@@ -1,0 +1,8 @@
+# Week 1 dependencies — local, free RAG stack
+chromadb>=0.5.0
+ollama>=0.3.0
+pypdf>=4.2.0
+python-dotenv>=1.0.0
+
+# Uncomment if you attempt the optional "hosted swap" exercise:
+# openai>=1.30.0

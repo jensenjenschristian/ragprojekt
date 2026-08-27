@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# Local vector store
+chroma_db/
+
+# Your documents (remove this line if you want to commit them)
+data/*
+!data/.gitkeep
