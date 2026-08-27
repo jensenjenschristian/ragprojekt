@@ -1,0 +1,35 @@
+Side 2
+1. Generelt
+Leverandøren skal generelt ved udførelse af ydelserne sikre overholdelse af følgende regler og 
+retningslinjer mv.:
+-AAU’s til enhver tid gældende Tekniske Kravspecifikation – funktionskrav til bygningsdele og 
+installationer med bilag som forefindes på https://www.campus- service.aau.dk/standarder-
+vejledninger/funktionskrav-bygningsdele-installationer/. Denne er senest opdateret februar 2026, og der 
+kan forventes en årlig opdatering. 
+-Relevante gældende love, bekendtgørelser, cirkulærer og øvrige regelsæt, samt branchestandarder
+-AAU’s til enhver tid gældende vejledning til eksterne samarbejdspartnere (bilag 6)
+Det er leverandørens ansvar, at Leverandørens medarbejdere er bekendt med de i nærværende afsnit 
+oplistede regler, retningslinjer mv.
+Leverandøren skal sikre, at 15 % af de leverede årsværk udgøres af personer under oplæring, jf. Bilag 7. 
+2. Krav til udførelsen af arbejdet
+Leverandøren skal sikre sig en stabil medarbejdergruppe, der over tid opbygger stort kendskab til AAU's 
+ABA/AVA-anlæg.
+Konkret betyder det, at der minimum tilknyttes følgende medarbejdere
+•én brandteknisk medarbejder med indgående lokalt kendskab, som anvendes til almindelige 
+driftsopgaver, fejlfindinger og lign., mens en større medarbejdergruppe kan indgå i udførelse af fx 
+entrepriseopgaver og større projekter.
+•én elteknisk medarbejdere med indgående lokalt kendskab, som anvendes til almindelige 
+driftsopgaver, fejlfindinger og lign., mens en større medarbejdergruppe kan indgå i udførelse af fx 
+entrepriseopgaver og større projekter.
+Herudover skal en større medarbejdergruppe indgå i udførelse af fx entrepriseopgaver og større projekter.
+Det er forudsætning at leverandøren er:
+•godkendt af DBI til at udføre arbejde i henhold til DBI-retningslinje 232 på følgende ABA-anlæg: 
+232.241 Sinteso FC20, eller opnår denne godkendelse senest 6 måneder efter aftalens indgåelse.
+•godkendt af DBI til at udføre arbejde i henhold til DBI-retningslinje 024 på AAU’s AVA-anlæg af 
+fabrikatet Siemens, eller opnår denne godkendelse senest 6 måneder efter aftalens indgåelse.
+Leverandøren skal desuden sikre, at medarbejdere, der anvendes til udførelse af ydelser, har følgende 
+faglige færdigheder:
+•nødvendige og relevante uddannelser, certificeringer og efteruddannelser for så vidt angår arbejde 
+der udføres på brandtekniske installationer og systemer. Dette omfatter blandt andet, men er ikke 
+begrænset til, DBI Brand 1 og Brand 2.
+•nødvendige og relevante uddannelser, certificeringer og efteruddannelser for så vidt angår arbejde 
