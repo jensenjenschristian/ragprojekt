@@ -66,11 +66,20 @@ def build_index(chunks, db_path="chroma_db", collection_name="tender"):
     return collection
 
 #stage 2
+#if __name__ == "__main__":
+#    pages = load_pages()
+#    chunks = chunk_pages(pages)
+#    print(f"{len(pages)} pages -> {len(chunks)} chunks")
+#
+#    c = chunks[27]
+#    print(f"\n--- {c['source']} side {c['page']} ---")
+#    print(c["text"])
+
+#stage 3
 if __name__ == "__main__":
     pages = load_pages()
     chunks = chunk_pages(pages)
     print(f"{len(pages)} pages -> {len(chunks)} chunks")
 
-    c = chunks[27]
-    print(f"\n--- {c['source']} side {c['page']} ---")
-    print(c["text"])
+    collection = build_index(chunks)
+    print(f"Indexed: {collection.count()} chunks")
