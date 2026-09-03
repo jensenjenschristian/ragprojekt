@@ -12,3 +12,5 @@ chroma_db/
 # Your documents (remove this line if you want to commit them)
 data/*
 !data/.gitkeep
+
+notes/corpus-dump.txt
