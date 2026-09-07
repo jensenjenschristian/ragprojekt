@@ -42,15 +42,20 @@ Kravspecifikation, with a citation.
 ---
 
 ### Q4 — true refusal, external reference, second topic
-**Question:** Hvad kræver Sikkerhedscirkulæret af leverandøren?
-**Expected:** abstention. `Aftale.pdf` p8 requires the supplier to be cleared to store and
-handle classified information `jf. Sikkerhedscirkulæret`, but the circular is not in the
-corpus and its contents are unavailable.
-**Source:** referring clause at `Aftale.pdf` p8; the answer itself is out of corpus.
+**Question:** Hvilke sikkerhedsklassifikationsniveauer opererer Sikkerhedscirkulæret med, og
+hvad kræves der for at opbevare information på hvert niveau?
+**Expected:** abstention. The corpus imposes obligations *relating to* the Sikkerhedscirkulæret
+but contains none of its content — no classification levels, no handling procedures, no
+clearance criteria. The correct answer points at the external circular.
+**Source:** none — absence is the ground truth. The two referring clauses are at
+`Aftale.pdf` p8.
 **Tests:** whether the Q3 refusal generalises or was topic-specific. Week 1 §7 showed
 abstention is context-sensitive, so one refusal test does not characterise the behaviour.
-**Status:** unverified — confirm the expected answer by reading p8 before first use.
-
+**Note:** the question was originally phrased *"Hvad kræver Sikkerhedscirkulæret af
+leverandøren?"*, which is ambiguous — the p8 obligations are a plausible answer to a nearby
+reading, making it a test of interpretation rather than abstention. Same defect as Q2.
+Narrowed to something the circular itself defines and the corpus demonstrably lacks. The
+positive version is now Q10.
 ---
 
 ### Q5 — cross-reference
@@ -69,15 +74,24 @@ Reconciling the two needs the total årsværk. Not tested here; flagged for Week
 
 ### Q6 — near-duplicate trap
 **Question:** Hvornår kan bestillinger gå til den sekundære leverandør i stedet for den primære?
-**Expected:** capacity problems (mandskabsmangel or similar) redirect an individual order —
-a temporary fallback. Distinct from the separate case where the secondary is permanently
-promoted to primary for all services under the agreement.
-**Source:** `Aftale.pdf` p4 (binding). The same passage appears at
-`Udbudsbetingelser.pdf` p4 (describes the procurement, does not bind).
-**Tests:** two things. Whether the temporary and permanent cases are kept apart, and whether
-retrieval indicates which document governs when both return near-identical text.
-**Note:** the two copies differ slightly in the pypdf extraction. Check after Docling whether
-that is a real textual difference or a line-wrap artifact.
+**Expected:** three situations, all from the same list — (1) the primary cannot perform due to
+temporary obstacles such as mandskabsmangel, so the individual order goes to the secondary;
+(2) the primary cannot meet a deadline AAU has set; (3) the primary materially breaches the
+agreement, AAU terminates, and the secondary is **permanently promoted** to primary for all
+services. Cases 1–2 are order-by-order fallbacks; case 3 is a permanent change of role.
+Conflating them is the failure mode.
+**Source:** `Aftale.pdf` p4 — binding. The passage is **verbatim identical** at
+`Udbudsbetingelser.pdf` p4, which does not bind but adds the rationale (a fixed primary for
+both maintenance and larger works, a secondary to secure continuity) and names
+`aftalens pkt. 3.2` as the governing clause.
+**Tests:** whether the system can distinguish two chunks that are lexically identical. No
+embedding, reranker or BM25 signal exists — the strings are the same. The `source` metadata
+field is the only available discriminator, which makes this the direct test of the Week 2
+schema decision.
+**Note:** `Udbudsbetingelser.pdf` p4 uses `aktør` and `leverandør` interchangeably for the
+same party in the same section — a Week 3 synonym/lexical-gap case.
+**Note:** the Week 1 pypdf extraction places page furniture (`Side 4`) inside the passage,
+between the intro sentence and the bullet list. Check Docling removes it.
 
 ---
 
@@ -119,3 +133,20 @@ its size is defined in Bilag 4. After the xlsx is ingested — the actual figure
 invisible to pypdf, so the reference resolves to nothing.
 **Use:** run before and after the Docling swap. This is the measured justification for
 bringing the xlsx in.
+
+---
+
+### Q10 — obligation with named third parties
+**Question:** Hvilke forpligtelser har leverandøren over for sikkerhedsmyndighederne?
+**Expected:** two obligations. Clearance to store and handle classified information, and
+dialogue and cooperation with the relevant security authorities and AAU's security
+organisation regarding advice, design and construction of facilities subject to the
+Sikkerhedscirkulæret. The authorities are named: PET and FE.
+**Source:** `Aftale.pdf` p8
+**Tests:** whether the named authorities survive retrieval. `PET` and `FE` are rare short
+tokens — smoothed away by embeddings, weighted heavily by BM25. A Week 3 hybrid target.
+**Note:** the obligation is expressed as `er forpligtet til`, with no `skal` anywhere in the
+clause. Second instance after Q8 of a binding obligation a `skal`-scanner would miss.
+**Note:** `sikkerhedsmyndigheder` is hyphen-split by pypdf (`sikker-\nhedsmyndigheder`), so
+the term is damaged in the Week 1 index — alongside `referenceprisliste` in Q7. Re-check
+both after Docling.
