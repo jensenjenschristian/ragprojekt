@@ -14,3 +14,5 @@ data/*
 !data/.gitkeep
 
 notes/corpus-dump.txt
+docling_test.py
+notes/docling-sample.md

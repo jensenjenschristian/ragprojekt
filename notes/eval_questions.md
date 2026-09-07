@@ -123,16 +123,15 @@ and misses `er forpligtet til` (the real one).
 
 ---
 
-### Q9 — currently unanswerable, should change in Week 2
-**Question:** Hvad er udkaldstillægget for hasteopgaver uden for almindelig arbejdstid?
-**Expected:** currently — abstention or a partial answer noting that the surcharge exists but
-its size is defined in Bilag 4. After the xlsx is ingested — the actual figure.
-**Source:** `Aftale.pdf` p7 establishes the surcharge `jf. Bilag 4`;
-`Bilag 4 - Tilbudsliste.XLSX` holds the value.
-**Tests:** the cost of excluding a file format. Bilag 4 is in the corpus directory but
-invisible to pypdf, so the reference resolves to nothing.
-**Use:** run before and after the Docling swap. This is the measured justification for
-bringing the xlsx in.
+### Q9 — answerable only after the xlsx swap
+**Question:** Hvad er udkaldstillægget for hasteopgaver uden for almindelig arbejdstid på
+delaftale København?
+**Expected:** 1.848 kr. (gennemsnitstimesats 616 × 3). Aalborg and Esbjerg are both 1.728 kr.
+(576 × 3). Under pypdf: unanswerable — `Aftale.pdf` p7 establishes the surcharge `jf. Bilag 4`
+and Bilag 4 was invisible to the parser.
+**Source:** `Bilag 4 - Tilbudsliste.XLSX`, sheet for delaftale København
+**Tests:** the cost of excluding a file format, measured before and after. The justification
+for step 3, not an assertion.
 
 ---
 
@@ -150,3 +149,40 @@ clause. Second instance after Q8 of a binding obligation a `skal`-scanner would 
 **Note:** `sikkerhedsmyndigheder` is hyphen-split by pypdf (`sikker-\nhedsmyndigheder`), so
 the term is damaged in the Week 1 index — alongside `referenceprisliste` in Q7. Re-check
 both after Docling.
+
+---
+
+### Q11 — factual lookup from a table
+**Question:** Hvad er den samlede værdi af delaftalen for Aalborg?
+**Expected:** 35 mio. kr. (Esbjerg 4,2 mio. kr., København 16,1 mio. kr.)
+**Source:** `Udbudsbetingelser.pdf` p5, table
+**Tests:** table extraction end to end. Under pypdf this was unstructured text; the value is
+retrievable only because TableFormer reconstructed the grid.
+
+---
+
+### Q12 — table spanning a page break
+**Question:** Hvornår er kontraktstart?
+**Expected:** 1. december 2026.
+**Source:** `Udbudsbetingelser.pdf` p7, continuation of the tidsplan beginning on p6
+**Tests:** whether a chunk from the continuation table is interpretable. In isolation the p7
+rows are five dates with no header — `Uge 45`, `Uge 46-47`, `Uge 48` — because TableFormer
+works per page and the header stayed on p6.
+
+---
+
+### Q13 — the same fact, three different answers
+**Question:** Hvad er timeprisen for en elektrikersvend?
+**Expected:** 500 kr. for delaftale Aalborg and Esbjerg, 550 kr. for København. An answer
+giving a single figure without naming the delaftale is wrong even when the number is right.
+**Source:** `Bilag 4 - Tilbudsliste.XLSX`, three sheets
+**Tests:** the hardest near-duplicate case in the corpus. Aalborg and Esbjerg are byte-
+identical; København differs in two cells of fifteen (Tekniker 700 vs 650, Elektriker svend
+550 vs 500, giving gennemsnitstimesats 616 vs 576). Embeddings cannot separate them — the
+discriminating tokens are bare numbers in a passage otherwise identical. BM25 cannot either:
+fourteen of sixteen tokens are shared.
+**Why it matters more than Q6:** in Q6 the wrong copy still states the correct fact with the
+wrong citation. Here the wrong copy states **a different number**. The only discriminator is
+the sheet title (`Bilag 4 - Tilbudsliste for delaftale X`), which sits twelve tables away in
+the parsed structure and is absent from the chunk. Unanswerable unless `delaftale` is carried
+as metadata.
