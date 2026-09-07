@@ -1,0 +1,3223 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Bilag 3 - Kravspecifikation",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 3413049810315973784,
+    "filename": "Bilag 3 - Kravspecifikation.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/groups/3"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/groups/4"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/groups/5"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/texts/52"
+      },
+      {
+        "$ref": "#/texts/53"
+      },
+      {
+        "$ref": "#/texts/54"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/groups/6"
+      },
+      {
+        "$ref": "#/texts/63"
+      },
+      {
+        "$ref": "#/texts/64"
+      },
+      {
+        "$ref": "#/texts/65"
+      },
+      {
+        "$ref": "#/texts/66"
+      },
+      {
+        "$ref": "#/texts/67"
+      },
+      {
+        "$ref": "#/texts/68"
+      },
+      {
+        "$ref": "#/texts/69"
+      },
+      {
+        "$ref": "#/pictures/4"
+      },
+      {
+        "$ref": "#/texts/70"
+      },
+      {
+        "$ref": "#/pictures/5"
+      },
+      {
+        "$ref": "#/texts/71"
+      },
+      {
+        "$ref": "#/texts/72"
+      },
+      {
+        "$ref": "#/texts/73"
+      },
+      {
+        "$ref": "#/texts/74"
+      },
+      {
+        "$ref": "#/texts/75"
+      },
+      {
+        "$ref": "#/texts/76"
+      },
+      {
+        "$ref": "#/texts/77"
+      },
+      {
+        "$ref": "#/texts/78"
+      },
+      {
+        "$ref": "#/texts/79"
+      },
+      {
+        "$ref": "#/texts/80"
+      },
+      {
+        "$ref": "#/texts/81"
+      },
+      {
+        "$ref": "#/texts/82"
+      },
+      {
+        "$ref": "#/texts/83"
+      },
+      {
+        "$ref": "#/texts/84"
+      },
+      {
+        "$ref": "#/texts/85"
+      },
+      {
+        "$ref": "#/texts/86"
+      },
+      {
+        "$ref": "#/texts/87"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/pictures/6"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/texts/90"
+      },
+      {
+        "$ref": "#/texts/91"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/23"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 103.40799856000001,
+            "t": 528.2720045899999,
+            "r": 508.40799855999995,
+            "b": 512.3649371866851,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            47
+          ]
+        }
+      ],
+      "orig": "til campus Aalborg/Esbjerg/København på Aalborg",
+      "text": "til campus Aalborg/Esbjerg/København på Aalborg",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 163.73200368,
+            "t": 612.4900016600001,
+            "r": 443.11600367999984,
+            "b": 487.5279372966851,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "Bilag 3 - Kravspecifikation Udbud af El-installatørydelser Universitet",
+      "text": "Bilag 3 - Kravspecifikation Udbud af El-installatørydelser Universitet",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 719.06900074,
+            "r": 120.19000066,
+            "b": 710.1217410714917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "1. Generelt",
+      "text": "1. Generelt",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 691.36300008,
+            "r": 535.9699999,
+            "b": 668.7277391214917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            126
+          ]
+        }
+      ],
+      "orig": "Leverandøren  skal  generelt  ved  udførelse  af  ydelserne  sikre  overholdelse  af  følgende  regler  og retningslinjer mv.:",
+      "text": "Leverandøren  skal  generelt  ved  udførelse  af  ydelserne  sikre  overholdelse  af  følgende  regler  og retningslinjer mv.:"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 649.40600254,
+            "r": 535.9799998999997,
+            "b": 599.0647409114918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            330
+          ]
+        }
+      ],
+      "orig": "- AAU's  til  enhver  tid  gældende  Tekniske  Kravspecifikation  -  funktionskrav  til  bygningsdele  og installationer med bilag som forefindes på https://www.campusservice.aau.dk/standardervejledninger/funktionskrav-bygningsdele-installationer/. Denne er senest opdateret februar 2026, og der kan forventes en årlig opdatering.",
+      "text": "AAU's  til  enhver  tid  gældende  Tekniske  Kravspecifikation  -  funktionskrav  til  bygningsdele  og installationer med bilag som forefindes på https://www.campusservice.aau.dk/standardervejledninger/funktionskrav-bygningsdele-installationer/. Denne er senest opdateret februar 2026, og der kan forventes en årlig opdatering.",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 593.54099705,
+            "r": 521.6799998999998,
+            "b": 584.5937373814917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            97
+          ]
+        }
+      ],
+      "orig": "- Relevante gældende love, bekendtgørelser, cirkulærer og øvrige regelsæt, samt branchestandarder",
+      "text": "Relevante gældende love, bekendtgørelser, cirkulærer og øvrige regelsæt, samt branchestandarder",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 579.07000401,
+            "r": 441.64999989999995,
+            "b": 570.1227443414917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            84
+          ]
+        }
+      ],
+      "orig": "- AAU's til enhver tid gældende vejledning til eksterne samarbejdspartnere (bilag 6)",
+      "text": "AAU's til enhver tid gældende vejledning til eksterne samarbejdspartnere (bilag 6)",
+      "enumerated": false,
+      "marker": "-"
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 551.36400716,
+            "r": 535.9699998999998,
+            "b": 528.7287462014917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            133
+          ]
+        }
+      ],
+      "orig": "Det er leverandørens ansvar, at Leverandørens medarbejdere er bekendt med de i nærværende afsnit oplistede regler, retningslinjer mv.",
+      "text": "Det er leverandørens ansvar, at Leverandørens medarbejdere er bekendt med de i nærværende afsnit oplistede regler, retningslinjer mv."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 509.96999471000004,
+            "r": 526.5999998999998,
+            "b": 501.13273504149174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            104
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal sikre, at 15 % af de leverede årsværk udgøres af personer under oplæring, jf. Bilag 7.",
+      "text": "Leverandøren skal sikre, at 15 % af de leverede årsværk udgøres af personer under oplæring, jf. Bilag 7."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 468.01299717000006,
+            "r": 219.77000066000008,
+            "b": 459.06573750149175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "2. Krav til udførelsen af arbejdet",
+      "text": "2. Krav til udførelsen af arbejdet",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 440.30701558000004,
+            "r": 536.0799998999998,
+            "b": 417.67175462149174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            118
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal sikre sig en stabil medarbejdergruppe, der over tid opbygger stort kendskab til AAU's ABA/AVA-anlæg.",
+      "text": "Leverandøren skal sikre sig en stabil medarbejdergruppe, der over tid opbygger stort kendskab til AAU's ABA/AVA-anlæg."
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 398.91300313000005,
+            "r": 371.93999990000003,
+            "b": 390.07574346149175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "Konkret betyder det, at der minimum tilknyttes følgende medarbejdere",
+      "text": "Konkret betyder det, at der minimum tilknyttes følgende medarbejdere"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 75.0,
+            "t": 373.53299504000006,
+            "r": 536.0699999999999,
+            "b": 334.2097337414918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            238
+          ]
+        }
+      ],
+      "orig": "· én  brandteknisk  medarbejder  med  indgående  lokalt  kendskab,  som  anvendes  til  almindelige driftsopgaver, fejlfindinger og lign., mens en større medarbejdergruppe kan indgå i udførelse af fx entrepriseopgaver og større projekter.",
+      "text": "én  brandteknisk  medarbejder  med  indgående  lokalt  kendskab,  som  anvendes  til  almindelige driftsopgaver, fejlfindinger og lign., mens en større medarbejdergruppe kan indgå i udførelse af fx entrepriseopgaver og større projekter.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 75.0,
+            "t": 331.46500187000004,
+            "r": 536.08,
+            "b": 292.1417405714917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            236
+          ]
+        }
+      ],
+      "orig": "· én  elteknisk  medarbejdere  med  indgående  lokalt  kendskab,  som  anvendes  til  almindelige driftsopgaver, fejlfindinger og lign., mens en større medarbejdergruppe kan indgå i udførelse af fx entrepriseopgaver og større projekter.",
+      "text": "én  elteknisk  medarbejdere  med  indgående  lokalt  kendskab,  som  anvendes  til  almindelige driftsopgaver, fejlfindinger og lign., mens en større medarbejdergruppe kan indgå i udførelse af fx entrepriseopgaver og større projekter.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 273.3830043500001,
+            "r": 531.4699998999997,
+            "b": 264.5457446814918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            105
+          ]
+        }
+      ],
+      "orig": "Herudover skal en større medarbejdergruppe indgå i udførelse af fx entrepriseopgaver og større projekter.",
+      "text": "Herudover skal en større medarbejdergruppe indgå i udførelse af fx entrepriseopgaver og større projekter."
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 245.78699604999997,
+            "r": 237.99999990000003,
+            "b": 236.94973638149168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            39
+          ]
+        }
+      ],
+      "orig": "Det er forudsætning at leverandøren er:",
+      "text": "Det er forudsætning at leverandøren er:"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 75.0,
+            "t": 220.40698796000015,
+            "r": 536.13,
+            "b": 194.88172700149175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            193
+          ]
+        }
+      ],
+      "orig": "· godkendt af DBI til at udføre arbejde i henhold til DBI-retningslinje 232 på følgende ABA-anlæg: 232.241 Sinteso FC20, eller opnår denne godkendelse senest 6 måneder efter aftalens indgåelse.",
+      "text": "godkendt af DBI til at udføre arbejde i henhold til DBI-retningslinje 232 på følgende ABA-anlæg: 232.241 Sinteso FC20, eller opnår denne godkendelse senest 6 måneder efter aftalens indgåelse.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 75.0,
+            "t": 192.13702946000012,
+            "r": 536.1200000000001,
+            "b": 166.61176850149172,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            190
+          ]
+        }
+      ],
+      "orig": "· godkendt af DBI til at udføre arbejde i henhold til DBI-retningslinje 024 på AAU's AVA-anlæg af fabrikatet Siemens, eller opnår denne godkendelse senest 6 måneder efter aftalens indgåelse.",
+      "text": "godkendt af DBI til at udføre arbejde i henhold til DBI-retningslinje 024 på AAU's AVA-anlæg af fabrikatet Siemens, eller opnår denne godkendelse senest 6 måneder efter aftalens indgåelse.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 147.85297505000005,
+            "r": 536.1299998999998,
+            "b": 125.21771409149176,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            122
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal desuden sikre, at medarbejdere, der anvendes til udførelse af ydelser, har følgende faglige færdigheder:",
+      "text": "Leverandøren skal desuden sikre, at medarbejdere, der anvendes til udførelse af ydelser, har følgende faglige færdigheder:"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 75.0,
+            "t": 122.47302800000011,
+            "r": 536.1299999999999,
+            "b": 83.14976670149179,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            237
+          ]
+        }
+      ],
+      "orig": "· nødvendige og relevante uddannelser, certificeringer og efteruddannelser for så vidt angår arbejde der udføres på brandtekniske installationer og systemer. Dette omfatter blandt andet, men er ikke begrænset til, DBI Brand 1 og Brand 2.",
+      "text": "nødvendige og relevante uddannelser, certificeringer og efteruddannelser for så vidt angår arbejde der udføres på brandtekniske installationer og systemer. Dette omfatter blandt andet, men er ikke begrænset til, DBI Brand 1 og Brand 2.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/groups/3"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 75.0,
+            "t": 80.4049738000001,
+            "r": 536.1299999999999,
+            "b": 68.1549738000001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            100
+          ]
+        }
+      ],
+      "orig": "· nødvendige og relevante uddannelser, certificeringer og efteruddannelser for så vidt angår arbejde",
+      "text": "nødvendige og relevante uddannelser, certificeringer og efteruddannelser for så vidt angår arbejde",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 285.04998779,
+            "t": 30.246009839999942,
+            "r": 310.31398779,
+            "b": 23.214726257910456,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Side 2",
+      "text": "Side 2"
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 93.0,
+            "t": 733.43000142,
+            "r": 533.3499999999999,
+            "b": 710.7947404614918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            102
+          ]
+        }
+      ],
+      "orig": "der udføres på eltekniske installationer. Dette omfatter blandt andet, men er ikke begrænset til LAUS.",
+      "text": "der udføres på eltekniske installationer. Dette omfatter blandt andet, men er ikke begrænset til LAUS."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/groups/4"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 75.0,
+            "t": 708.05000096,
+            "r": 437.56,
+            "b": 695.80000096,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            84
+          ]
+        }
+      ],
+      "orig": "· relevante arbejdsmiljøkurser til for eksempel lift, varmt arbejde, faldsikring mv.",
+      "text": "relevante arbejdsmiljøkurser til for eksempel lift, varmt arbejde, faldsikring mv.",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 677.5640002900001,
+            "r": 536.1299998999998,
+            "b": 627.3327386514918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            340
+          ]
+        }
+      ],
+      "orig": "Såfremt  medarbejdernes  nødvendige  kompetencer  eller  certificeringer  ikke  foreligger  ved  aftalens indgåelse, skal relevante uddannelses- eller certificeringsforløb være påbegyndt senest 3 måneder efter aftalens  ikrafttræden,  eller  der  skal  være  indgået  samarbejde  med  en  af  Aalborg  Universitet  godkendt underleverandør.",
+      "text": "Såfremt  medarbejdernes  nødvendige  kompetencer  eller  certificeringer  ikke  foreligger  ved  aftalens indgåelse, skal relevante uddannelses- eller certificeringsforløb være påbegyndt senest 3 måneder efter aftalens  ikrafttræden,  eller  der  skal  være  indgået  samarbejde  med  en  af  Aalborg  Universitet  godkendt underleverandør."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 608.57399861,
+            "r": 536.1299998999998,
+            "b": 558.3427369714917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            397
+          ]
+        }
+      ],
+      "orig": "Arbejds- og serviceopgaverne kan tildeles af AAU's personale pr. telefon, mail eller via Campus Services' Building Support system (et ticket management system). Leverandørens medarbejder, som udfører disse opgaver,  skal  derfor  kunne  arbejde  med  PC  og  App  tilknyttet  Building  Support.  Campus  Service  stiller login til rådighed, men Leverandøren skal medbringe egen PC og mobiltelefon.",
+      "text": "Arbejds- og serviceopgaverne kan tildeles af AAU's personale pr. telefon, mail eller via Campus Services' Building Support system (et ticket management system). Leverandørens medarbejder, som udfører disse opgaver,  skal  derfor  kunne  arbejde  med  PC  og  App  tilknyttet  Building  Support.  Campus  Service  stiller login til rådighed, men Leverandøren skal medbringe egen PC og mobiltelefon."
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 539.5840083800001,
+            "r": 535.9199999,
+            "b": 516.9487474214918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            120
+          ]
+        }
+      ],
+      "orig": "Der må ikke foretages afbrydelser af forsyninger, fx el-, vand-, ventilation- og varmeforsyning uden tilladelse fra AAU.",
+      "text": "Der må ikke foretages afbrydelser af forsyninger, fx el-, vand-, ventilation- og varmeforsyning uden tilladelse fra AAU."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 498.18999593000007,
+            "r": 356.4999999,
+            "b": 489.35273626149177,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            67
+          ]
+        }
+      ],
+      "orig": "Der må ikke foretages fysiske afspærringer uden tilladelse fra AAU.",
+      "text": "Der må ikke foretages fysiske afspærringer uden tilladelse fra AAU."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 470.59400288000006,
+            "r": 535.8799998999998,
+            "b": 420.3627412414918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            365
+          ]
+        }
+      ],
+      "orig": "Leverandøren  får  inden  arbejdets  opstart  udleveret  nøgle  eller  adgangskort  til  de  bygninger,  som  er omfattet af arbejdet. Det er Leverandørens ansvar, at disse ikke udleveres til udenforstående eller kopieres. Ved bortkomst eller misbrug skal Leverandøren betale erstatning for nye nøgler eller adgangskort samt eventuel udgift til udskiftning af låse.",
+      "text": "Leverandøren  får  inden  arbejdets  opstart  udleveret  nøgle  eller  adgangskort  til  de  bygninger,  som  er omfattet af arbejdet. Det er Leverandørens ansvar, at disse ikke udleveres til udenforstående eller kopieres. Ved bortkomst eller misbrug skal Leverandøren betale erstatning for nye nøgler eller adgangskort samt eventuel udgift til udskiftning af låse."
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 401.6040126500001,
+            "r": 535.9799998999998,
+            "b": 378.9687516914918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            116
+          ]
+        }
+      ],
+      "orig": "Som udgangspunkt må AAU's affaldsløsninger ikke anvendes, men der kan laves lokale aftaler på det pågældende område.",
+      "text": "Som udgangspunkt må AAU's affaldsløsninger ikke anvendes, men der kan laves lokale aftaler på det pågældende område."
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 360.2100002000001,
+            "r": 535.9799998999999,
+            "b": 337.5747392414918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            152
+          ]
+        }
+      ],
+      "orig": "Leverandøren  og  dennes  medarbejdere  har  pligt  til  at  informere  AAU  om  skader  eller  defekter,  som konstateres under udførelse af en opgave.",
+      "text": "Leverandøren  og  dennes  medarbejdere  har  pligt  til  at  informere  AAU  om  skader  eller  defekter,  som konstateres under udførelse af en opgave."
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 318.81598775,
+            "r": 535.5299998999997,
+            "b": 296.1807267914917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            176
+          ]
+        }
+      ],
+      "orig": "Leverandøren og AAU skal inden hver opgaves begyndelse aftale arbejdets omfang, arbejdsgang samt eventuelle ønsker til arbejdet, materialer, mv. Aftalen kan evt. være mundtlig.",
+      "text": "Leverandøren og AAU skal inden hver opgaves begyndelse aftale arbejdets omfang, arbejdsgang samt eventuelle ønsker til arbejdet, materialer, mv. Aftalen kan evt. være mundtlig."
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 277.42200581,
+            "r": 535.5199998999999,
+            "b": 227.19074417149181,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            345
+          ]
+        }
+      ],
+      "orig": "Leverandøren  skal  henvende  sig  til  AAU  ved  ankomst,  medmindre  andet  er  aftalt  i  forbindelse  med indgåelse  af  aftale  om  den  konkrete  opgave.  Leverandøren  skal  desuden  holde  AAU  informeret  om arbejdets  start  og  færdiggørelse  samt  evt.  forsinkelse  og  eventuelt  behov  for  underleverandører  til opgaveløsningen.",
+      "text": "Leverandøren  skal  henvende  sig  til  AAU  ved  ankomst,  medmindre  andet  er  aftalt  i  forbindelse  med indgåelse  af  aftale  om  den  konkrete  opgave.  Leverandøren  skal  desuden  holde  AAU  informeret  om arbejdets  start  og  færdiggørelse  samt  evt.  forsinkelse  og  eventuelt  behov  for  underleverandører  til opgaveløsningen."
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 208.4320155800001,
+            "r": 535.6799998999999,
+            "b": 185.7967546214918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            161
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal tilrettelægge arbejdets udførelse under hensyntagen til universitets daglige  drift.  AAU koordinerer evt. adgang til undervisningslokaler, mv.",
+      "text": "Leverandøren skal tilrettelægge arbejdets udførelse under hensyntagen til universitets daglige  drift.  AAU koordinerer evt. adgang til undervisningslokaler, mv."
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 167.03797261,
+            "r": 364.80999989999987,
+            "b": 158.2007129414917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "Al kommunikation mellem AAU og Leverandøren vil foregå på dansk.",
+      "text": "Al kommunikation mellem AAU og Leverandøren vil foregå på dansk."
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 139.4420253500001,
+            "r": 535.7799998999999,
+            "b": 103.00876405149188,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            255
+          ]
+        }
+      ],
+      "orig": "Af sikkerhedsmæssige årsager er det Leverandørens pligt at sikre sig, at al personale beskæftiget med varetagelsen af denne kontrakt kan forstå skriftlige og mundtlige instruktioner/meddelelser på dansk fra såvel arbejdsledelse som fra AAU's medarbejdere.",
+      "text": "Af sikkerhedsmæssige årsager er det Leverandørens pligt at sikre sig, at al personale beskæftiget med varetagelsen af denne kontrakt kan forstå skriftlige og mundtlige instruktioner/meddelelser på dansk fra såvel arbejdsledelse som fra AAU's medarbejdere."
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 84.25000874,
+            "r": 535.5799999000001,
+            "b": 61.6147477814917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            222
+          ]
+        }
+      ],
+      "orig": "Leverandørens  personale  skal  være  let  identificerbart  med  firmanavn  på  arbejdsbeklædningen,  synligt legitimationskort eller lign. Personalet skal ligeledes kunne identificere sig i form af skriftlig legitimation.",
+      "text": "Leverandørens  personale  skal  være  let  identificerbart  med  firmanavn  på  arbejdsbeklædningen,  synligt legitimationskort eller lign. Personalet skal ligeledes kunne identificere sig i form af skriftlig legitimation."
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 285.04998779,
+            "t": 30.246009839999942,
+            "r": 310.31398779,
+            "b": 23.214726257910456,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Side 3",
+      "text": "Side 3"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 719.63200108,
+            "r": 535.5799998999998,
+            "b": 628.0067422514917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            686
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal efterleve AAU's gældende Politik for informationssikkerhed og tilhørende retningslinjer. Leverandøren skal endvidere efterleve efterfølgende ændringer, opdateringer og præciseringer heraf, i det omfang disse er sagligt begrundede, relevante for Leverandørens ydelser og ikke grundlæggende ændrer kontraktens  karakter.  Dette  gælder  blandt  andet,  hvor  Leverandørens  ydelser  måtte  omfatte  service, support,  programmering,  konfiguration,  fjernadgang  eller  anden  håndtering  af  managementplatforme, centraludstyr eller netværksforbundne komponenter på brandtekniske installationer, herunder eksempelvis ABA-, ABDL-, AVA-, varsling- og røgudluftningsanlæg.",
+      "text": "Leverandøren skal efterleve AAU's gældende Politik for informationssikkerhed og tilhørende retningslinjer. Leverandøren skal endvidere efterleve efterfølgende ændringer, opdateringer og præciseringer heraf, i det omfang disse er sagligt begrundede, relevante for Leverandørens ydelser og ikke grundlæggende ændrer kontraktens  karakter.  Dette  gælder  blandt  andet,  hvor  Leverandørens  ydelser  måtte  omfatte  service, support,  programmering,  konfiguration,  fjernadgang  eller  anden  håndtering  af  managementplatforme, centraludstyr eller netværksforbundne komponenter på brandtekniske installationer, herunder eksempelvis ABA-, ABDL-, AVA-, varsling- og røgudluftningsanlæg."
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 609.2480022100001,
+            "r": 516.9799998999999,
+            "b": 600.4107425414918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            99
+          ]
+        }
+      ],
+      "orig": "Derudover er der krav om følgende, som ikke allerede fremgår af AAU's Tekniske kravspecifikationer:",
+      "text": "Derudover er der krav om følgende, som ikke allerede fremgår af AAU's Tekniske kravspecifikationer:"
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 581.65200154,
+            "r": 535.5799999999999,
+            "b": 545.2187402414918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            211
+          ]
+        }
+      ],
+      "orig": "1. Alle ændringer på kritiske installationer, herunder ABA-, AVA-, ABV-, nødog panikbelysningsanlæg  samt  øvrige  sikkerheds-  og  sikringsinstallationer,  skal  forudgående  være aftalt med AAU Campus Service.",
+      "text": "Alle ændringer på kritiske installationer, herunder ABA-, AVA-, ABV-, nødog panikbelysningsanlæg  samt  øvrige  sikkerheds-  og  sikringsinstallationer,  skal  forudgående  være aftalt med AAU Campus Service.",
+      "enumerated": true,
+      "marker": "1."
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 540.2580043500001,
+            "r": 535.5799999999999,
+            "b": 503.8247430514918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            239
+          ]
+        }
+      ],
+      "orig": "2. Ved  arbejde  på  kritiske  installationer  skal  leverandøren  efter  afsluttet  arbejde  dokumentere  og verificere,  at  anlægget  fungerer  som  forudsat,  og  at  eventuelle  integrationer  til  øvrige  systemer fortsat er intakte.",
+      "text": "Ved  arbejde  på  kritiske  installationer  skal  leverandøren  efter  afsluttet  arbejde  dokumentere  og verificere,  at  anlægget  fungerer  som  forudsat,  og  at  eventuelle  integrationer  til  øvrige  systemer fortsat er intakte.",
+      "enumerated": true,
+      "marker": "2."
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 498.86400716,
+            "r": 535.5799999999999,
+            "b": 476.22874620149173,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            177
+          ]
+        }
+      ],
+      "orig": "3. Konfigurationsændringer,  softwareopdateringer  og  firmwareopdateringer  på  installationer  med programmerbare funktioner skal dokumenteres og stilles til rådighed for AAU.",
+      "text": "Konfigurationsændringer,  softwareopdateringer  og  firmwareopdateringer  på  installationer  med programmerbare funktioner skal dokumenteres og stilles til rådighed for AAU.",
+      "enumerated": true,
+      "marker": "3."
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 471.26801412000003,
+            "r": 535.5699999999999,
+            "b": 448.63275316149173,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            151
+          ]
+        }
+      ],
+      "orig": "4. Leverandøren skal varsle AAU minimum 5 arbejdsdage før planlagte opdateringer eller ændringer, der kan påvirke anlæggets drift eller tilgængelighed.",
+      "text": "Leverandøren skal varsle AAU minimum 5 arbejdsdage før planlagte opdateringer eller ændringer, der kan påvirke anlæggets drift eller tilgængelighed.",
+      "enumerated": true,
+      "marker": "4."
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 443.67200581000003,
+            "r": 535.5800000000002,
+            "b": 407.23874451149175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            229
+          ]
+        }
+      ],
+      "orig": "5. Inden  der  udføres  ændringer  på  software-,  firmware-  eller  konfigurationsbaserede  installationer, skal leverandøren sikre, at der foreligger en aktuel backup af anlæggets konfiguration, programmering og relevante data.",
+      "text": "Inden  der  udføres  ændringer  på  software-,  firmware-  eller  konfigurationsbaserede  installationer, skal leverandøren sikre, at der foreligger en aktuel backup af anlæggets konfiguration, programmering og relevante data.",
+      "enumerated": true,
+      "marker": "5."
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 402.27799336000004,
+            "r": 535.5799999999997,
+            "b": 365.84473206149175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            225
+          ]
+        }
+      ],
+      "orig": "6. Såfremt  ændringen  medfører  tab  af  data,  konfiguration  eller  funktionalitet,  er  leverandøren ansvarlig for uden yderligere omkostninger for AAU at genskabe anlægget til samme funktionelle niveau som før ændringen.",
+      "text": "Såfremt  ændringen  medfører  tab  af  data,  konfiguration  eller  funktionalitet,  er  leverandøren ansvarlig for uden yderligere omkostninger for AAU at genskabe anlægget til samme funktionelle niveau som før ændringen.",
+      "enumerated": true,
+      "marker": "6."
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 360.88401143000004,
+            "r": 535.5799999999996,
+            "b": 338.24875047149175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "7. På  AAU's  anmodning  skal  leverandøren  kunne  dokumentere,  at  backup  er  gennemført,  og  at genskabelse kan foretages.",
+      "text": "På  AAU's  anmodning  skal  leverandøren  kunne  dokumentere,  at  backup  er  gennemført,  og  at genskabelse kan foretages.",
+      "enumerated": true,
+      "marker": "7."
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 333.28800313000005,
+            "r": 535.5799999999998,
+            "b": 310.6527421714918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            123
+          ]
+        }
+      ],
+      "orig": "8. Kritiske fejlrettelser og nødvendige sikkerhedsopdateringer skal kunne gennemføres hurtigst muligt efter aftale med AAU.",
+      "text": "Kritiske fejlrettelser og nødvendige sikkerhedsopdateringer skal kunne gennemføres hurtigst muligt efter aftale med AAU.",
+      "enumerated": true,
+      "marker": "8."
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 305.6919948300001,
+            "r": 535.5799999999999,
+            "b": 269.25873353149177,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            294
+          ]
+        }
+      ],
+      "orig": "9. Planlagt  vedligehold  og  ændringsarbejde  på  kritiske  installationer  skal  så  vidt  muligt  udføres  på tidspunkter,  hvor  påvirkningen  af  universitetets  drift  er  mindst  mulig.  Der  skal  tages  hensyn  til undervisning, forskning, eksamensperioder og AAU's lavserviceperioder.",
+      "text": "Planlagt  vedligehold  og  ændringsarbejde  på  kritiske  installationer  skal  så  vidt  muligt  udføres  på tidspunkter,  hvor  påvirkningen  af  universitetets  drift  er  mindst  mulig.  Der  skal  tages  hensyn  til undervisning, forskning, eksamensperioder og AAU's lavserviceperioder.",
+      "enumerated": true,
+      "marker": "9."
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/groups/5"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 264.2980128900001,
+            "r": 535.5699999999999,
+            "b": 241.6627519314918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            135
+          ]
+        }
+      ],
+      "orig": "10. Ved ændringer på ABA-, AVA- og ABV-anlæg skal gældende myndighedskrav, certificeringskrav og relevante standarder altid overholdes.",
+      "text": "Ved ændringer på ABA-, AVA- og ABV-anlæg skal gældende myndighedskrav, certificeringskrav og relevante standarder altid overholdes.",
+      "enumerated": true,
+      "marker": "10."
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 222.90400044000012,
+            "r": 535.5799999999999,
+            "b": 186.47073914149178,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            253
+          ]
+        }
+      ],
+      "orig": "Ved kritiske installationer forstås blandt andet ABA-, AVA-, ABV-, nød- og panikbelysningsanlæg samt øvrige installationer, hvor fejl eller manglende funktion kan påvirke personsikkerhed, brandsikkerhed, sikringsniveau eller væsentlige driftsfunktioner.",
+      "text": "Ved kritiske installationer forstås blandt andet ABA-, AVA-, ABV-, nød- og panikbelysningsanlæg samt øvrige installationer, hvor fejl eller manglende funktion kan påvirke personsikkerhed, brandsikkerhed, sikringsniveau eller væsentlige driftsfunktioner."
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 75.0,
+            "t": 181.51001851,
+            "r": 535.5799999999999,
+            "b": 117.48076035149177,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            404
+          ]
+        }
+      ],
+      "orig": "Bemærkning: Kravene vedrørende backup, dokumentation og ændringsstyring gælder alene installationer med software-, firmwareeller konfigurationsbaserede funktioner og finder ikke anvendelse  på  traditionelle  el-installationer  uden  programmerbare  komponenter.  Dette  omfatter eksempelvis  ABA-,  AVA-,  ABV-,  nød-  og  panikbelysningsanlæg,  DALI-anlæg,  IBI-installationer  og tilsvarende systemer.",
+      "text": "Bemærkning: Kravene vedrørende backup, dokumentation og ændringsstyring gælder alene installationer med software-, firmwareeller konfigurationsbaserede funktioner og finder ikke anvendelse  på  traditionelle  el-installationer  uden  programmerbare  komponenter.  Dette  omfatter eksempelvis  ABA-,  AVA-,  ABV-,  nød-  og  panikbelysningsanlæg,  DALI-anlæg,  IBI-installationer  og tilsvarende systemer."
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 285.04998779,
+            "t": 30.246009839999942,
+            "r": 310.31398779,
+            "b": 23.214726257910456,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Side 4",
+      "text": "Side 4"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 732.86700108,
+            "r": 182.04000066000003,
+            "b": 723.9197414114917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "3. Materialer og materiel",
+      "text": "3. Materialer og materiel",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 64.0999999,
+            "t": 705.1610023200001,
+            "r": 535.5799999,
+            "b": 654.9297406814918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            352
+          ]
+        }
+      ],
+      "orig": "Leverandøren  skal  anvende  elbiler  som  primære  køretøjer  ved  udførelsen  af  alle  daglige  drifts-  og serviceopgaver i henhold til aftalen. Konventionelle (fossildrevne) køretøjer må kun anvendes undtagelsesvist,  og  kun  hvis  det  for  en  konkret  opgave  dokumenterbart  er  teknisk  eller  driftsmæssigt umuligt at benytte et el-køretøj.",
+      "text": "Leverandøren  skal  anvende  elbiler  som  primære  køretøjer  ved  udførelsen  af  alle  daglige  drifts-  og serviceopgaver i henhold til aftalen. Konventionelle (fossildrevne) køretøjer må kun anvendes undtagelsesvist,  og  kun  hvis  det  for  en  konkret  opgave  dokumenterbart  er  teknisk  eller  driftsmæssigt umuligt at benytte et el-køretøj."
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 636.1709987300001,
+            "r": 535.5699999000001,
+            "b": 599.7377374314917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            291
+          ]
+        }
+      ],
+      "orig": "Hvis  ikke  andet  er  aftalt,  skal  Leverandøren  uden  yderligere  vederlag  kunne  stille  alle  nødvendige maskiner og materiel til rådighed for arbejdets udførelse, herunder nødvendigt håndværktøj, måleudstyr, programmeringsudstyr, testudstyr, hjælpeudstyr samt personlige værnemidler.",
+      "text": "Hvis  ikke  andet  er  aftalt,  skal  Leverandøren  uden  yderligere  vederlag  kunne  stille  alle  nødvendige maskiner og materiel til rådighed for arbejdets udførelse, herunder nødvendigt håndværktøj, måleudstyr, programmeringsudstyr, testudstyr, hjælpeudstyr samt personlige værnemidler."
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 580.97899739,
+            "r": 535.5799998999998,
+            "b": 544.5457360914918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            241
+          ]
+        }
+      ],
+      "orig": "Herunder vil eksempelvis være  omfattet multimeter, div. håndværktøj, loddekolbe, kabelstripper, boremaskine,  hammer,  netværkstester,  termisk  kamera,  programmeringsenhed,  kalibreringsudstyr  og hvad der i øvrigt kan sidestilles hermed.",
+      "text": "Herunder vil eksempelvis være  omfattet multimeter, div. håndværktøj, loddekolbe, kabelstripper, boremaskine,  hammer,  netværkstester,  termisk  kamera,  programmeringsenhed,  kalibreringsudstyr  og hvad der i øvrigt kan sidestilles hermed."
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 525.7869960500001,
+            "r": 535.5799998999998,
+            "b": 489.3537347514918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            289
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal desuden stille småt materiel til rådighed uden vederlag, hvilket omfatter mindre, løse standard-  og  forbrugsmaterialer,  der  anvendes  til  samling,  fastgørelse,  mærkning  og  afslutning  af elinstallationer, og som normalt ikke specificeres eller afregnes stykvist.",
+      "text": "Leverandøren skal desuden stille småt materiel til rådighed uden vederlag, hvilket omfatter mindre, løse standard-  og  forbrugsmaterialer,  der  anvendes  til  samling,  fastgørelse,  mærkning  og  afslutning  af elinstallationer, og som normalt ikke specificeres eller afregnes stykvist."
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 470.59500996,
+            "r": 200.74999990000003,
+            "b": 461.75775029149173,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "Små materiel kan bl.a. omfatte",
+      "text": "Små materiel kan bl.a. omfatte"
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 75.0,
+            "t": 459.01300602000003,
+            "r": 203.03000000000003,
+            "b": 446.76300602000003,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "· klemmer og samlemuffer",
+      "text": "klemmer og samlemuffer",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 75.0,
+            "t": 444.5409906400001,
+            "r": 203.60000000000002,
+            "b": 432.2909906400001,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            28
+          ]
+        }
+      ],
+      "orig": "· kabelsko, strips og bøjler",
+      "text": "kabelsko, strips og bøjler",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 75.0,
+            "t": 430.06900578000005,
+            "r": 377.0100000000001,
+            "b": 417.81900578000005,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            69
+          ]
+        }
+      ],
+      "orig": "· Skruer, plugs og øvrige fastgørelsesmidler relateret til elarbejdet",
+      "text": "Skruer, plugs og øvrige fastgørelsesmidler relateret til elarbejdet",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/groups/6"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 75.0,
+            "t": 415.59699040000004,
+            "r": 316.43000000000006,
+            "b": 403.34699040000004,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            50
+          ]
+        }
+      ],
+      "orig": "· Isoleringstape, krympeflex og mærkningsmateriale",
+      "text": "Isoleringstape, krympeflex og mærkningsmateriale",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 385.1110011800001,
+            "r": 374.16999990000005,
+            "b": 376.2737415114918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal ved udkald råde over de mest kritiske reservedele.",
+      "text": "Leverandøren skal ved udkald råde over de mest kritiske reservedele."
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 357.5149928800001,
+            "r": 535.5799998999998,
+            "b": 307.28373124149175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            391
+          ]
+        }
+      ],
+      "orig": "Såfremt  der  til  udførelsen  af  en  opgave  kræves  hvad  der  må  betragtes  som  særligt  krævende  udstyr (materiel) i form af stillads, kran, lifte, sikkerhedsafspærring eller lignende, vil et eventuelt vederlag herfor blive  betalt  udover  timeprisen.  Særligt  udstyr  skal  derfor  ikke  være  indeholdt  i  timepriserne,  men  skal aftales separat med AAU, når det er nødvendigt.",
+      "text": "Såfremt  der  til  udførelsen  af  en  opgave  kræves  hvad  der  må  betragtes  som  særligt  krævende  udstyr (materiel) i form af stillads, kran, lifte, sikkerhedsafspærring eller lignende, vil et eventuelt vederlag herfor blive  betalt  udover  timeprisen.  Særligt  udstyr  skal  derfor  ikke  være  indeholdt  i  timepriserne,  men  skal aftales separat med AAU, når det er nødvendigt."
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 288.52500264,
+            "r": 519.7999998999999,
+            "b": 279.68774297149173,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            104
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal bruge materialer af sædvanlig god kvalitet, der passer til de eksisterende materialer.",
+      "text": "Leverandøren skal bruge materialer af sædvanlig god kvalitet, der passer til de eksisterende materialer."
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 260.92899434000003,
+            "r": 483.10999989999993,
+            "b": 252.09173467149174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            95
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal, hvor det er muligt, anvende PVC-fri materialer i udførelsen af sine opgaver.",
+      "text": "Leverandøren skal, hvor det er muligt, anvende PVC-fri materialer i udførelsen af sine opgaver."
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 233.33301656000003,
+            "r": 535.5699998999999,
+            "b": 155.5057618814917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            593
+          ]
+        }
+      ],
+      "orig": "AAU  forbeholder  sig  ret  til  selv  at  levere  materialer  og  materiel.  Dette  meddeles  i  givet  fald  forlods  i forbindelse med tildeling af den enkelte opgave eller som del af en fast aftale. AAU vil drage omsorg for, at  AAU  udlånt  materiel  er  lovligt  og  forsvarligt  og  hvis  relevant  har  bestået  lovpligtige  eftersyn. Leverandøren  er  ansvarlig  for  brugen  af  eget  og  AAU  udlånt  materiel  som  beskrevet  i  aftalens  afsnit 12. Det  er  arbejdsgivers  pligt  at  instruere  egne  medarbejdere  upåagtet  om  det  er  eget  eller  AAU's materiel, der anvendes.",
+      "text": "AAU  forbeholder  sig  ret  til  selv  at  levere  materialer  og  materiel.  Dette  meddeles  i  givet  fald  forlods  i forbindelse med tildeling af den enkelte opgave eller som del af en fast aftale. AAU vil drage omsorg for, at  AAU  udlånt  materiel  er  lovligt  og  forsvarligt  og  hvis  relevant  har  bestået  lovpligtige  eftersyn. Leverandøren  er  ansvarlig  for  brugen  af  eget  og  AAU  udlånt  materiel  som  beskrevet  i  aftalens  afsnit 12. Det  er  arbejdsgivers  pligt  at  instruere  egne  medarbejdere  upåagtet  om  det  er  eget  eller  AAU's materiel, der anvendes."
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 136.74701802000004,
+            "r": 536.0799999000001,
+            "b": 114.11175706149174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            158
+          ]
+        }
+      ],
+      "orig": "Materialer, værktøj, maskiner mv., der opbevares eller henligger på AAU's område, er  AAU uvedkommende og skal være forsikringsmæssigt dækket af Leverandøren.",
+      "text": "Materialer, værktøj, maskiner mv., der opbevares eller henligger på AAU's område, er  AAU uvedkommende og skal være forsikringsmæssigt dækket af Leverandøren."
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 95.35297505000005,
+            "r": 535.9199998999999,
+            "b": 72.71771409149176,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            179
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal til enhver tid rydde op og fjerne materialer og flytbart materiel, eksempelvis rullestillads og stiger, efter endt arbejdsdag samt ved færdiggørelse af arbejder.",
+      "text": "Leverandøren skal til enhver tid rydde op og fjerne materialer og flytbart materiel, eksempelvis rullestillads og stiger, efter endt arbejdsdag samt ved færdiggørelse af arbejder."
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 285.04998779,
+            "t": 30.246009839999942,
+            "r": 310.31398779,
+            "b": 23.214726257910456,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Side 5",
+      "text": "Side 5"
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 733.43000142,
+            "r": 535.9299998999999,
+            "b": 696.9967401214917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            270
+          ]
+        }
+      ],
+      "orig": "På AAU's foranledning kan der stilles krav om slutdokumentation og kvalitetssikring af det udførte arbejde fx ikke synlige dele og konstruktioner, der ikke kan kontrolleres ved aflevering. Dokumentationen kan være i form af billeddokumentation, produktdokumentation o.l.",
+      "text": "På AAU's foranledning kan der stilles krav om slutdokumentation og kvalitetssikring af det udførte arbejde fx ikke synlige dele og konstruktioner, der ikke kan kontrolleres ved aflevering. Dokumentationen kan være i form af billeddokumentation, produktdokumentation o.l."
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 692.03600041,
+            "r": 535.9199998999998,
+            "b": 669.4007394514917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            160
+          ]
+        }
+      ],
+      "orig": "Yderligere  stilles  der  krav  om,  at  leverandøren  foretager  en  dokumenteret  intern  gennemgang  inden færdigmelding, også kendt som 'mester-gennemgang'.",
+      "text": "Yderligere  stilles  der  krav  om,  at  leverandøren  foretager  en  dokumenteret  intern  gennemgang  inden færdigmelding, også kendt som 'mester-gennemgang'."
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 650.64199941,
+            "r": 429.20999989999984,
+            "b": 641.8047397414917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            82
+          ]
+        }
+      ],
+      "orig": "Ramme for aflevering og udførelse af dokumentation aftales i det konkrete projekt.",
+      "text": "Ramme for aflevering og udførelse af dokumentation aftales i det konkrete projekt."
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 623.0459987300001,
+            "r": 535.9699998999997,
+            "b": 586.6127374314917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            255
+          ]
+        }
+      ],
+      "orig": "Det forventes, at AAU indenfor aftalens løbetid implementerer FM-system såsom Dalux eller lignende til anvendelse af KS og D&V-sikring i byggeprojekter. Leverandøren skal derfor være indstillet på anvendelse af sådan et system i løbet af aftalens løbetid.",
+      "text": "Det forventes, at AAU indenfor aftalens løbetid implementerer FM-system såsom Dalux eller lignende til anvendelse af KS og D&V-sikring i byggeprojekter. Leverandøren skal derfor være indstillet på anvendelse af sådan et system i løbet af aftalens løbetid."
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 567.29099705,
+            "r": 130.07000066,
+            "b": 558.3437373814917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "4. Oprydning",
+      "text": "4. Oprydning",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 539.5850002000001,
+            "r": 535.9799998999998,
+            "b": 503.1517389014918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            283
+          ]
+        }
+      ],
+      "orig": "Leverandøren  er  forpligtet  til  at  bortskaffe  affald  og  emballage  af  enhver  art,  der  har  forbindelse  med opgavens  udførelse,  på  en  miljømæssigt  forsvarlig  måde  og  i  overensstemmelse  med  gældende lovgivning samt kommunale retningslinjer for affaldshåndtering.",
+      "text": "Leverandøren  er  forpligtet  til  at  bortskaffe  affald  og  emballage  af  enhver  art,  der  har  forbindelse  med opgavens  udførelse,  på  en  miljømæssigt  forsvarlig  måde  og  i  overensstemmelse  med  gældende lovgivning samt kommunale retningslinjer for affaldshåndtering."
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 484.39299886000003,
+            "r": 536.0199998999997,
+            "b": 461.75773790149174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            208
+          ]
+        }
+      ],
+      "orig": "Leverandøren  skal  dagligt  foretage  oprydning,  således  at  hverken  materialer  (både  gamle  og  nye), værktøj, maskiner og lignende er til fare for sikkerheden eller til gene for Kundens daglige drift.",
+      "text": "Leverandøren  skal  dagligt  foretage  oprydning,  således  at  hverken  materialer  (både  gamle  og  nye), værktøj, maskiner og lignende er til fare for sikkerheden eller til gene for Kundens daglige drift."
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 442.99900166000003,
+            "r": 430.7599999,
+            "b": 434.16174199149174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            80
+          ]
+        }
+      ],
+      "orig": "Ved gentagende påtaler kan Kunden få bestilt oprydning på Leverandørens regning.",
+      "text": "Ved gentagende påtaler kan Kunden få bestilt oprydning på Leverandørens regning."
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 401.04198887000007,
+            "r": 228.62000066000004,
+            "b": 392.09472920149176,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            34
+          ]
+        }
+      ],
+      "orig": "5. Støjende eller støvende arbejde",
+      "text": "5. Støjende eller støvende arbejde",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 373.33600728000005,
+            "r": 471.58999989999984,
+            "b": 364.49874761149175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            94
+          ]
+        }
+      ],
+      "orig": "Ved udførelse af støjende eller støvende arbejde skal tidspunkt for udførelse aftales med AAU.",
+      "text": "Ved udførelse af støjende eller støvende arbejde skal tidspunkt for udførelse aftales med AAU."
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 345.73999898000005,
+            "r": 535.4299998999996,
+            "b": 323.1047380214918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            157
+          ]
+        }
+      ],
+      "orig": "Leverandøren hæfter for omkostninger ved utilsigtet tilkald af brandvæsen i forbindelse med arbejder, der udvikler støv/røg, som ikke er varslet overfor AAU.",
+      "text": "Leverandøren hæfter for omkostninger ved utilsigtet tilkald af brandvæsen i forbindelse med arbejder, der udvikler støv/røg, som ikke er varslet overfor AAU."
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 289.9850125500001,
+            "r": 276.4000006600001,
+            "b": 281.03775288149177,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "6. Miljø, arbejdsmiljø, sundhed og sikkerhed",
+      "text": "6. Miljø, arbejdsmiljø, sundhed og sikkerhed",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 262.2790004400001,
+            "r": 535.4199999,
+            "b": 239.64373948149182,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            159
+          ]
+        }
+      ],
+      "orig": "De tilbudte ydelser skal overholde alle gældende standarder, normer og gældende arbejdsmiljøregler og vejledninger fra arbejdstilsynet indenfor de udbudte fag.",
+      "text": "De tilbudte ydelser skal overholde alle gældende standarder, normer og gældende arbejdsmiljøregler og vejledninger fra arbejdstilsynet indenfor de udbudte fag."
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 220.88501851,
+            "r": 380.0599999,
+            "b": 212.0477588414917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            73
+          ]
+        }
+      ],
+      "orig": "Det er en fælles opgave at sikre, at arbejdsmiljølovgivningen overholdes.",
+      "text": "Det er en fælles opgave at sikre, at arbejdsmiljølovgivningen overholdes."
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 193.28901021000001,
+            "r": 535.8799999000001,
+            "b": 170.65374925149172,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            126
+          ]
+        }
+      ],
+      "orig": "Gældende love med senere ændringer og tilføjelser samt AT-vejledninger vedrørende arbejdsmiljø skal til enhver tid overholdes.",
+      "text": "Gældende love med senere ændringer og tilføjelser samt AT-vejledninger vedrørende arbejdsmiljø skal til enhver tid overholdes."
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 151.89502828000002,
+            "r": 535.7799999,
+            "b": 115.46176698149179,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            246
+          ]
+        }
+      ],
+      "orig": "Arbejdet skal udføres i overensstemmelse med de til enhver tid gældende love og bekendtgørelser samt de af Arbejdstilsynet udsendte meddelelser, cirkulæreskrivelser og anvisninger mv. for miljø-, arbejdsmiljø-, sundheds- og sikkerhedsforskrifter.",
+      "text": "Arbejdet skal udføres i overensstemmelse med de til enhver tid gældende love og bekendtgørelser samt de af Arbejdstilsynet udsendte meddelelser, cirkulæreskrivelser og anvisninger mv. for miljø-, arbejdsmiljø-, sundheds- og sikkerhedsforskrifter."
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 96.70301167000002,
+            "r": 535.8299998999996,
+            "b": 60.26975037149168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            225
+          ]
+        }
+      ],
+      "orig": "Det forudsættes, at Leverandøren ud fra et almindeligt kendskab til de omfattede opgaver har viden om særlige, væsentlige arbejdsmiljøforhold, der er forbundet med opgavernes udførelse og det regelgrundlag, som gælder herfor.",
+      "text": "Det forudsættes, at Leverandøren ud fra et almindeligt kendskab til de omfattede opgaver har viden om særlige, væsentlige arbejdsmiljøforhold, der er forbundet med opgavernes udførelse og det regelgrundlag, som gælder herfor."
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 285.04998779,
+            "t": 30.246009839999942,
+            "r": 310.31398779,
+            "b": 23.214726257910456,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Side 6",
+      "text": "Side 6"
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 719.63200108,
+            "r": 535.9699999000001,
+            "b": 696.9967401214917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            147
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal kontrollere, at krav vedrørende miljø, arbejdsmiljø, sundhed og sikkerhed opfyldes, og skal på anmodning kunne dokumentere dette.",
+      "text": "Leverandøren skal kontrollere, at krav vedrørende miljø, arbejdsmiljø, sundhed og sikkerhed opfyldes, og skal på anmodning kunne dokumentere dette."
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 62.3499999,
+            "t": 678.23800008,
+            "r": 536.0799998999997,
+            "b": 641.8047387814918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            287
+          ]
+        }
+      ],
+      "orig": "AAU skal holdes orienteret i tilfælde af utilsigtede hændelser i forhold til de opgaver Leverandøren udfører for AAU. AAU skal ved samme lejlighed have navn og telefonnummer på Leverandørens Arbejdsmiljørepræsentant samt kopi af arbejdsulykkesrapport, hvis en sådan har været udarbejdet.",
+      "text": "AAU skal holdes orienteret i tilfælde af utilsigtede hændelser i forhold til de opgaver Leverandøren udfører for AAU. AAU skal ved samme lejlighed have navn og telefonnummer på Leverandørens Arbejdsmiljørepræsentant samt kopi af arbejdsulykkesrapport, hvis en sådan har været udarbejdet."
+    },
+    {
+      "self_ref": "#/texts/91",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 285.04998779,
+            "t": 30.246009839999942,
+            "r": 310.31398779,
+            "b": 23.214726257910456,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            6
+          ]
+        }
+      ],
+      "orig": "Side 7",
+      "text": "Side 7"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 429.77928089935506,
+            "t": 810.7244472503662,
+            "r": 544.0502788364487,
+            "b": 750.9075698852539,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 429.48930220635947,
+            "t": 811.3570365905762,
+            "r": 544.3531861273234,
+            "b": 751.4064865112305,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 429.3717861303547,
+            "t": 811.433521270752,
+            "r": 544.3954480062395,
+            "b": 750.8638000488281,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 429.60684877434034,
+            "t": 811.2815914154053,
+            "r": 544.2817129352749,
+            "b": 751.4911880493164,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 429.2085625821312,
+            "t": 811.492431640625,
+            "r": 544.551871843786,
+            "b": 750.7231979370117,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 429.54388284363205,
+            "t": 811.5070838928223,
+            "r": 544.4792399566445,
+            "b": 751.0750885009766,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 7,
+          "bbox": {
+            "l": 429.71161920432274,
+            "t": 811.3015670776367,
+            "r": 544.3172665794424,
+            "b": 751.5204772949219,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 6
+    },
+    "7": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 7
+    }
+  }
+}

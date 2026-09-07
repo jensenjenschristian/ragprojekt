@@ -1,0 +1,695 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Bilag 9 - Tro- og loveerklæring vedr. forordning",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 10675202364263425762,
+    "filename": "Bilag 9 - Tro- og loveerklæring vedr. forordning.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/18"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/groups/1"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/groups/2"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        }
+      ],
+      "content_layer": "body",
+      "name": "group",
+      "label": "form_area"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.70000076,
+            "t": 752.36802144,
+            "r": 209.38400076,
+            "b": 741.0199037929412,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "TRO- OG LOVEERKLÆRING",
+      "text": "TRO- OG LOVEERKLÆRING",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.70000076,
+            "t": 719.69302306,
+            "r": 540.8760007599999,
+            "b": 664.4506456487395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            389
+          ]
+        }
+      ],
+      "orig": "om fravær af den i RÅDETS FORORDNING (EU) 2022/576 af. 8. april 2022 om ændring af forordning (EU) nr. 833/2014 om restriktive foranstaltninger på baggrund af Ruslands handlinger, der destabiliserer situationen i Ukraine (herefter \"Forordning 2022/576\") nævnte tilknytning til russiske statsborgere eller fysiske eller juridiske personer, enheder eller organer, der er etableret i Rusland.",
+      "text": "om fravær af den i RÅDETS FORORDNING (EU) 2022/576 af. 8. april 2022 om ændring af forordning (EU) nr. 833/2014 om restriktive foranstaltninger på baggrund af Ruslands handlinger, der destabiliserer situationen i Ukraine (herefter \"Forordning 2022/576\") nævnte tilknytning til russiske statsborgere eller fysiske eller juridiske personer, enheder eller organer, der er etableret i Rusland."
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.10000086,
+            "t": 648.41702113,
+            "r": 158.40500086,
+            "b": 639.5006429787395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Virksomhedens navn:",
+      "text": "Virksomhedens navn:"
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.10000086,
+            "t": 626.26702151,
+            "r": 100.57800086,
+            "b": 617.3506433587395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Adresse:",
+      "text": "Adresse:"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.10000086,
+            "t": 604.1170218899999,
+            "r": 138.94600086,
+            "b": 595.2006437387395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Postnummer, by:",
+      "text": "Postnummer, by:"
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.10000086,
+            "t": 581.96702418,
+            "r": 95.93600086000001,
+            "b": 573.0506460287395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "CVR-nr.",
+      "text": "CVR-nr."
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.70000076,
+            "t": 539.03401507,
+            "r": 282.78000076,
+            "b": 529.3070570868068,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            44
+          ]
+        }
+      ],
+      "orig": "Vedrørende Forordning 2022/576, artikel 5 k:",
+      "text": "Vedrørende Forordning 2022/576, artikel 5 k:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.70000076,
+            "t": 517.38101515,
+            "r": 341.89700075999997,
+            "b": 508.4646369987396,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            62
+          ]
+        }
+      ],
+      "orig": "Undertegnede erklærer på tro og love, at virksomheden ikke er:",
+      "text": "Undertegnede erklærer på tro og love, at virksomheden ikke er:"
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 74.70000076,
+            "t": 489.23903212000005,
+            "r": 533.5760007599998,
+            "b": 460.18065281873953,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            114
+          ]
+        }
+      ],
+      "orig": "a) russiske statsborgere eller fysiske eller juridiske personer, enheder eller organer, der er etableret i Rusland",
+      "text": "russiske statsborgere eller fysiske eller juridiske personer, enheder eller organer, der er etableret i Rusland",
+      "enumerated": true,
+      "marker": "a)"
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 74.70000076,
+            "t": 448.95503554000004,
+            "r": 523.09300076,
+            "b": 419.8966562387395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            131
+          ]
+        }
+      ],
+      "orig": "b) juridiske personer, enheder eller organer, hvoraf en enhed som omhandlet i litra a) direkte eller indirekte ejer over 50 % eller",
+      "text": "juridiske personer, enheder eller organer, hvoraf en enhed som omhandlet i litra a) direkte eller indirekte ejer over 50 % eller",
+      "enumerated": true,
+      "marker": "b)"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 74.70000076,
+            "t": 408.67100844000004,
+            "r": 535.8090007599999,
+            "b": 379.6126291387395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            152
+          ]
+        }
+      ],
+      "orig": "c) fysiske eller juridiske personer, enheder eller organer, der handler på vegne af eller efter anvisning fra en enhed som omhandlet i litra a) eller b)",
+      "text": "fysiske eller juridiske personer, enheder eller organer, der handler på vegne af eller efter anvisning fra en enhed som omhandlet i litra a) eller b)",
+      "enumerated": true,
+      "marker": "c)"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.70000076,
+            "t": 360.38701186000003,
+            "r": 533.7480007599999,
+            "b": 320.58663197873943,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            218
+          ]
+        }
+      ],
+      "orig": "og at virksomheden i forbindelse med opfyldelsen af den aktuelle kontrakt ikke anvender underleverandører eller støttende enheder omfattet af ovenstående litra a-c, som tegner sig for mere end 10% af kontraktens værdi.",
+      "text": "og at virksomheden i forbindelse med opfyldelsen af den aktuelle kontrakt ikke anvender underleverandører eller støttende enheder omfattet af ovenstående litra a-c, som tegner sig for mere end 10% af kontraktens værdi."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.70000076,
+            "t": 293.60002459,
+            "r": 155.01600076000003,
+            "b": 283.8730666068068,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "Underskriftsforhold",
+      "text": "Underskriftsforhold",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 56.70000076,
+            "t": 271.9470094200001,
+            "r": 371.68500075999987,
+            "b": 263.0306312687395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "Erklæringen afgives af nedenstående person, som med sin underskrift:",
+      "text": "Erklæringen afgives af nedenstående person, som med sin underskrift:"
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 74.70000076,
+            "t": 243.80501113000003,
+            "r": 338.5790007600001,
+            "b": 234.88863297873945,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "1) bekræfter at være bemyndiget til at afgive erklæringen",
+      "text": "bekræfter at være bemyndiget til at afgive erklæringen",
+      "enumerated": true,
+      "marker": "1)"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 74.70000076,
+            "t": 223.66304334999995,
+            "r": 397.83600075999993,
+            "b": 214.7466651987395,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "2) bekræfter på tro og lov korrektheden af oplysningerne i erklæringen",
+      "text": "bekræfter på tro og lov korrektheden af oplysningerne i erklæringen",
+      "enumerated": true,
+      "marker": "2)"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.10000086,
+            "t": 174.87904676999995,
+            "r": 81.65800086,
+            "b": 165.96266861873949,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            5
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 218.45000696,
+            "t": 174.87904676999995,
+            "r": 241.56100696,
+            "b": 165.96266861873949,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            6,
+            10
+          ]
+        }
+      ],
+      "orig": "Titel Navn",
+      "text": "Titel Navn"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.10000086,
+            "t": 120.09504636999998,
+            "r": 83.61600086,
+            "b": 111.17866821873952,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            4
+          ]
+        },
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 218.45000696,
+            "t": 120.09504636999998,
+            "r": 269.08300696,
+            "b": 111.17866821873952,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            5,
+            16
+          ]
+        }
+      ],
+      "orig": "Dato Underskrift",
+      "text": "Dato Underskrift"
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 533.02501297,
+            "t": 58.73404249999999,
+            "r": 538.60201297,
+            "b": 49.81766434873953,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "1",
+      "text": "1"
+    }
+  ],
+  "pictures": [],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.29998779,
+        "height": 841.90002441
+      },
+      "page_no": 1
+    }
+  }
+}

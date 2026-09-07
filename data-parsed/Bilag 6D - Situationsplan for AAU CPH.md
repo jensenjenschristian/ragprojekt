@@ -1,0 +1,3 @@
+CAMPUS SERVICE   -   FREDRIK BAJERS VEJ 1   -   9220 AALBORG
+
+<!-- image -->

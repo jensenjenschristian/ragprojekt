@@ -1,0 +1,2928 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Bilag 5 - Vejledning til eksterne samarbejdspartnere - version august 2024",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 2446088038557114229,
+    "filename": "Bilag 5 - Vejledning til eksterne samarbejdspartnere - version august 2024.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      },
+      {
+        "$ref": "#/texts/32"
+      },
+      {
+        "$ref": "#/texts/33"
+      },
+      {
+        "$ref": "#/texts/34"
+      },
+      {
+        "$ref": "#/texts/35"
+      },
+      {
+        "$ref": "#/texts/36"
+      },
+      {
+        "$ref": "#/texts/37"
+      },
+      {
+        "$ref": "#/texts/38"
+      },
+      {
+        "$ref": "#/texts/39"
+      },
+      {
+        "$ref": "#/texts/40"
+      },
+      {
+        "$ref": "#/texts/41"
+      },
+      {
+        "$ref": "#/texts/42"
+      },
+      {
+        "$ref": "#/texts/43"
+      },
+      {
+        "$ref": "#/texts/44"
+      },
+      {
+        "$ref": "#/texts/45"
+      },
+      {
+        "$ref": "#/texts/46"
+      },
+      {
+        "$ref": "#/texts/47"
+      },
+      {
+        "$ref": "#/texts/48"
+      },
+      {
+        "$ref": "#/texts/49"
+      },
+      {
+        "$ref": "#/texts/50"
+      },
+      {
+        "$ref": "#/texts/51"
+      },
+      {
+        "$ref": "#/groups/0"
+      },
+      {
+        "$ref": "#/texts/55"
+      },
+      {
+        "$ref": "#/texts/56"
+      },
+      {
+        "$ref": "#/texts/57"
+      },
+      {
+        "$ref": "#/texts/58"
+      },
+      {
+        "$ref": "#/texts/59"
+      },
+      {
+        "$ref": "#/texts/60"
+      },
+      {
+        "$ref": "#/texts/61"
+      },
+      {
+        "$ref": "#/texts/62"
+      },
+      {
+        "$ref": "#/texts/63"
+      },
+      {
+        "$ref": "#/groups/1"
+      },
+      {
+        "$ref": "#/texts/68"
+      },
+      {
+        "$ref": "#/texts/69"
+      },
+      {
+        "$ref": "#/texts/70"
+      },
+      {
+        "$ref": "#/texts/71"
+      },
+      {
+        "$ref": "#/texts/72"
+      },
+      {
+        "$ref": "#/groups/2"
+      },
+      {
+        "$ref": "#/texts/78"
+      },
+      {
+        "$ref": "#/texts/79"
+      },
+      {
+        "$ref": "#/texts/80"
+      },
+      {
+        "$ref": "#/texts/81"
+      },
+      {
+        "$ref": "#/texts/82"
+      },
+      {
+        "$ref": "#/texts/83"
+      },
+      {
+        "$ref": "#/texts/84"
+      },
+      {
+        "$ref": "#/texts/85"
+      },
+      {
+        "$ref": "#/texts/86"
+      },
+      {
+        "$ref": "#/texts/87"
+      },
+      {
+        "$ref": "#/texts/88"
+      },
+      {
+        "$ref": "#/texts/89"
+      },
+      {
+        "$ref": "#/texts/90"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [
+    {
+      "self_ref": "#/groups/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    },
+    {
+      "self_ref": "#/groups/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        }
+      ],
+      "content_layer": "body",
+      "name": "list",
+      "label": "list"
+    }
+  ],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 128.52,
+            "t": 706.3313999999999,
+            "r": 470.71825772000005,
+            "b": 691.7760428571428,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "VELKOMMEN TIL CAMPUS SERVICE PÅ AAU",
+      "text": "VELKOMMEN TIL CAMPUS SERVICE PÅ AAU",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 170.863,
+            "t": 674.2536,
+            "r": 422.99504,
+            "b": 648.7031453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "Vejledning til eksterne samarbejdspartnere Campus Service - August 202 4",
+      "text": "Vejledning til eksterne samarbejdspartnere Campus Service - August 202 4"
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.275000000000034,
+            "t": 586.0366,
+            "r": 153.83673039999994,
+            "b": 573.2322632653062,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            9
+          ]
+        }
+      ],
+      "orig": "VELKOMMEN",
+      "text": "VELKOMMEN",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.27999999999999,
+            "t": 556.7419199999999,
+            "r": 522.6996127999997,
+            "b": 334.66714534482753,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            773
+          ]
+        }
+      ],
+      "orig": "Vi byder velkommen til medarbejdere i virksomheder, der arbejder for Campus Service på Aalborg Universitet, samt til de gæster som besøger os. Her er en samling nyttige informationer - er der noget du er i tvivl om, eller har du brug for yderligere oplysninger, er du velkommen til at kontakte håndværkerne eller facility supporterne i det område, hvor du skal arbejde eller befinder dig. VIGTIGT! Inden arbejdet igangsættes bedes du informere det relevante Facility Support Team - du kan se en oversigt sidst i dette dokument. Du er ligeledes velkommen til at kontakte medarbejderne i Campus Service, Fredrik Bajers Vej 1, 9220 Aalborg Ø, på telefon 9940 9940 eller e-mail ti  l campus@adm.aau.dk. På vores hjemmeside, www.campusservice.aau.dk , kan du under Standarder og",
+      "text": "Vi byder velkommen til medarbejdere i virksomheder, der arbejder for Campus Service på Aalborg Universitet, samt til de gæster som besøger os. Her er en samling nyttige informationer - er der noget du er i tvivl om, eller har du brug for yderligere oplysninger, er du velkommen til at kontakte håndværkerne eller facility supporterne i det område, hvor du skal arbejde eller befinder dig. VIGTIGT! Inden arbejdet igangsættes bedes du informere det relevante Facility Support Team - du kan se en oversigt sidst i dette dokument. Du er ligeledes velkommen til at kontakte medarbejderne i Campus Service, Fredrik Bajers Vej 1, 9220 Aalborg Ø, på telefon 9940 9940 eller e-mail ti  l campus@adm.aau.dk. På vores hjemmeside, www.campusservice.aau.dk , kan du under Standarder og"
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.28,
+            "t": 328.7039199999999,
+            "r": 468.16118688,
+            "b": 287.38714534482756,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            178
+          ]
+        }
+      ],
+      "orig": "vejledninger\\ Vejledning til eksterne samarbejdspartnere, downloade oversigtskort over campusområderne. Du kan også klikke dig ind på www.map.aau.dk og finde de enkelte adresser.",
+      "text": "vejledninger\\ Vejledning til eksterne samarbejdspartnere, downloade oversigtskort over campusområderne. Du kan også klikke dig ind på www.map.aau.dk og finde de enkelte adresser."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.28,
+            "t": 263.00059999999996,
+            "r": 316.5844003999999,
+            "b": 250.19626326530613,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            29
+          ]
+        }
+      ],
+      "orig": "INFORMATION OM CAMPUS SERVICE",
+      "text": "INFORMATION OM CAMPUS SERVICE",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.28,
+            "t": 233.58392000000003,
+            "r": 434.23410112000005,
+            "b": 223.78714534482754,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            68
+          ]
+        }
+      ],
+      "orig": "Campus Service har til huse på Fredrik Bajers Vej 1, 9220 Aalborg Ø.",
+      "text": "Campus Service har til huse på Fredrik Bajers Vej 1, 9220 Aalborg Ø."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.269000000000005,
+            "t": 204.30592000000001,
+            "r": 524.7428625599999,
+            "b": 178.78814534482763,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            103
+          ]
+        }
+      ],
+      "orig": "Indenfor normal arbejdstid fra kl. 08:00 til 15:30, vil du kunne træffe medarbejderne i Campus Service.",
+      "text": "Indenfor normal arbejdstid fra kl. 08:00 til 15:30, vil du kunne træffe medarbejderne i Campus Service."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.26899999999999,
+            "t": 163.02692000000002,
+            "r": 521.2885409600002,
+            "b": 121.78714534482754,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            227
+          ]
+        }
+      ],
+      "orig": "Sekretariatet kan hjælpe med at skabe kontakt til den eller de personer, du skal tale med. Har du brug for yderligere oplysninger om Campus Service, finder du yderligere information på vores hjemmeside www.campusservice.aau.dk.",
+      "text": "Sekretariatet kan hjælpe med at skabe kontakt til den eller de personer, du skal tale med. Har du brug for yderligere oplysninger om Campus Service, finder du yderligere information på vores hjemmeside www.campusservice.aau.dk."
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 62.280000000000314,
+            "t": 106.02391999999998,
+            "r": 532.3902400000001,
+            "b": 64.78514534482758,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            171
+          ]
+        }
+      ],
+      "orig": "Skal du have adgang til bygninger eller aflåste lokaler udenfor normal arbejdstid, skal dette altid aftales med projektlederen eller en anden ansvarlig fra Campus Service.",
+      "text": "Skal du have adgang til bygninger eller aflåste lokaler udenfor normal arbejdstid, skal dette altid aftales med projektlederen eller en anden ansvarlig fra Campus Service."
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.28,
+            "t": 748.9986,
+            "r": 251.41284000000005,
+            "b": 736.1942632653062,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            22
+          ]
+        }
+      ],
+      "orig": "PARKERING OG SKILTNING",
+      "text": "PARKERING OG SKILTNING",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.28,
+            "t": 719.58192,
+            "r": 533.3126400000001,
+            "b": 709.7851453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            79
+          ]
+        }
+      ],
+      "orig": "Færdselsoven gælder overalt på campus. Færdsels- og parkeringsskilte er opsat i",
+      "text": "Færdselsoven gælder overalt på campus. Færdsels- og parkeringsskilte er opsat i"
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.26272000000006,
+            "t": 703.86096,
+            "r": 530.1596159999999,
+            "b": 250.06514534482756,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1366
+          ]
+        }
+      ],
+      "orig": "samarbejde med politiet. Der f  indes parkeringspladser overalt omkring universitetet, som du er velkommen til at bruge. Bemærk, at der skal benyttes P-skive på visse parkeringspladser. Det er ikke tilladt at parkere på universitetets område udenfor parkeringspladserne. På Campus Services' hjemmeside kan du læse mere om, hvor du kan parkere på AAU's områder. Har du brug for at parkere i forbindelse med det arbejde du skal udføre, skal du være i besiddelse af en godkendt parkeringstilladelse udstedt af Campus Service. Parkeringstilladelsen skal altid være synlig og placeres i bilens forrude. Med en gyldig parkeringstilladelse kan du parkere overalt på universitetet, dog ikke på brandveje. Henvend dig i sekretariatet på Frederik Bajers Vej 1 for at få en p- tilladelse. Det er vigtigt, at du respekterer enhver form for skiltning på universitetets område, mest af hensyn til den interne trafik, men også fordi overtrædelser af skiltenes anvisninger kan medføre bøde eller parkeringsafgifter i henhold til gældende regler i færdselsloven. Eventuelle parkeringsafgifter og bøder er  universitetet uvedkommende. Cylkister er velkomne til at benytte cykelstativer og cykelkældre på universitets område. På universitetets områder er der opsat skilte over institutter og afdelingers placeringer. Du kan f  inde f  lere oplysninger på www.campusservice.aau.dk under",
+      "text": "samarbejde med politiet. Der f  indes parkeringspladser overalt omkring universitetet, som du er velkommen til at bruge. Bemærk, at der skal benyttes P-skive på visse parkeringspladser. Det er ikke tilladt at parkere på universitetets område udenfor parkeringspladserne. På Campus Services' hjemmeside kan du læse mere om, hvor du kan parkere på AAU's områder. Har du brug for at parkere i forbindelse med det arbejde du skal udføre, skal du være i besiddelse af en godkendt parkeringstilladelse udstedt af Campus Service. Parkeringstilladelsen skal altid være synlig og placeres i bilens forrude. Med en gyldig parkeringstilladelse kan du parkere overalt på universitetet, dog ikke på brandveje. Henvend dig i sekretariatet på Frederik Bajers Vej 1 for at få en p- tilladelse. Det er vigtigt, at du respekterer enhver form for skiltning på universitetets område, mest af hensyn til den interne trafik, men også fordi overtrædelser af skiltenes anvisninger kan medføre bøde eller parkeringsafgifter i henhold til gældende regler i færdselsloven. Eventuelle parkeringsafgifter og bøder er  universitetet uvedkommende. Cylkister er velkomne til at benytte cykelstativer og cykelkældre på universitets område. På universitetets områder er der opsat skilte over institutter og afdelingers placeringer. Du kan f  inde f  lere oplysninger på www.campusservice.aau.dk under"
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.28,
+            "t": 244.14192000000003,
+            "r": 236.41392,
+            "b": 234.34514534482764,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "punktet '  Find rundt på AAU'.",
+      "text": "punktet '  Find rundt på AAU'."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.28,
+            "t": 209.95859999999993,
+            "r": 288.75924,
+            "b": 197.1542632653061,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "FÆRDSEL PÅ CAMPUSOMRÅDET",
+      "text": "FÆRDSEL PÅ CAMPUSOMRÅDET",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.28,
+            "t": 180.54192,
+            "r": 533.9761439999999,
+            "b": 170.74514534482762,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            78
+          ]
+        }
+      ],
+      "orig": "Når du færdes på universitetets område, skal du være opmærksom på, at gang- og",
+      "text": "Når du færdes på universitetets område, skal du være opmærksom på, at gang- og"
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.24687999999986,
+            "t": 164.82096,
+            "r": 525.1750559999998,
+            "b": 72.46658534482765,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            304
+          ]
+        }
+      ],
+      "orig": "cykelstier krydser alle veje på området, og at der er livlig gående og cyklende trafik specielt i tiden mellem kl. 07:30 og 18:00. Du skal derfor være ekstra opmærksom og vise hensyn til de gående og cyklende trafikanter. Skal du aflæsse værktøj, materialer m.  m., skal du gøre dette, så du ikke generer",
+      "text": "cykelstier krydser alle veje på området, og at der er livlig gående og cyklende trafik specielt i tiden mellem kl. 07:30 og 18:00. Du skal derfor være ekstra opmærksom og vise hensyn til de gående og cyklende trafikanter. Skal du aflæsse værktøj, materialer m.  m., skal du gøre dette, så du ikke generer"
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 62.35728000000023,
+            "t": 66.66384000000005,
+            "r": 482.05392000000023,
+            "b": 56.86706534482755,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "andre brugere på universitetet - specielt hvor der foregår undervisning.",
+      "text": "andre brugere på universitetet - specielt hvor der foregår undervisning."
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 67.8,
+            "t": 44.45291999999995,
+            "r": 139.48026745798336,
+            "b": 37.31831237068968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Rev. August 20 24",
+      "text": "Rev. August 20 24"
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 521.76,
+            "t": 44.45291999999995,
+            "r": 528.6206400000001,
+            "b": 37.31831237068968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "2",
+      "text": "2"
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 748.9986,
+            "r": 129.989304,
+            "b": 736.1942632653062,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            7
+          ]
+        }
+      ],
+      "orig": "RYGNING",
+      "text": "RYGNING",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 719.70192,
+            "r": 422.7867839999998,
+            "b": 709.9051453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            65
+          ]
+        }
+      ],
+      "orig": "Det er ikke tilladt at ryge indendørs i universitetets bygninger.",
+      "text": "Det er ikke tilladt at ryge indendørs i universitetets bygninger."
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 694.2619199999999,
+            "r": 436.92864,
+            "b": 684.4651453448275,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            64
+          ]
+        }
+      ],
+      "orig": "Tobaksrygning skal derfor foregå på de anviste udendørs pladser.",
+      "text": "Tobaksrygning skal derfor foregå på de anviste udendørs pladser."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 668.82192,
+            "r": 533.3126400000002,
+            "b": 627.3403453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            239
+          ]
+        }
+      ],
+      "orig": "Der er monteret godkendte askebægre på disse pladser, og vi forventer at du bruger disse og derved medvirker ti  l at holde rygepladserne rene og ryddelige. Du bedes i forbindelse med rygning tage hensyn til andre brugere af rygepladserne.",
+      "text": "Der er monteret godkendte askebægre på disse pladser, og vi forventer at du bruger disse og derved medvirker ti  l at holde rygepladserne rene og ryddelige. Du bedes i forbindelse med rygning tage hensyn til andre brugere af rygepladserne."
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 602.9585999999999,
+            "r": 288.6370919999999,
+            "b": 590.1542632653061,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "SIKRING OG ADGANGSKONTROL",
+      "text": "SIKRING OG ADGANGSKONTROL",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.24687999999992,
+            "t": 573.5419199999999,
+            "r": 521.7316799999999,
+            "b": 532.1817853448275,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            197
+          ]
+        }
+      ],
+      "orig": "Samtlige bygninger på universitetet er udstyret med sikringssystemer. Alarmer vil normalt være tilsluttet fra kl. 16 :00 til 07:30, medmindre andet er aftalt med facility supporterne for bygningen.",
+      "text": "Samtlige bygninger på universitetet er udstyret med sikringssystemer. Alarmer vil normalt være tilsluttet fra kl. 16 :00 til 07:30, medmindre andet er aftalt med facility supporterne for bygningen."
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.379359999999934,
+            "t": 516.5423999999999,
+            "r": 522.2770559999998,
+            "b": 475.18226534482756,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            243
+          ]
+        }
+      ],
+      "orig": "Skulle du være så uheldig at udløse en alarm, skal du straks kontakte facility supporterne for området og få hjælp til afstilling af alarmen. Undlader du dette, kan du eller dit f  irma risikere at få en regning fra alarmfirmaet for ti  lkald.",
+      "text": "Skulle du være så uheldig at udløse en alarm, skal du straks kontakte facility supporterne for området og få hjælp til afstilling af alarmen. Undlader du dette, kan du eller dit f  irma risikere at få en regning fra alarmfirmaet for ti  lkald."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 459.54192,
+            "r": 485.64864,
+            "b": 449.74514534482756,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            77
+          ]
+        }
+      ],
+      "orig": "Udenfor normal arbejdstid kontaktes Håndværkervagten på t  l  f. 2045 8824  .",
+      "text": "Udenfor normal arbejdstid kontaktes Håndværkervagten på t  l  f. 2045 8824  ."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 434.10192,
+            "r": 455.921136,
+            "b": 408.5841853448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            85
+          ]
+        }
+      ],
+      "orig": "Der kan være områder eller bygninger, hvor man har brug for særlig adgangstilladelse.",
+      "text": "Der kan være områder eller bygninger, hvor man har brug for særlig adgangstilladelse."
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 384.1986,
+            "r": 257.29560000000004,
+            "b": 371.39426326530617,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            21
+          ]
+        }
+      ],
+      "orig": "ADGANGSKORT OG NØGLER",
+      "text": "ADGANGSKORT OG NØGLER",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 354.66192,
+            "r": 493.68456000000003,
+            "b": 329.1441853448275,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            103
+          ]
+        }
+      ],
+      "orig": "Ved arbejde på universitetet skal du sikre dig lovlig adgang ved udlevering af nøgle eller adgangskort.",
+      "text": "Ved arbejde på universitetet skal du sikre dig lovlig adgang ved udlevering af nøgle eller adgangskort."
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 313.2264,
+            "r": 172.85472,
+            "b": 301.40701224489794,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Leverandørkort",
+      "text": "Leverandørkort",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/32",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.23631999999992,
+            "t": 285.30192,
+            "r": 526.6372319999999,
+            "b": 228.09938534482762,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            280
+          ]
+        }
+      ],
+      "orig": "Et leverandørkort udstedes af Campus Service efter anmodning fra den projektansvarlige og gives til personer, som er tilknyttet universitet i en længere tidsperiode, f.  eks. hvis du er leverandør, håndværker, konsulent eller lignende, og skal udføre arbejde over flere dage/uger.",
+      "text": "Et leverandørkort udstedes af Campus Service efter anmodning fra den projektansvarlige og gives til personer, som er tilknyttet universitet i en længere tidsperiode, f.  eks. hvis du er leverandør, håndværker, konsulent eller lignende, og skal udføre arbejde over flere dage/uger."
+    },
+    {
+      "self_ref": "#/texts/33",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 212.34192000000007,
+            "r": 464.4197280000001,
+            "b": 186.82514534482755,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            84
+          ]
+        }
+      ],
+      "orig": "Kortet er personligt og oprettes med billede, eksternt ID-nummer og din fødselsdato.",
+      "text": "Kortet er personligt og oprettes med billede, eksternt ID-nummer og din fødselsdato."
+    },
+    {
+      "self_ref": "#/texts/34",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.27568000000002,
+            "t": 171.18192,
+            "r": 524.180448,
+            "b": 129.82178534482762,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            165
+          ]
+        }
+      ],
+      "orig": "Som udgangspunkt giver kortet adgang t  i  l AAU's bygninger. Har du brug for adgang til aflåste områder, bedes du henvende dig til det lokale Facility Support team.",
+      "text": "Som udgangspunkt giver kortet adgang t  i  l AAU's bygninger. Har du brug for adgang til aflåste områder, bedes du henvende dig til det lokale Facility Support team."
+    },
+    {
+      "self_ref": "#/texts/35",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 62.28,
+            "t": 113.90639999999996,
+            "r": 124.7472,
+            "b": 102.087012244898,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Dagskort",
+      "text": "Dagskort",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/36",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 67.8,
+            "t": 44.45291999999995,
+            "r": 135.0940872758112,
+            "b": 37.31831237068968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "Rev. August 2024",
+      "text": "Rev. August 2024"
+    },
+    {
+      "self_ref": "#/texts/37",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 521.76,
+            "t": 44.45291999999995,
+            "r": 528.6206400000001,
+            "b": 37.31831237068968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "3",
+      "text": "3"
+    },
+    {
+      "self_ref": "#/texts/38",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.26895999999999,
+            "t": 749.34192,
+            "r": 530.4576959999999,
+            "b": 676.4251453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            330
+          ]
+        }
+      ],
+      "orig": "Du kan få oprettet et adgangskort til AAU, som kun er gyldigt i 24 timer. Dette sker f.  eks. hvis du skal udføre et stykke arbejde på universitetet i en kortere tidsperiode, eller skal have adgang til aflåste områder. Kortet erhverves igennem din kontakt hos Campus Service og bliver udstedt hos det lokale Facility Support team.",
+      "text": "Du kan få oprettet et adgangskort til AAU, som kun er gyldigt i 24 timer. Dette sker f.  eks. hvis du skal udføre et stykke arbejde på universitetet i en kortere tidsperiode, eller skal have adgang til aflåste områder. Kortet erhverves igennem din kontakt hos Campus Service og bliver udstedt hos det lokale Facility Support team."
+    },
+    {
+      "self_ref": "#/texts/39",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.28,
+            "t": 660.7819199999999,
+            "r": 517.0164960000002,
+            "b": 619.3003453448275,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            169
+          ]
+        }
+      ],
+      "orig": "Kortet er på forhånd tildelt en kode, som oplyses ved overdragelse. Et dagskort har ikke påtrykt billede og kan derfor ikke bruges som ID-kort, men blot som adgangskort.",
+      "text": "Kortet er på forhånd tildelt en kode, som oplyses ved overdragelse. Et dagskort har ikke påtrykt billede og kan derfor ikke bruges som ID-kort, men blot som adgangskort."
+    },
+    {
+      "self_ref": "#/texts/40",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.28,
+            "t": 595.0386,
+            "r": 324.0291239999999,
+            "b": 582.2342632653061,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            30
+          ]
+        }
+      ],
+      "orig": "BRANDRISIKO OG 'VARMT ARBEJDE'",
+      "text": "BRANDRISIKO OG 'VARMT ARBEJDE'",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/41",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.28,
+            "t": 565.6219199999999,
+            "r": 515.9268480000002,
+            "b": 524.1403453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            182
+          ]
+        }
+      ],
+      "orig": "Vær opmærksom på brandfaren - især når du udfører varmt tagarbejde samt varmt smede- og VVS-arbejde, specielt ved skærebrænding, svejsning og brug af vinkelsliber såvel inde som ude.",
+      "text": "Vær opmærksom på brandfaren - især når du udfører varmt tagarbejde samt varmt smede- og VVS-arbejde, specielt ved skærebrænding, svejsning og brug af vinkelsliber såvel inde som ude."
+    },
+    {
+      "self_ref": "#/texts/42",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.3352000000001,
+            "t": 508.62239999999997,
+            "r": 449.11056,
+            "b": 498.82562534482753,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            66
+          ]
+        }
+      ],
+      "orig": "Som entreprenør skal du nøje overholde reglerne i 'varmt arbejde'.",
+      "text": "Som entreprenør skal du nøje overholde reglerne i 'varmt arbejde'."
+    },
+    {
+      "self_ref": "#/texts/43",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.28,
+            "t": 483.06192,
+            "r": 499.95969599999995,
+            "b": 457.54418534482755,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            117
+          ]
+        }
+      ],
+      "orig": "Udvis speciel stor påpasselighed overfor nedfald af gløder i kabelbakker, på tagpap og lignende brandbare materialer.",
+      "text": "Udvis speciel stor påpasselighed overfor nedfald af gløder i kabelbakker, på tagpap og lignende brandbare materialer."
+    },
+    {
+      "self_ref": "#/texts/44",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.4,
+            "t": 442.24896,
+            "r": 518.6041814,
+            "b": 416.3014386206897,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            124
+          ]
+        }
+      ],
+      "orig": "Du må ikke påbegynde et '  varmt arbejde' før du har underskrevet ' Aftalen om sikkerhedsforanstaltninger ved varmt arbejde'",
+      "text": "Du må ikke påbegynde et '  varmt arbejde' før du har underskrevet ' Aftalen om sikkerhedsforanstaltninger ved varmt arbejde'"
+    },
+    {
+      "self_ref": "#/texts/45",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.28,
+            "t": 400.74192,
+            "r": 510.00863999999996,
+            "b": 390.94514534482755,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "Formularen kan downloades fra vores hjemmeside www.campusservice.aau.dk.",
+      "text": "Formularen kan downloades fra vores hjemmeside www.campusservice.aau.dk."
+    },
+    {
+      "self_ref": "#/texts/46",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.28,
+            "t": 375.18192,
+            "r": 483.49684800000006,
+            "b": 349.7851453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            144
+          ]
+        }
+      ],
+      "orig": "Vi forventer, at du selv indhenter oplysninger hos den projektansvarlige om særlig brandrisiko i det område eller bygning, hvor du skal arbejde.",
+      "text": "Vi forventer, at du selv indhenter oplysninger hos den projektansvarlige om særlig brandrisiko i det område eller bygning, hvor du skal arbejde."
+    },
+    {
+      "self_ref": "#/texts/47",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.28,
+            "t": 325.2786,
+            "r": 235.82844,
+            "b": 312.47426326530615,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            19
+          ]
+        }
+      ],
+      "orig": "ARBEJDETS UDFØRELSE",
+      "text": "ARBEJDETS UDFØRELSE",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/48",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.28,
+            "t": 295.98191999999995,
+            "r": 517.717536,
+            "b": 270.34274534482756,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            132
+          ]
+        }
+      ],
+      "orig": "Campus Service gør en stor indsats for at sikre medarbejdere og studerende på Aalborg Universitet gode og trygge arbejdsbetingelser.",
+      "text": "Campus Service gør en stor indsats for at sikre medarbejdere og studerende på Aalborg Universitet gode og trygge arbejdsbetingelser."
+    },
+    {
+      "self_ref": "#/texts/49",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.28,
+            "t": 254.42640000000006,
+            "r": 154.14048,
+            "b": 242.607012244898,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            12
+          ]
+        }
+      ],
+      "orig": "Arbejdsmiljø",
+      "text": "Arbejdsmiljø",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/50",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.28,
+            "t": 226.38192000000004,
+            "r": 438.8573807999998,
+            "b": 200.86514534482762,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            124
+          ]
+        }
+      ],
+      "orig": "Vi har en effektiv arbejdsmiljøorganisation, der udfører det daglige arbejdsmiljøarbejde lokalt i institutter og afdelinger.",
+      "text": "Vi har en effektiv arbejdsmiljøorganisation, der udfører det daglige arbejdsmiljøarbejde lokalt i institutter og afdelinger."
+    },
+    {
+      "self_ref": "#/texts/51",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 62.257919999999956,
+            "t": 185.13743999999997,
+            "r": 148.26393599999994,
+            "b": 175.0690726530612,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Vi forventer at",
+      "text": "Vi forventer at",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/52",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 80.28,
+            "t": 158.10192000000006,
+            "r": 515.044776,
+            "b": 132.70514534482754,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            116
+          ]
+        }
+      ],
+      "orig": "· du som entreprenør retter dig efter anvisninger fra arbejdsmiljøgrupperne, når du udfører arbejde på universitetet",
+      "text": "du som entreprenør retter dig efter anvisninger fra arbejdsmiljøgrupperne, når du udfører arbejde på universitetet",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/53",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 80.28,
+            "t": 115.38192000000004,
+            "r": 410.38367039999974,
+            "b": 105.58514534482765,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            56
+          ]
+        }
+      ],
+      "orig": "· du overholder arbejdsmiljølovens regler og anvisninger",
+      "text": "du overholder arbejdsmiljølovens regler og anvisninger",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/54",
+      "parent": {
+        "$ref": "#/groups/0"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 80.28,
+            "t": 88.26192000000003,
+            "r": 524.621232,
+            "b": 62.744185344827656,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            128
+          ]
+        }
+      ],
+      "orig": "· du selv orienterer dig om eventuelle specifikke regler for det område, hvor du skal arbejde eller opholde dig på universitetet",
+      "text": "du selv orienterer dig om eventuelle specifikke regler for det område, hvor du skal arbejde eller opholde dig på universitetet",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/55",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 67.8,
+            "t": 44.45291999999995,
+            "r": 130.09177221533125,
+            "b": 37.31831237068968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "Rev. August 2024",
+      "text": "Rev. August 2024"
+    },
+    {
+      "self_ref": "#/texts/56",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 521.76,
+            "t": 44.45291999999995,
+            "r": 528.6206400000001,
+            "b": 37.31831237068968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "4",
+      "text": "4"
+    },
+    {
+      "self_ref": "#/texts/57",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 749.34192,
+            "r": 518.4250512000002,
+            "b": 723.8241853448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            127
+          ]
+        }
+      ],
+      "orig": "Har du brug for hjælp i forbindelse med arbejdsmiljøspørgsmål, er du velkommen til at kontakte Arbejdsmiljoesektion@adm.aau.dk.",
+      "text": "Har du brug for hjælp i forbindelse med arbejdsmiljøspørgsmål, er du velkommen til at kontakte Arbejdsmiljoesektion@adm.aau.dk."
+    },
+    {
+      "self_ref": "#/texts/58",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.27568000000002,
+            "t": 708.3018199999999,
+            "r": 529.2522239999998,
+            "b": 666.8202453448275,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            170
+          ]
+        }
+      ],
+      "orig": "Du har pligt til at oplyse arbejdsmiljøorganisationen om eventuelle risici i forbindelse med brug af kemikalier, herunder lugtgener eller dampe fra malinger og limer m.m.",
+      "text": "Du har pligt til at oplyse arbejdsmiljøorganisationen om eventuelle risici i forbindelse med brug af kemikalier, herunder lugtgener eller dampe fra malinger og limer m.m."
+    },
+    {
+      "self_ref": "#/texts/59",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 650.7864,
+            "r": 148.02336000000003,
+            "b": 638.9670122448979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            11
+          ]
+        }
+      ],
+      "orig": "Arbejdssted",
+      "text": "Arbejdssted",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/60",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 622.7419199999999,
+            "r": 504.74796480000003,
+            "b": 612.9451453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "Alt entreprenørarbejde skal udføres i overensstemmelse med gældende danske",
+      "text": "Alt entreprenørarbejde skal udføres i overensstemmelse med gældende danske"
+    },
+    {
+      "self_ref": "#/texts/61",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 607.0219199999999,
+            "r": 223.09968,
+            "b": 597.2251453448275,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            25
+          ]
+        }
+      ],
+      "orig": "regler og overenskomster.",
+      "text": "regler og overenskomster."
+    },
+    {
+      "self_ref": "#/texts/62",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 581.70192,
+            "r": 523.6886400000001,
+            "b": 556.0651453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            146
+          ]
+        }
+      ],
+      "orig": "Du skal meddele projektlederen om du ønsker/  forventer at benytte underleverandør. Samtidig skal du oplyse navn og adresse på eventuelle firmaer.",
+      "text": "Du skal meddele projektlederen om du ønsker/  forventer at benytte underleverandør. Samtidig skal du oplyse navn og adresse på eventuelle firmaer."
+    },
+    {
+      "self_ref": "#/texts/63",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 540.3335,
+            "r": 148.1712,
+            "b": 530.2651326530612,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "Vi forventer at",
+      "text": "Vi forventer at",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/64",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.16,
+            "t": 513.30192,
+            "r": 285.23146560000004,
+            "b": 503.50514534482755,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "· du holder arbejdsstedet ryddeligt",
+      "text": "du holder arbejdsstedet ryddeligt",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/65",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.1619,
+            "t": 495.78144,
+            "r": 221.11401600000002,
+            "b": 485.9846453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "· du rydder op efter dig",
+      "text": "du rydder op efter dig",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/66",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.18400000000004,
+            "t": 478.38192,
+            "r": 484.0098720000003,
+            "b": 468.58514534482754,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            72
+          ]
+        }
+      ],
+      "orig": "· arbejdsstedet først forlades, når det er gjort rent inden afleveringen",
+      "text": "arbejdsstedet først forlades, når det er gjort rent inden afleveringen",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/67",
+      "parent": {
+        "$ref": "#/groups/1"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.1605,
+            "t": 460.86143999999996,
+            "r": 427.07812800000005,
+            "b": 451.06464534482757,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "· alt affald sorteres og anbringes i dertil egnede containere",
+      "text": "alt affald sorteres og anbringes i dertil egnede containere",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/68",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 435.54192,
+            "r": 509.79843360000046,
+            "b": 410.02514534482754,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            148
+          ]
+        }
+      ],
+      "orig": "Vær opmærksom på, at der foregår undervisning og forskning i arbejdsområdet, hvorfor unødig støj - herunder brug af transistorradioer - skal undgås.",
+      "text": "Vær opmærksom på, at der foregår undervisning og forskning i arbejdsområdet, hvorfor unødig støj - herunder brug af transistorradioer - skal undgås."
+    },
+    {
+      "self_ref": "#/texts/69",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.4,
+            "t": 394.72896,
+            "r": 416.0884009999997,
+            "b": 384.50623862068966,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            60
+          ]
+        }
+      ],
+      "orig": "Brug af slagværktøjer skal altid aftales med projektlederen.",
+      "text": "Brug af slagværktøjer skal altid aftales med projektlederen."
+    },
+    {
+      "self_ref": "#/texts/70",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 360.1986,
+            "r": 197.54136,
+            "b": 347.39426326530617,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            15
+          ]
+        }
+      ],
+      "orig": "ULYKKE OG BRAND",
+      "text": "ULYKKE OG BRAND",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/71",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 330.31859999999995,
+            "r": 492.01800000000003,
+            "b": 286.72515306122455,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            141
+          ]
+        }
+      ],
+      "orig": "Alarmcentralen - I tilfælde af ulykke eller brand skal du ringe til 1-1-2 Politiet - har du brug for at kontakte politiet skal du ringe 1-1-4",
+      "text": "Alarmcentralen - I tilfælde af ulykke eller brand skal du ringe til 1-1-2 Politiet - har du brug for at kontakte politiet skal du ringe 1-1-4"
+    },
+    {
+      "self_ref": "#/texts/72",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 269.82192,
+            "r": 206.42928,
+            "b": 260.0251453448275,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            24
+          ]
+        }
+      ],
+      "orig": "Du skal oplyse følgende:",
+      "text": "Du skal oplyse følgende:"
+    },
+    {
+      "self_ref": "#/texts/73",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.16,
+            "t": 242.70191999999997,
+            "r": 142.90427938000002,
+            "b": 232.9051453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            10
+          ]
+        }
+      ],
+      "orig": "· Dit navn",
+      "text": "Dit navn",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/74",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.1629,
+            "t": 225.30291999999997,
+            "r": 483.9431520000001,
+            "b": 215.50610534482757,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            70
+          ]
+        }
+      ],
+      "orig": "· Hvor du ringer fra - husk at oplyse det telefonnummer, du ringer fra",
+      "text": "Hvor du ringer fra - husk at oplyse det telefonnummer, du ringer fra",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/75",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.16288000000014,
+            "t": 207.78240000000005,
+            "r": 191.20099200000016,
+            "b": 197.98562534482767,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "· Hvad der er sket",
+      "text": "Hvad der er sket",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/76",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.16288000000014,
+            "t": 190.26192000000003,
+            "r": 281.18846400000007,
+            "b": 180.46514534482753,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            35
+          ]
+        }
+      ],
+      "orig": "· Hvor på universitetet det er sket",
+      "text": "Hvor på universitetet det er sket",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/77",
+      "parent": {
+        "$ref": "#/groups/2"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "list_item",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 80.13792000000004,
+            "t": 172.86288000000002,
+            "r": 301.20840000000015,
+            "b": 163.06610534482763,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            40
+          ]
+        }
+      ],
+      "orig": "· Hvor mange der er kommet t  i  l skade",
+      "text": "Hvor mange der er kommet t  i  l skade",
+      "enumerated": false,
+      "marker": "·"
+    },
+    {
+      "self_ref": "#/texts/78",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.28,
+            "t": 147.29999999999995,
+            "r": 112.092,
+            "b": 136.3561224489796,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            8
+          ]
+        }
+      ],
+      "orig": "Vigtigt!",
+      "text": "Vigtigt!",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/79",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 62.4,
+            "t": 120.53812000000005,
+            "r": 510.8567999999999,
+            "b": 79.30514534482757,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            214
+          ]
+        }
+      ],
+      "orig": "Det kan være svært at finde rundt på universitetet, derfor er det vigtigt at du - når du har alarmeret - sørger for, at der er en person, som kan vise vej til ulykkesstedet. Derved kan der spares kostbare minutter.",
+      "text": "Det kan være svært at finde rundt på universitetet, derfor er det vigtigt at du - når du har alarmeret - sørger for, at der er en person, som kan vise vej til ulykkesstedet. Derved kan der spares kostbare minutter."
+    },
+    {
+      "self_ref": "#/texts/80",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 67.8,
+            "t": 44.45291999999995,
+            "r": 130.09177221533125,
+            "b": 37.31831237068968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            17
+          ]
+        }
+      ],
+      "orig": "Rev.  August 2024",
+      "text": "Rev.  August 2024"
+    },
+    {
+      "self_ref": "#/texts/81",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 5,
+          "bbox": {
+            "l": 521.76,
+            "t": 44.45291999999995,
+            "r": 528.6206400000001,
+            "b": 37.31831237068968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "5",
+      "text": "5"
+    },
+    {
+      "self_ref": "#/texts/82",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.28,
+            "t": 692.9064,
+            "r": 166.25808,
+            "b": 681.0870122448979,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Hjertestartere",
+      "text": "Hjertestartere",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/83",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.28,
+            "t": 674.46192,
+            "r": 520.452144,
+            "b": 648.9441853448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            155
+          ]
+        }
+      ],
+      "orig": "Alle hjertestartere på AAU er tilmeldt hjertestarterregisteret og du kan finde en oversigt over, hvor hjertestarterne er placeret, på www.hjertestarter.dk.",
+      "text": "Alle hjertestartere på AAU er tilmeldt hjertestarterregisteret og du kan finde en oversigt over, hvor hjertestarterne er placeret, på www.hjertestarter.dk."
+    },
+    {
+      "self_ref": "#/texts/84",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.28,
+            "t": 633.3018199999999,
+            "r": 497.8528799999999,
+            "b": 607.7851453448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            90
+          ]
+        }
+      ],
+      "orig": "Se evt. mere på www.campusservice.aau.dk  hvor du også kan downloade en hjertestarter-app.",
+      "text": "Se evt. mere på www.campusservice.aau.dk  hvor du også kan downloade en hjertestarter-app."
+    },
+    {
+      "self_ref": "#/texts/85",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.28,
+            "t": 571.6386,
+            "r": 449.05392,
+            "b": 558.8342632653062,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "OVERSIGT OVER FACILITY SUPPORT TEAMS I AALBORG",
+      "text": "OVERSIGT OVER FACILITY SUPPORT TEAMS I AALBORG",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/86",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.27999999999986,
+            "t": 551.70192,
+            "r": 482.8874399999997,
+            "b": 526.1841853448276,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            99
+          ]
+        }
+      ],
+      "orig": "Facility Supporterne på AAU Aalborg er organiseret i et supportteam, der dækker hele campusområdet:",
+      "text": "Facility Supporterne på AAU Aalborg er organiseret i et supportteam, der dækker hele campusområdet:"
+    },
+    {
+      "self_ref": "#/texts/87",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 80.4,
+            "t": 508.8936,
+            "r": 206.43705600000004,
+            "b": 498.8252326530612,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "· FACILITY SUPPORT",
+      "text": "· FACILITY SUPPORT",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/88",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 62.28336000000003,
+            "t": 493.14192,
+            "r": 388.08575999999994,
+            "b": 483.34274534482756,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "Skriv ti  l facilitysupport@adm.aau.dk - Ring til 9940 3333",
+      "text": "Skriv ti  l facilitysupport@adm.aau.dk - Ring til 9940 3333",
+      "hyperlink": "mailto:facilitysupport@adm.aau.dk"
+    },
+    {
+      "self_ref": "#/texts/89",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 67.8,
+            "t": 44.45291999999995,
+            "r": 126.76186669821317,
+            "b": 37.31831237068968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            16
+          ]
+        }
+      ],
+      "orig": "Rev. August 2024",
+      "text": "Rev. August 2024"
+    },
+    {
+      "self_ref": "#/texts/90",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "furniture",
+      "label": "page_footer",
+      "prov": [
+        {
+          "page_no": 6,
+          "bbox": {
+            "l": 521.76,
+            "t": 44.45291999999995,
+            "r": 528.6206400000001,
+            "b": 37.31831237068968,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1
+          ]
+        }
+      ],
+      "orig": "6",
+      "text": "6"
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 236.87030345635122,
+            "t": 805.2548394867704,
+            "r": 356.98796611197037,
+            "b": 741.8591100857011,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 4
+    },
+    "5": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 5
+    },
+    "6": {
+      "size": {
+        "width": 595.56,
+        "height": 842.04
+      },
+      "page_no": 6
+    }
+  }
+}

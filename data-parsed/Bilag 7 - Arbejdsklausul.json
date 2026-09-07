@@ -1,0 +1,1184 @@
+{
+  "schema_name": "DoclingDocument",
+  "version": "1.10.0",
+  "name": "Bilag 7 - Arbejdsklausul",
+  "origin": {
+    "mimetype": "application/pdf",
+    "binary_hash": 3959210534265897144,
+    "filename": "Bilag 7 - Arbejdsklausul.pdf"
+  },
+  "furniture": {
+    "self_ref": "#/furniture",
+    "children": [],
+    "content_layer": "furniture",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "body": {
+    "self_ref": "#/body",
+    "children": [
+      {
+        "$ref": "#/pictures/0"
+      },
+      {
+        "$ref": "#/texts/0"
+      },
+      {
+        "$ref": "#/texts/1"
+      },
+      {
+        "$ref": "#/texts/2"
+      },
+      {
+        "$ref": "#/texts/3"
+      },
+      {
+        "$ref": "#/texts/4"
+      },
+      {
+        "$ref": "#/texts/5"
+      },
+      {
+        "$ref": "#/texts/6"
+      },
+      {
+        "$ref": "#/texts/7"
+      },
+      {
+        "$ref": "#/texts/8"
+      },
+      {
+        "$ref": "#/texts/9"
+      },
+      {
+        "$ref": "#/texts/10"
+      },
+      {
+        "$ref": "#/texts/11"
+      },
+      {
+        "$ref": "#/texts/12"
+      },
+      {
+        "$ref": "#/texts/13"
+      },
+      {
+        "$ref": "#/pictures/1"
+      },
+      {
+        "$ref": "#/texts/14"
+      },
+      {
+        "$ref": "#/texts/15"
+      },
+      {
+        "$ref": "#/texts/16"
+      },
+      {
+        "$ref": "#/texts/17"
+      },
+      {
+        "$ref": "#/texts/18"
+      },
+      {
+        "$ref": "#/pictures/2"
+      },
+      {
+        "$ref": "#/texts/19"
+      },
+      {
+        "$ref": "#/texts/20"
+      },
+      {
+        "$ref": "#/texts/21"
+      },
+      {
+        "$ref": "#/texts/22"
+      },
+      {
+        "$ref": "#/texts/23"
+      },
+      {
+        "$ref": "#/texts/24"
+      },
+      {
+        "$ref": "#/texts/25"
+      },
+      {
+        "$ref": "#/texts/26"
+      },
+      {
+        "$ref": "#/texts/27"
+      },
+      {
+        "$ref": "#/texts/28"
+      },
+      {
+        "$ref": "#/texts/29"
+      },
+      {
+        "$ref": "#/pictures/3"
+      },
+      {
+        "$ref": "#/texts/30"
+      },
+      {
+        "$ref": "#/texts/31"
+      }
+    ],
+    "content_layer": "body",
+    "name": "_root_",
+    "label": "unspecified"
+  },
+  "groups": [],
+  "texts": [
+    {
+      "self_ref": "#/texts/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 51.0,
+            "t": 712.81000136,
+            "r": 511.1640000000002,
+            "b": 669.08928767779,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            197
+          ]
+        }
+      ],
+      "orig": "Standardklausuler vedr. arbejdsvilkår, arbejdssprog, virksomhedsregistrering, tavshedspligt samt lærlinge og elever, for så vidt angår kontrakter om bygge- og anlægsarbejder på Aalborg Universitet.",
+      "text": "Standardklausuler vedr. arbejdsvilkår, arbejdssprog, virksomhedsregistrering, tavshedspligt samt lærlinge og elever, for så vidt angår kontrakter om bygge- og anlægsarbejder på Aalborg Universitet."
+    },
+    {
+      "self_ref": "#/texts/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 51.0,
+            "t": 649.78199879,
+            "r": 114.75999999999999,
+            "b": 640.9447391214917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            14
+          ]
+        }
+      ],
+      "orig": "Arbejdsklausul",
+      "text": "Arbejdsklausul",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 51.0,
+            "t": 627.70600239,
+            "r": 318.3200000000001,
+            "b": 618.8687427214917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            59
+          ]
+        }
+      ],
+      "orig": "ILO-konvention nr. 94 vedrørende arbejdsvilkår er gældende.",
+      "text": "ILO-konvention nr. 94 vedrørende arbejdsvilkår er gældende."
+    },
+    {
+      "self_ref": "#/texts/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 600.11000172,
+            "r": 536.7499998099997,
+            "b": 536.0807435614918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            256
+          ]
+        }
+      ],
+      "orig": "Den danske stat er i medfør af ILO konvention nr. 94 om arbejdsklausuler i offentlige kontrakter forpligtet til at arbejdstid og andre arbejdsvilkår, som ikke er mindre gunstige end dem, der i henhold til kollektiv inden for vedkommende fag eller industri.",
+      "text": "Den danske stat er i medfør af ILO konvention nr. 94 om arbejdsklausuler i offentlige kontrakter forpligtet til at arbejdstid og andre arbejdsvilkår, som ikke er mindre gunstige end dem, der i henhold til kollektiv inden for vedkommende fag eller industri."
+    },
+    {
+      "self_ref": "#/texts/4",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 586.31200043,
+            "r": 539.8199998099996,
+            "b": 390.5127475414917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            976
+          ]
+        }
+      ],
+      "orig": "sikre, at tjenesteydere og deres eventuelle underleverandører tilsikrer arbejdere løn, herunder særlige ydelser, overenskomst, voldgiftskendelse, nationale love eller administrative forskrifter gælder for arbejde af samme art Leverandøren forpligter sig til at sikre medarbejdere beskæftiget i Danmark med opgavens udførelse løn- og ansættelsesvilkår, som nævnt ovenfor, og er forpligtet til at orientere de ansatte om de gældende arbejdsvilkår (eksempelvis via ophæng af plakater, skilte eller lignende). Leverandøren er forpligtet til over for sine medarbejdere straks at foretage afhjælpning, således at de ansatte fuldt ud kompenseres for den mindre gunstige løn (herunder særlige ydelser), arbejdstid og/eller andre arbejdsvilkår, som leverandøren eller dennes eventuelle underleverandører har budt til ansatte i forbindelse med udførelse af opgaver under denne aftale. Hvis der benyttes underleverandører, påhviler det leverandøren at påse, at førnævnte krav overholdes.",
+      "text": "sikre, at tjenesteydere og deres eventuelle underleverandører tilsikrer arbejdere løn, herunder særlige ydelser, overenskomst, voldgiftskendelse, nationale love eller administrative forskrifter gælder for arbejde af samme art Leverandøren forpligter sig til at sikre medarbejdere beskæftiget i Danmark med opgavens udførelse løn- og ansættelsesvilkår, som nævnt ovenfor, og er forpligtet til at orientere de ansatte om de gældende arbejdsvilkår (eksempelvis via ophæng af plakater, skilte eller lignende). Leverandøren er forpligtet til over for sine medarbejdere straks at foretage afhjælpning, således at de ansatte fuldt ud kompenseres for den mindre gunstige løn (herunder særlige ydelser), arbejdstid og/eller andre arbejdsvilkår, som leverandøren eller dennes eventuelle underleverandører har budt til ansatte i forbindelse med udførelse af opgaver under denne aftale. Hvis der benyttes underleverandører, påhviler det leverandøren at påse, at førnævnte krav overholdes."
+    },
+    {
+      "self_ref": "#/texts/5",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 371.75399891,
+            "r": 538.2899998099998,
+            "b": 335.3207309414917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            228
+          ]
+        }
+      ],
+      "orig": "Leverandøren er forpligtet til på anmodning fra AAU snarest muligt at dokumentere, at ovenstående krav er overholdt. AAU forbeholder sig ret til at inddrage de relevante faglige organisationer ved vurderingen af, om arbejdere på",
+      "text": "Leverandøren er forpligtet til på anmodning fra AAU snarest muligt at dokumentere, at ovenstående krav er overholdt. AAU forbeholder sig ret til at inddrage de relevante faglige organisationer ved vurderingen af, om arbejdere på"
+    },
+    {
+      "self_ref": "#/texts/6",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 330.35998932,
+            "r": 362.23999981000014,
+            "b": 321.5227296514918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            74
+          ]
+        }
+      ],
+      "orig": "pladsen har de arbejdsvilkår, de er berettiget til efter arbejdsklausulen.",
+      "text": "pladsen har de arbejdsvilkår, de er berettiget til efter arbejdsklausulen."
+    },
+    {
+      "self_ref": "#/texts/7",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 316.56201282999996,
+            "r": 550.0399998099998,
+            "b": 293.92675187149166,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            186
+          ]
+        }
+      ],
+      "orig": "AAU kan foretage tilbagehold i betalingerne til leverandøren eller trække på garantier i sagen, indtil leverandøren har dokumenteret, at de ansatte er sikret de nævnte ansættelsesvilkår.",
+      "text": "AAU kan foretage tilbagehold i betalingerne til leverandøren eller trække på garantier i sagen, indtil leverandøren har dokumenteret, at de ansatte er sikret de nævnte ansættelsesvilkår."
+    },
+    {
+      "self_ref": "#/texts/8",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 51.0,
+            "t": 261.36999622999997,
+            "r": 287.4500000000001,
+            "b": 252.53273656149167,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            51
+          ]
+        }
+      ],
+      "orig": "Leverandørens ansvar i forbindelse med arbejdssprog",
+      "text": "Leverandørens ansvar i forbindelse med arbejdssprog",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/9",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 51.0,
+            "t": 239.29400746,
+            "r": 513.53,
+            "b": 216.6587465014917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            202
+          ]
+        }
+      ],
+      "orig": "Leverandører med hvem AAU har kontrakt, og som benytter udenlandske underleverandører, eller i sin entreprise i øvrigt har leverandører, som benytter udenlandske underleverandører, skal sørge for, at de",
+      "text": "Leverandører med hvem AAU har kontrakt, og som benytter udenlandske underleverandører, eller i sin entreprise i øvrigt har leverandører, som benytter udenlandske underleverandører, skal sørge for, at de"
+    },
+    {
+      "self_ref": "#/texts/10",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 51.0,
+            "t": 211.69800583000006,
+            "r": 347.89,
+            "b": 202.86074616149176,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            61
+          ]
+        }
+      ],
+      "orig": "pågældende udenlandske arbejdsgivere overholder nedenstående:",
+      "text": "pågældende udenlandske arbejdsgivere overholder nedenstående:"
+    },
+    {
+      "self_ref": "#/texts/11",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 197.89999501,
+            "r": 529.4099998099999,
+            "b": 147.66873337149173,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            163
+          ]
+        }
+      ],
+      "orig": "Virksomheder, der beskæftiger fremmedsprogede medarbejdere, skal i deres pladsspecifikke APV og / eller Endvidere henvises til Plan for Sikkerhed og Sundhed (PSS).",
+      "text": "Virksomheder, der beskæftiger fremmedsprogede medarbejdere, skal i deres pladsspecifikke APV og / eller Endvidere henvises til Plan for Sikkerhed og Sundhed (PSS)."
+    },
+    {
+      "self_ref": "#/texts/12",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 184.10199372,
+            "r": 539.13999981,
+            "b": 122.14275243149166,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            257
+          ]
+        }
+      ],
+      "orig": "arbejdsprocesvurderinger (pladsspecifik APV inkl. risikovurdering og handleplan for arbejdets gennemførelse) tage højde for, hvordan fremmedsprogede medarbejdere håndteres, inklusive skiltning, træning og uddannelse. Arbejdssproget på byggepladsen er dansk.",
+      "text": "arbejdsprocesvurderinger (pladsspecifik APV inkl. risikovurdering og handleplan for arbejdets gennemførelse) tage højde for, hvordan fremmedsprogede medarbejdere håndteres, inklusive skiltning, træning og uddannelse. Arbejdssproget på byggepladsen er dansk."
+    },
+    {
+      "self_ref": "#/texts/13",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 51.0,
+            "t": 103.38400379999996,
+            "r": 535.2299999999996,
+            "b": 80.74874284149166,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            219
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 713.25400082,
+            "r": 544.3899998099998,
+            "b": 379.4747255014917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            220,
+            2106
+          ]
+        },
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 374.51398483,
+            "r": 532.4599998099998,
+            "b": 365.67672516149173,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            2107,
+            2217
+          ]
+        }
+      ],
+      "orig": "Af hensyn til de pågældendes og andres sikkerhed på byggepladsen, har leverandører, der på byggepladsen beskæftiger personer eller entrerer med firmaer, der ikke taler eller forstår dansk, ansvaret for, at disse forstår gældende regler, herunder denne PSS, og at de kan kommunikere med andre parter og beskæftigede på byggepladsen. Inden arbejdet påbegyndes skal arbejdsgiveren for udenlandske beskæftigede gennemføre og dokumentere, at alle medarbejdere er i stand til at forstå danske sikkerhedsskilte og læse sikkerheds- og advarselstekster evt. ved arbejdsgiverens oversættelse til de pågældendes eget sprog. Særlig sikkerhedsskiltning skal altid være oversat. Desuden er det et krav, at alle medarbejdere, inden arbejdet påbegyndes, kender generelle danske sikkerhedsregler samt de fælles regler, som gælder på byggepladsen. Arbejdsgiveren skal oversætte relevante sikkerhedsmæssige dokumenter f.eks. konkrete arbejdsinstruktioner og byggepladsens informationsfolder, så udenlandske medarbejdere kan læse, forstå og anvende dem. Øvrige nødvendige oversættelser aftales med arbejdsmiljøkoordinatoren inden opstart. Ledende medarbejdere med dagligt ansvar for ikke-dansktalende, skal kunne læse og forstå dansk. Kan den ledende medarbejder og den fremmedsprogede ikke i tilstrækkelig grad kommunikere på engelsk, skal den ledende medarbejder kunne det - eller de - fremmede sprog, som de beskæftigede taler. Under selve arbejdet på byggepladsen skal der være mindst én medarbejder, der både læser og forstår flydende dansk, samtidig med, at medarbejderen taler det - eller de - fremmede sprog. Den pågældende skal stille sig til rådighed for tolkningsopgaver ved sikkerhedsspørgsmål, og skal deltager i sikkerhedsmøder, på sikkerhedsrunderinger samt i øvrige møde, hvor tolkning er nødvendig. Den eller de pågældende skal være udpeget af den leverandør, med hvem AAU har kontrakt. Medarbejdere, som arbejder med særligt farligt arbejde, andre særlige risici og /eller farlige stoffer, skal have den eller de nødvendige uddannelser. Kvalifikationer erhvervet i udlandet skal være dokumenteret og godkendt af Arbejdstilsynet inden arbejdet påbegyndes. Det gælder også for stilladsarbejder, brug af truck og lignende.",
+      "text": "Af hensyn til de pågældendes og andres sikkerhed på byggepladsen, har leverandører, der på byggepladsen beskæftiger personer eller entrerer med firmaer, der ikke taler eller forstår dansk, ansvaret for, at disse forstår gældende regler, herunder denne PSS, og at de kan kommunikere med andre parter og beskæftigede på byggepladsen. Inden arbejdet påbegyndes skal arbejdsgiveren for udenlandske beskæftigede gennemføre og dokumentere, at alle medarbejdere er i stand til at forstå danske sikkerhedsskilte og læse sikkerheds- og advarselstekster evt. ved arbejdsgiverens oversættelse til de pågældendes eget sprog. Særlig sikkerhedsskiltning skal altid være oversat. Desuden er det et krav, at alle medarbejdere, inden arbejdet påbegyndes, kender generelle danske sikkerhedsregler samt de fælles regler, som gælder på byggepladsen. Arbejdsgiveren skal oversætte relevante sikkerhedsmæssige dokumenter f.eks. konkrete arbejdsinstruktioner og byggepladsens informationsfolder, så udenlandske medarbejdere kan læse, forstå og anvende dem. Øvrige nødvendige oversættelser aftales med arbejdsmiljøkoordinatoren inden opstart. Ledende medarbejdere med dagligt ansvar for ikke-dansktalende, skal kunne læse og forstå dansk. Kan den ledende medarbejder og den fremmedsprogede ikke i tilstrækkelig grad kommunikere på engelsk, skal den ledende medarbejder kunne det - eller de - fremmede sprog, som de beskæftigede taler. Under selve arbejdet på byggepladsen skal der være mindst én medarbejder, der både læser og forstår flydende dansk, samtidig med, at medarbejderen taler det - eller de - fremmede sprog. Den pågældende skal stille sig til rådighed for tolkningsopgaver ved sikkerhedsspørgsmål, og skal deltager i sikkerhedsmøder, på sikkerhedsrunderinger samt i øvrige møde, hvor tolkning er nødvendig. Den eller de pågældende skal være udpeget af den leverandør, med hvem AAU har kontrakt. Medarbejdere, som arbejder med særligt farligt arbejde, andre særlige risici og /eller farlige stoffer, skal have den eller de nødvendige uddannelser. Kvalifikationer erhvervet i udlandet skal være dokumenteret og godkendt af Arbejdstilsynet inden arbejdet påbegyndes. Det gælder også for stilladsarbejder, brug af truck og lignende."
+    },
+    {
+      "self_ref": "#/texts/14",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 51.0,
+            "t": 333.11999623,
+            "r": 525.1300000000001,
+            "b": 247.0147311914917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            340
+          ]
+        }
+      ],
+      "orig": "Tavshedspligt Alle involverede skal iagttage ubetinget tavshed med hensyn til oplysninger vedrørende AAU'S eller andres forhold, som de får kendskab til i forbindelse med opfyldelsen af denne kontrakt. opfyldelse, tilsvarende forpligtelse. Leverandøren må benytte AAU som reference, men må ikke uden AAU's forudgående, skriftlige tilladelse",
+      "text": "Tavshedspligt Alle involverede skal iagttage ubetinget tavshed med hensyn til oplysninger vedrørende AAU'S eller andres forhold, som de får kendskab til i forbindelse med opfyldelsen af denne kontrakt. opfyldelse, tilsvarende forpligtelse. Leverandøren må benytte AAU som reference, men må ikke uden AAU's forudgående, skriftlige tilladelse"
+    },
+    {
+      "self_ref": "#/texts/15",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 51.0,
+            "t": 283.44799916,
+            "r": 533.5599999999997,
+            "b": 233.2167299014917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            197
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal pålægge alle underleverandører, underleverandører og andre, der bistår med kontraktens udsende offentlig meddelelse om kontrakten eller offentliggøre noget om kontraktens indhold.",
+      "text": "Leverandøren skal pålægge alle underleverandører, underleverandører og andre, der bistår med kontraktens udsende offentlig meddelelse om kontrakten eller offentliggøre noget om kontraktens indhold."
+    },
+    {
+      "self_ref": "#/texts/16",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 51.0,
+            "t": 200.66000477,
+            "r": 259.80000000000007,
+            "b": 191.8227451014917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            43
+          ]
+        }
+      ],
+      "orig": "Register om Udenlandske Tjenesteydere (RUT)",
+      "text": "Register om Udenlandske Tjenesteydere (RUT)",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/17",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 51.0,
+            "t": 178.58401600000002,
+            "r": 265.5500000000001,
+            "b": 169.74675633149172,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            46
+          ]
+        }
+      ],
+      "orig": "Hvis leverandøren er en udenlandsk virksomhed:",
+      "text": "Hvis leverandøren er en udenlandsk virksomhed:",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/18",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 51.0,
+            "t": 150.98800770000003,
+            "r": 542.5399999999997,
+            "b": 100.75674606149175,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            382
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal over for AAU dokumentere, at leverandøren enten har ladet sig registrere i Register for Udenlandske Tjenesteydere (RUT) hos Erhvervsstyrelsen eller ikke er forpligtet til at lade sig registrere, jf. de til enhver tid gældende regler herom. Er leverandøren forpligtet til at lade sig registrere, skal registreringen være foretaget senest ved arbejdets påbegyndelse.",
+      "text": "Leverandøren skal over for AAU dokumentere, at leverandøren enten har ladet sig registrere i Register for Udenlandske Tjenesteydere (RUT) hos Erhvervsstyrelsen eller ikke er forpligtet til at lade sig registrere, jf. de til enhver tid gældende regler herom. Er leverandøren forpligtet til at lade sig registrere, skal registreringen være foretaget senest ved arbejdets påbegyndelse."
+    },
+    {
+      "self_ref": "#/texts/19",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 51.0,
+            "t": 713.25400082,
+            "r": 504.45999999999975,
+            "b": 663.0227391814917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            320
+          ]
+        }
+      ],
+      "orig": "Dokumentation for registrering i RUT skal være tilgået AAU via byggeleder senest 3 arbejdsdage efter arbejdets påbegyndelse. Hvis byggeleder ikke modtager dokumentationen inden for fristen, eller hvis dokumentationen viser, at leverandøren har angivet urigtige oplysninger, vil AAU anmelde forholdet til Arbejdstilsynet.",
+      "text": "Dokumentation for registrering i RUT skal være tilgået AAU via byggeleder senest 3 arbejdsdage efter arbejdets påbegyndelse. Hvis byggeleder ikke modtager dokumentationen inden for fristen, eller hvis dokumentationen viser, at leverandøren har angivet urigtige oplysninger, vil AAU anmelde forholdet til Arbejdstilsynet."
+    },
+    {
+      "self_ref": "#/texts/20",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 51.0,
+            "t": 646.33400074,
+            "r": 323.50999999999993,
+            "b": 637.4967410714917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            57
+          ]
+        }
+      ],
+      "orig": "Hvis Leverandøren anvender udenlandske underleverandører:",
+      "text": "Hvis Leverandøren anvender udenlandske underleverandører:"
+    },
+    {
+      "self_ref": "#/texts/21",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 51.0,
+            "t": 618.73800007,
+            "r": 537.8799999999997,
+            "b": 554.7087419114918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            452
+          ]
+        }
+      ],
+      "orig": "Ved anvendelse af udenlandske underleverandører, er leverandøren forpligtet til at sikre, at den udenlandske underleverandør enten har ladet sig registrere i Register for Udenlandske Tjenesteydere (RUT) hos Erhvervsstyrelsen eller ikke er forpligtet til at lade sig registrere, jf. de til enhver tid gældende regler herom. Er underleverandøren forpligtet til at lade sig registrere, skal registreringen være foretaget senest ved arbejdets påbegyndelse.",
+      "text": "Ved anvendelse af udenlandske underleverandører, er leverandøren forpligtet til at sikre, at den udenlandske underleverandør enten har ladet sig registrere i Register for Udenlandske Tjenesteydere (RUT) hos Erhvervsstyrelsen eller ikke er forpligtet til at lade sig registrere, jf. de til enhver tid gældende regler herom. Er underleverandøren forpligtet til at lade sig registrere, skal registreringen være foretaget senest ved arbejdets påbegyndelse."
+    },
+    {
+      "self_ref": "#/texts/22",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 51.0,
+            "t": 538.0200053799999,
+            "r": 511.95999999999987,
+            "b": 473.99074722149163,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            462
+          ]
+        }
+      ],
+      "orig": "Dokumentation fra underleverandøren for registrering i RUT skal være tilgået leverandøren senest 3 arbejdsdage efter arbejdets påbegyndelse. Hvis leverandøren ikke modtager dokumentationen inden for fristen, eller hvis dokumentationen viser, at underleverandøren har angivet urigtige oplysninger, skal leverandøren anmelde forholdet til Arbejdstilsynet. Leverandøren skal på AAU's anmodning fremlægge dokumentation for, at der er sket korrekt registrering i RUT.",
+      "text": "Dokumentation fra underleverandøren for registrering i RUT skal være tilgået leverandøren senest 3 arbejdsdage efter arbejdets påbegyndelse. Hvis leverandøren ikke modtager dokumentationen inden for fristen, eller hvis dokumentationen viser, at underleverandøren har angivet urigtige oplysninger, skal leverandøren anmelde forholdet til Arbejdstilsynet. Leverandøren skal på AAU's anmodning fremlægge dokumentation for, at der er sket korrekt registrering i RUT."
+    },
+    {
+      "self_ref": "#/texts/23",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 51.0,
+            "t": 457.30200306,
+            "r": 497.2999999999999,
+            "b": 448.4647433914917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            97
+          ]
+        }
+      ],
+      "orig": "Fælles for leverandører der er en udenlandsk virksomhed / anvender udenlandske underleverandører:",
+      "text": "Fælles for leverandører der er en udenlandsk virksomhed / anvender udenlandske underleverandører:"
+    },
+    {
+      "self_ref": "#/texts/24",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 51.0,
+            "t": 429.70599476,
+            "r": 531.1099999999994,
+            "b": 379.47473312149174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            344
+          ]
+        }
+      ],
+      "orig": "AAU er berettiget til at opkræve en bod på kr. 10.000 pr. påbegyndt arbejdsdag, hvormed leverandøren overskrider en af AAU oplyst frist for fremlæggelse af dokumentation for, at der er sket korrekt registrering af sig selv eller af underleverandører i RUT. Udenlandske tjenesteydere, der ikke er anmeldt til RUT, kan blive bortvist fra pladsen.",
+      "text": "AAU er berettiget til at opkræve en bod på kr. 10.000 pr. påbegyndt arbejdsdag, hvormed leverandøren overskrider en af AAU oplyst frist for fremlæggelse af dokumentation for, at der er sket korrekt registrering af sig selv eller af underleverandører i RUT. Udenlandske tjenesteydere, der ikke er anmeldt til RUT, kan blive bortvist fra pladsen."
+    },
+    {
+      "self_ref": "#/texts/25",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "section_header",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 51.0,
+            "t": 346.91800038,
+            "r": 132.59000000000003,
+            "b": 338.0807407114917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            18
+          ]
+        }
+      ],
+      "orig": "Lærlinge og elever",
+      "text": "Lærlinge og elever",
+      "level": 1
+    },
+    {
+      "self_ref": "#/texts/26",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 51.0,
+            "t": 324.84201161,
+            "r": 543.1899999999998,
+            "b": 274.6107499714917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            408
+          ]
+        }
+      ],
+      "orig": "Leverandøren skal sikre, at et antal af de årsværk (svarende til 1.924 arbejdstimer inkl. ferie, sygdom, skoleophold m.v.), der anvendes til at opfylde kontrakten, besættes med en eller flere lærlinge. En lærling er en arbejdstager, med hvem leverandøren indgår eller har indgået en uddannelsesaftale iht. lov om erhvervsuddannelser eller som er omfattet af en lignende uddannelsesordning i et andet EU-land.",
+      "text": "Leverandøren skal sikre, at et antal af de årsværk (svarende til 1.924 arbejdstimer inkl. ferie, sygdom, skoleophold m.v.), der anvendes til at opfylde kontrakten, besættes med en eller flere lærlinge. En lærling er en arbejdstager, med hvem leverandøren indgår eller har indgået en uddannelsesaftale iht. lov om erhvervsuddannelser eller som er omfattet af en lignende uddannelsesordning i et andet EU-land."
+    },
+    {
+      "self_ref": "#/texts/27",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 257.92199817999995,
+            "r": 511.42999980999974,
+            "b": 221.48873688149172,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            250
+          ]
+        }
+      ],
+      "orig": "Leverandøren kan vælge at beskæftige en eller flere lærlinge i kortere perioder ved at det samlede antal arbejdstimer inkl. skoleophold, som udføres af lærlingene, svarer til beskæftigelsen af det angivne antal årsværk lærlinge i kontraktens løbetid.",
+      "text": "Leverandøren kan vælge at beskæftige en eller flere lærlinge i kortere perioder ved at det samlede antal arbejdstimer inkl. skoleophold, som udføres af lærlingene, svarer til beskæftigelsen af det angivne antal årsværk lærlinge i kontraktens løbetid."
+    },
+    {
+      "self_ref": "#/texts/28",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 216.52798572999995,
+            "r": 536.6999998099999,
+            "b": 166.29672409149168,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            368
+          ]
+        }
+      ],
+      "orig": "Leverandøren kan opfylde sin forpligtelse til at beskæftige et givent antal årsværk lærlinge ved at overføre én (eller flere) lærling(-e), som ved kontraktens indgåelse er ansat hos leverandøren til det arbejde, som kontrakten omhandler. Såfremt opgavens omfang efter kontraktens indgåelse nedsættes betydeligt, reguleres de krævede antal årsværk lærlinge tilsvarende.",
+      "text": "Leverandøren kan opfylde sin forpligtelse til at beskæftige et givent antal årsværk lærlinge ved at overføre én (eller flere) lærling(-e), som ved kontraktens indgåelse er ansat hos leverandøren til det arbejde, som kontrakten omhandler. Såfremt opgavens omfang efter kontraktens indgåelse nedsættes betydeligt, reguleres de krævede antal årsværk lærlinge tilsvarende."
+    },
+    {
+      "self_ref": "#/texts/29",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 149.60800282000002,
+            "r": 478.7199998099999,
+            "b": 113.1747415214918,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            261
+          ]
+        }
+      ],
+      "orig": "Leverandørens forpligtelse til at beskæftige elever og lærlinge kan efter skriftlig aftale med AAU undtagelsesvist fraviges, hvis leverandøren kan påvise, at leverandøren ikke har kunnet indgå uddannelsesaftaler til besættelse af stillinger med elever/lærlinge.",
+      "text": "Leverandørens forpligtelse til at beskæftige elever og lærlinge kan efter skriftlig aftale med AAU undtagelsesvist fraviges, hvis leverandøren kan påvise, at leverandøren ikke har kunnet indgå uddannelsesaftaler til besættelse af stillinger med elever/lærlinge."
+    },
+    {
+      "self_ref": "#/texts/30",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 51.0,
+            "t": 713.25400082,
+            "r": 543.9999999999998,
+            "b": 649.2247426614917,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            445
+          ]
+        }
+      ],
+      "orig": "Såfremt det ved aflevering af entreprisen kan konstateres, at leverandøren ikke fuldt ud har beskæftiget det aftalte antal årsværk lærlinge, pålægges leverandøren en bod svarende til 100.000 kr. pr. manglende årsværk lærlinge. Det vil sige, at såfremt leverandøren f.eks. mangler at beskæftige 0,5 årsværk lærlinge, ifalder den en bod på 50.000 kr.; mangler den at beskæftige 1,1 årsværk lærlinge, ifalder den en bod på 110.000 kr. og så videre.",
+      "text": "Såfremt det ved aflevering af entreprisen kan konstateres, at leverandøren ikke fuldt ud har beskæftiget det aftalte antal årsværk lærlinge, pålægges leverandøren en bod svarende til 100.000 kr. pr. manglende årsværk lærlinge. Det vil sige, at såfremt leverandøren f.eks. mangler at beskæftige 0,5 årsværk lærlinge, ifalder den en bod på 50.000 kr.; mangler den at beskæftige 1,1 årsværk lærlinge, ifalder den en bod på 110.000 kr. og så videre."
+    },
+    {
+      "self_ref": "#/texts/31",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "text",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 50.94999981,
+            "t": 616.66800038,
+            "r": 541.9399999999998,
+            "b": 394.65274216149174,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            1302
+          ]
+        }
+      ],
+      "orig": "Udbudsretlige sanktioner Leverandørens evt. manglende overholdelse af sine forpligtelser vedr. hhv. arbejdsklausuler, RUT, arbejdssprog eller tavshedspligt samt evt. manglende overholdelse af forpligtelserne vedr. lærlinge og elever jf. ovenstående er at betragte som en forsømmelse i forbindelse med udøvelsen af leverandørens erhverv. Om en konstateret forsømmelse kan anses for en 'alvorlig forsømmelse' i udbudslovens forstand, vil bero på den adfærd, som leverandøren har udvist, herunder om misligholdelse beror på hensigt eller uagtsomhed af en vis alvor hos leverandøren. Konstateringen af, om leverandøren har begået en alvorlig forsømmelse ved manglende overholdelse af sine kontraktmæssige forpligtelser i henhold til nærværende aftale, vil ske ved en konkret og individuel vurdering af den af leverandøren udviste adfærd. Konstateringen heraf forudsætter ikke, at der foreligger en retskraftig dom eller lignede grundlag. Såfremt AAU konstaterer, at leverandøren ved misligholdelse af sine kontraktmæssige forpligtelser har begået en alvorlig forsømmelse, kan AAU udelukke leverandøren fra at deltage i fremtidige udbudsforretninger, som AAU afholder. AAU forbeholder sig herudover ret til, at informere andre ordregivende myndigheder om den af leverandøren begåede \"alvorlige forsømmelse.\"",
+      "text": "Udbudsretlige sanktioner Leverandørens evt. manglende overholdelse af sine forpligtelser vedr. hhv. arbejdsklausuler, RUT, arbejdssprog eller tavshedspligt samt evt. manglende overholdelse af forpligtelserne vedr. lærlinge og elever jf. ovenstående er at betragte som en forsømmelse i forbindelse med udøvelsen af leverandørens erhverv. Om en konstateret forsømmelse kan anses for en 'alvorlig forsømmelse' i udbudslovens forstand, vil bero på den adfærd, som leverandøren har udvist, herunder om misligholdelse beror på hensigt eller uagtsomhed af en vis alvor hos leverandøren. Konstateringen af, om leverandøren har begået en alvorlig forsømmelse ved manglende overholdelse af sine kontraktmæssige forpligtelser i henhold til nærværende aftale, vil ske ved en konkret og individuel vurdering af den af leverandøren udviste adfærd. Konstateringen heraf forudsætter ikke, at der foreligger en retskraftig dom eller lignede grundlag. Såfremt AAU konstaterer, at leverandøren ved misligholdelse af sine kontraktmæssige forpligtelser har begået en alvorlig forsømmelse, kan AAU udelukke leverandøren fra at deltage i fremtidige udbudsforretninger, som AAU afholder. AAU forbeholder sig herudover ret til, at informere andre ordregivende myndigheder om den af leverandøren begåede \"alvorlige forsømmelse.\""
+    }
+  ],
+  "pictures": [
+    {
+      "self_ref": "#/pictures/0",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 1,
+          "bbox": {
+            "l": 411.7592853059705,
+            "t": 804.5727195739746,
+            "r": 534.9343976526452,
+            "b": 739.8653259277344,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/1",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 2,
+          "bbox": {
+            "l": 412.063564735771,
+            "t": 804.6037521362305,
+            "r": 535.1671733984211,
+            "b": 739.3210372924805,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/2",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 3,
+          "bbox": {
+            "l": 411.72797004648504,
+            "t": 804.6921424865723,
+            "r": 535.2711510370242,
+            "b": 739.8058776855469,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    },
+    {
+      "self_ref": "#/pictures/3",
+      "parent": {
+        "$ref": "#/body"
+      },
+      "children": [],
+      "content_layer": "body",
+      "label": "picture",
+      "prov": [
+        {
+          "page_no": 4,
+          "bbox": {
+            "l": 411.3871612292808,
+            "t": 805.045768737793,
+            "r": 535.7065764561595,
+            "b": 738.7798461914062,
+            "coord_origin": "BOTTOMLEFT"
+          },
+          "charspan": [
+            0,
+            0
+          ]
+        }
+      ],
+      "captions": [],
+      "references": [],
+      "footnotes": [],
+      "annotations": []
+    }
+  ],
+  "tables": [],
+  "key_value_items": [],
+  "form_items": [],
+  "pages": {
+    "1": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 1
+    },
+    "2": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 2
+    },
+    "3": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 3
+    },
+    "4": {
+      "size": {
+        "width": 595.5,
+        "height": 842.0
+      },
+      "page_no": 4
+    }
+  }
+}
