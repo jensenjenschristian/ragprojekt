@@ -1,0 +1,25 @@
+# Parsing dependencies — Colab only.
+#
+# Docling parsing runs in Google Colab, not locally. Measured peak 1235 MB on a
+# 6-page document with table structure disabled, against ~930 MB available on the
+# Week 1/2 machine. See notes/week2-findings.md §3.
+#
+# Install these only if you need to re-parse the corpus. The parsed output is
+# committed in data-parsed/, so the main pipeline does not need them.
+docling==2.126.0
+docling-core==2.95.0
+docling-ibm-models==4.0.2
+docling-parse==7.17.0
+docling-slim==2.126.0
+numpy==2.1.3
+pillow==11.3.0
+sentence-transformers==5.7.0
+torch @ https://download.pytorch.org/whl/cpu/torch-2.11.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl
+torchao==0.10.0
+torchaudio @ https://download.pytorch.org/whl/cpu/torchaudio-2.11.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl
+torchcodec @ https://download.pytorch.org/whl/cpu/torchcodec-0.11.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl
+torchdata==0.11.0
+torchsummary==1.5.1
+torchtune==0.6.1
+torchvision @ https://download.pytorch.org/whl/cpu/torchvision-0.26.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl
+transformers==5.16.1
