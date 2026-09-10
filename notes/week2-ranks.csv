@@ -1,0 +1,10 @@
+model,chunking,Q1,Q2,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13
+e5-small,fixed,,1.0,2,2,1,1.0,,,1,,
+e5-small,recursive,5.0,3.0,1,1,1,5.0,4.0,1.0,1,4.0,3.0
+e5-small,structural,3.0,2.0,1,1,1,1.0,,1.0,1,2.0,3.0
+bge-m3,fixed,2.0,,2,2,1,1.0,,,1,2.0,
+bge-m3,recursive,2.0,5.0,1,2,1,,2.0,1.0,1,4.0,1.0
+bge-m3,structural,1.0,5.0,1,1,1,1.0,4.0,2.0,1,2.0,1.0
+minilm-en,fixed,,2.0,5,3,1,4.0,,,2,,
+minilm-en,recursive,,1.0,2,4,1,,,5.0,5,,1.0
+minilm-en,structural,,1.0,1,1,1,5.0,,1.0,1,,3.0

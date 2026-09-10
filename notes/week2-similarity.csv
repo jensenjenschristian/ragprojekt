@@ -1,0 +1,7 @@
+model,pair,similarity
+e5-small,"skal vs bør, same clause",0.9981
+e5-small,"unrelated clauses, same document",0.885
+bge-m3,"skal vs bør, same clause",0.992
+bge-m3,"unrelated clauses, same document",0.4834
+minilm-en,"skal vs bør, same clause",0.9685
+minilm-en,"unrelated clauses, same document",0.5691
