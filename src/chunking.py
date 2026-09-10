@@ -1,31 +1,35 @@
 def chunk_fixed(elements, tok, size=250, overlap=50):
     """Week 1 baseline, in tokens rather than characters.
 
-    Concatenates all text and cuts every `size` tokens. Ignores every boundary —
-    section, paragraph, sentence, word. This is what severed the subject from
-    'faglært person med relevant svendebrev...' in week1-findings.md §4.
+    Cuts every `size` tokens within a page, ignoring section, paragraph and
+    sentence boundaries. Chunking per page (as Week 1 did) preserves page
+    provenance; only the section metadata is unavailable.
     """
     chunks = []
     for source in sorted({e["source"] for e in elements}):
         els = [e for e in elements if e["source"] == source]
-        text = "\n".join(e["text"] for e in els)
-        ids = tok.encode(text, add_special_tokens=False)
-        step = size - overlap
-        for i in range(0, len(ids), step):
-            window = ids[i:i + size]
-            if not window:
-                continue
-            chunks.append({
-                "text": tok.decode(window),
-                "source": source,
-                "page": els[0]["page"],      # deliberately wrong; see note
-                "section": None,
-                "section_path": None,
-                "subsection": None,
-                "delaftale": None,
-                "element_type": "fixed",
-                "strategy": "fixed",
-            })
+        pages = sorted({e["page"] for e in els if e["page"] is not None})
+        for page in pages:
+            page_els = [e for e in els if e["page"] == page]
+            text = "\n".join(e["text"] for e in page_els)
+            ids = tok.encode(text, add_special_tokens=False)
+            step = size - overlap
+            for i in range(0, len(ids), step):
+                window = ids[i:i + size]
+                if not window:
+                    continue
+                chunks.append({
+                    "text": tok.decode(window),
+                    "source": source,
+                    "page": page,
+                    "pages": [page],
+                    "section": None,
+                    "section_path": None,
+                    "subsection": None,
+                    "delaftale": None,
+                    "element_type": "fixed",
+                    "strategy": "fixed",
+                })
     return chunks
 
 def chunk_recursive(elements, tok, size=350, overlap=50):
