@@ -684,6 +684,246 @@ shows title chunks displacing real answers.
 
 --
 
+## 11. The comparison: chunking beats the embedding model
+
+Nine configurations — three chunking strategies × three embedding models — scored on the 11
+retrieval questions from `eval-questions.md`. Q3 and Q4 are refusal tests and belong to
+generation evaluation in Week 5, so they are excluded here.
+
+**Metrics.** Hit rate is whether the correct chunk appears in the top *k* at all (k=5). MRR is
+the mean reciprocal rank — rank 1 scores 1.0, rank 4 scores 0.25, absent scores 0. Week 1's
+baseline was Q2 at rank 4, MRR 0.25.
+
+**Match conditions.** Each question carries a machine-readable `**Match:**` line — source,
+page, and a `contains` probe — and all fields must hold together. `source` and `page` alone
+are too loose (a page holds several chunks); `contains` alone too loose in the other direction
+(`550` appears in all three delaftale sheets). Verified against the parsed corpus before the
+comparison ran: 11 questions, exactly one matching chunk each.
+
+**Models.** `multilingual-e5-small` (Week 1's reference, 384-dim), `BGE-M3` (the multilingual
+ceiling, 1024-dim), and `all-MiniLM-L6-v2` (English-trained, 384-dim). The third is chosen
+deliberately: it is the model Chroma silently defaults to, which Week 1 §8 flagged as a trap
+because it will embed Danish without complaint or warning. This turns a documented trap into
+a measured one.
+
+**Prefixes as model config.** e5 requires `passage:`/`query:`; BGE-M3 and MiniLM use none.
+Week 1 hardcoded these in `ingest.py:47` and `query.py:17`. Getting this wrong degrades
+retrieval silently, which in a comparison means concluding something false about a model, so
+the prefix is now a property of the model config rather than a string in the pipeline.
+
+### Results
+
+**MRR:**
+
+| | fixed | recursive | structural |
+|---|---|---|---|
+| e5-small | 0.455 | 0.597 | **0.697** |
+| BGE-M3 | 0.455 | 0.632 | **0.768** |
+| MiniLM-en | 0.253 | 0.377 | 0.594 |
+
+**Hit rate:**
+
+| | fixed | recursive | structural |
+|---|---|---|---|
+| e5-small | 0.55 | **1.00** | 0.91 |
+| BGE-M3 | 0.64 | 0.91 | **1.00** |
+| MiniLM-en | 0.55 | 0.64 | 0.73 |
+
+### Chunking is worth more than the model
+
+Reading down a column versus across a row:
+
+- **Chunking, model held constant:** BGE-M3 gains **0.313 MRR** from fixed to structural.
+- **Model, chunking held constant:** swapping MiniLM for BGE-M3 at fixed size gains **0.202**.
+
+The best model on the worst chunking (0.455) loses to the worst model on the best chunking
+(0.594). The syllabus claim — retrieval quality is mostly decided before generation — measured
+on this corpus rather than asserted.
+
+Structural beats recursive on every model, and the gap widens as the model weakens: 0.100 for
+e5, 0.136 for BGE-M3, 0.217 for MiniLM. Suggestive that structure compensates for a weaker
+embedder, but eleven questions is too small a sample to lean on it.
+
+### Hit rate and MRR disagree about the winner
+
+`e5-small` + recursive finds **every** question (1.00) but ranks them worse (0.597).
+BGE-M3 + structural also finds every question and ranks them better (0.768) — so BGE-M3
+structural dominates. But e5 structural *misses* one question (0.91) while ranking the rest
+more precisely than e5 recursive.
+
+Which matters depends on *k* and on cost asymmetry. The syllabus's Week 6 note applies: in a
+tender, a missed mandatory requirement can disqualify a bid while a false positive costs
+someone thirty seconds of reading. That argues for recall over precision, and therefore for
+reading hit rate first.
+
+**Recommended stack: BGE-M3 + structural chunking.** The only configuration at hit rate 1.00
+with MRR 0.768.
+
+### Per-question ranks reveal what the aggregates hide
+
+| model | chunking | Q1 | Q2 | Q5 | Q6 | Q7 | Q8 | Q9 | Q10 | Q11 | Q12 | Q13 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| e5 | structural | 3 | 2 | 1 | 1 | 1 | 1 | — | 1 | 1 | 2 | 3 |
+| BGE-M3 | structural | 1 | 5 | 1 | 1 | 1 | 1 | 4 | 2 | 1 | 2 | 1 |
+| MiniLM | structural | — | 1 | 1 | 1 | 1 | 5 | — | 1 | 1 | — | 3 |
+
+**BGE-M3's advantage is narrow, not broad.** It wins Q1 (1 vs 3), Q13 (1 vs 3) and Q9 (4 vs
+miss); it *loses* Q2 (5 vs 2) and Q10 (2 vs 1). The 0.071 MRR gain over e5 is essentially
+"finds Q9, ranks the xlsx questions better" — not a uniform improvement, a different failure
+profile.
+
+That narrowness matters more than it sounds. Q9 and Q13 are the three-identical-sheets
+questions, where the discriminating content is a bare number (`1848` vs `1728`, `550` vs
+`500`). Those are precisely the cases where being wrong returns a *wrong figure* rather than a
+wrong citation. BGE-M3's edge is concentrated on the questions that matter most.
+
+**Q9 is nearly unsolvable by embedding alone** — found in 2 of 9 configurations, never above
+rank 4. **Q7 is rank 1 in all nine** — distinctive vocabulary, no near-duplicates, the easy
+case. **Q2 inverts:** MiniLM ranks it 1st while BGE-M3 ranks it 5th. With eleven questions
+this cannot be distinguished from noise, and saying so is more honest than explaining it.
+
+**MiniLM fails three questions outright** — Q1, Q9, Q12. Q1 is the simplest factual lookup in
+the set (15 % årsværk under oplæring) and the English-centric model cannot find it in the top
+5. The clearest possible illustration of why model choice on a Danish corpus is not a detail.
+
+### The fixed-size baseline had to be repaired before it was fair
+
+The first run scored fixed-size at hit rate 0.09 across all three models — identically, which
+was the tell. `chunk_fixed` concatenated each document before slicing, destroying per-element
+page provenance, so every page-based match failed. That measures "concatenate-then-slice
+loses provenance," not "fixed-size retrieves badly."
+
+Repaired to chunk per page, as Week 1 did, and re-run: 0.455 / 0.455 / 0.253. Two things stay
+deliberately broken because they are real properties of the baseline, not implementation
+choices: `section` is always `None` (fixed-size cannot cite a clause) and `delaftale` is
+always `None` (the sheet identity lives in a group name that fixed-size has no mechanism to
+carry). Q9 and Q13 therefore remain structural misses for fixed-size — which is the schema
+argument, restated as a metric.
+
+Note MiniLM + fixed scores **0.253**, almost exactly Week 1's 0.25 baseline. Coincidence, but
+a tidy one: the naive configuration lands where the naive configuration landed.
+
+---
+
+## 12. Modality is invisible to every model tested — and now provably so
+
+Week 1 §5 measured `skal` vs `bør` at **0.9966** on e5-small and concluded embeddings encode
+topic, not modality. The Week 2 plan set the test: *if BGE-M3 separates them meaningfully
+better, that changes the Week 3 hybrid-retrieval argument; if it doesn't, that's the stronger
+finding.*
+
+Measured across all three models, with an added control pair — two unrelated `skal`
+obligations from different parts of the contract (apprentice quotas vs invoicing law):
+
+| Model | `skal` vs `bør`, same clause | unrelated clauses | usable range |
+|---|---|---|---|
+| e5-small | 0.9981 | 0.8850 | **0.113** |
+| BGE-M3 | 0.9920 | 0.4834 | **0.509** |
+| MiniLM-en | 0.9685 | 0.5691 | 0.399 |
+
+### The control pair is what makes this conclusive
+
+Raw similarity means nothing across models, because each compresses its output range
+differently. Week 1 §5 noted e5-small pushes Danish into roughly 0.85–1.00 and concluded
+"absolute scores carry almost no information; only ordering does." The control quantifies it:
+**e5 uses 0.885–0.998 for the entire span from unrelated to near-identical. BGE-M3 uses
+0.483–0.992 — four and a half times the dynamic range.**
+
+That reframes the finding entirely. It is not that BGE-M3 fails to separate `skal` from `bør`
+in the same compressed way e5 does. BGE-M3 *can* discriminate — it places topically unrelated
+clauses at 0.48. It still places a mandatory requirement and its optional twin at 0.992, on a
+scale where it demonstrably has room to spare.
+
+Normalised against each model's own usable range, the modality gap is:
+
+- BGE-M3: 0.008 / 0.509 = **1.5 % of usable range**
+- e5-small: 0.0019 / 0.113 = **1.7 % of usable range**
+
+Nearly identical proportions from models that look completely different in absolute terms. A
+model with a working discrimination range *chooses* to place these two almost on top of each
+other, because **modality is not a topical difference.**
+
+### Week 1's framing survives, and gets sharper
+
+Week 1 §5's vivid version — *two genuine obligations sit further apart than a requirement and
+its optional twin* — holds on all three models. For e5 the numbers are 0.885 vs 0.998. For
+BGE-M3 they are **0.483 vs 0.992**: two real obligations are half a unit apart while a
+requirement and its negation are within 0.008.
+
+**The Week 3 hybrid-retrieval argument is now empirically grounded rather than asserted.** This
+is not one model's limitation. Three models spanning 384 to 1024 dimensions, English-trained
+to state-of-the-art multilingual, all agree. BM25 weights rare exact tokens, which is precisely
+what every dense embedding tested here smooths away.
+
+*(MiniLM's 0.9685 looks like better separation and is not: proportionally it is the same, and
+it is the worst retriever in §11's table. A model that compresses everything shows smaller
+differences everywhere, not sharper discrimination.)*
+
+---
+
+## 13. The vector store is a swappable component
+
+Implemented behind one interface in `src/store.py`: `NumpyStore` (brute force, no
+dependencies), `ChromaStore`, `FaissStore`. All three return identical results on the same
+query, filtered and unfiltered, at 113 chunks.
+
+The point was never a benchmark — at this size any timing difference is noise. It was the
+seam, so Weeks 3 and 4 are not coupled to either backend.
+
+**The two are not like-for-like, and that asymmetry is the lesson:**
+
+| | Chroma | FAISS |
+|---|---|---|
+| What it is | a database | an index |
+| Metadata | stored alongside vectors | not stored — parallel list, looked up by position |
+| Filtering | server-side `where` clause | **none** — over-fetch and filter in Python |
+| Persistence | built in | write the index to a file |
+| Types | no `None`, no lists | n/a |
+
+Chroma's type restriction is a live constraint: `pages` is a list and cannot be stored, so it
+would have to be serialised to a string and parsed back — and `pages` is what the eval matcher
+needs for the split-tidsplan question.
+
+FAISS's inability to filter is worked around by fetching 20× and filtering in Python. That
+works at 113 chunks and degrades badly at scale: with a selective filter you may over-fetch
+the whole index and still come up short.
+
+`NumpyStore` is included deliberately as a reference implementation. Twenty lines, and it makes
+the other two legible — you can see exactly what they are optimising.
+
+**Filtering answers Q13 outright.** `where={"delaftale": "København"}` returns three chunks,
+all København, rate table first. The hardest near-duplicate case in the corpus, solved by
+filtering rather than by hoping the ranking out-ranks two byte-identical competitors.
+
+*Concepts to be able to explain:* cosine and dot product are identical on normalised vectors,
+which is why `IndexFlatIP` works as cosine here. HNSW builds a navigable graph (fast queries,
+high memory); IVF partitions into clusters and probes the nearest few (lower memory, tunable
+recall). Neither is used here — `IndexFlat` is exhaustive, and at 113 vectors of 384 dimensions
+that is ~43,000 multiply-adds, i.e. microseconds. Approximate search trades exactness for speed
+and only pays off in the millions.
+
+---
+
+## 14. A fourth inspection artifact, and a fifth
+
+§8 recorded three cases of mistaking an inspection artifact for a data problem. Two more
+occurred during the comparison, and the pattern is now the most reliable finding of the week.
+
+**4. Stale notebook state.** After editing `chunk_fixed`, the scores did not move.
+`inspect.getsource` showed the *new* code — because it reads the file on disk — while the
+running session held the *old* module. Notebook state persists across cells in whatever order
+they were run, so "I changed the code" and "the running program uses the changed code" are
+separate facts.
+
+**5. A failed clone read as a data problem.** `ModuleNotFoundError: No module named 'src'`
+after a clone URL still containing the placeholder `YOURNAME`. Ten minutes were spent
+hypothesising about tokenizer round-trip losses corrupting `contains` probes before the
+plumbing was checked.
+
+**Rule, restated: check the pipe before diagnosing the water.**
+
+--
+
 ## Carried forward
 
 | Finding | Lands in |
@@ -718,3 +958,12 @@ shows title chunks displacing real answers.
 | Severed chunks fixed by Docling, not by chunking strategy | W2 writeup — attribute correctly |
 | Recursive chunking mislabels sections across boundaries | W2 strategy choice, W5 citations |
 | Three `Bilag 4` title chunks are a fourth near-duplicate cluster | W3 retrieval eval |
+| Chunking worth 0.313 MRR; model swap worth 0.202 | W3 — where effort pays |
+| BGE-M3 + structural: hit 1.00, MRR 0.768 | W3 baseline to beat |
+| MiniLM-en misses Q1, the simplest lookup in the set | W3 — model choice is not a detail |
+| Modality gap ≈1.5 % of usable range on all three models | W3 hybrid — now empirical |
+| BGE-M3 range 0.483–0.992 vs e5's 0.885–0.998 | W6 threshold design |
+| Q9 found in 2 of 9 configurations, never above rank 4 | W3 — the hard case |
+| Fixed-size cannot carry section or delaftale | W2 schema argument as a metric |
+| Store swappable behind one interface; FAISS cannot filter | W3, W4 decoupling |
+| Chroma rejects `None` and lists — `pages` needs serialising | W4 if Chroma is the store |
