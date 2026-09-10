@@ -1,85 +1,61 @@
-from pathlib import Path
-from pypdf import PdfReader
+
 import chromadb
 from sentence_transformers import SentenceTransformer
+from transformers import AutoTokenizer
 
-def load_pages(data_dir="data"):
-    pages = []
-    for pdf in sorted(Path(data_dir).glob("*.pdf")):
-        reader = PdfReader(pdf)
-        for i, page in enumerate(reader.pages, start=1):
-            text = page.extract_text() or ""
-            if text.strip():
-                pages.append({"text": text, "source": pdf.name, "page": i})
-    return pages
+from src.parse_docling import load_corpus
+from src.chunking import chunk_structural
+from src.models import MODELS, DEFAULT_MODEL
 
-def chunk_pages(pages, size=1000, overlap=200):
-    chunks = []
-    for p in pages:
-        text = p["text"]
-        start = 0
-        while start < len(text):
-            piece = text[start:start + size]
-            if piece.strip():
-                chunks.append({
-                    "text": piece,
-                    "source": p["source"],
-                    "page": p["page"],
-                })
-            start += size - overlap
-    return chunks
 
-#stage 1
-#if __name__ == "__main__":
-#    pages = load_pages()
-#    docs = len({p["source"] for p in pages})
-#    print(f"{len(pages)} pages with text, from {docs} documents")
-#    #for i, p in enumerate(pages):
-#    #    print(f"{i:4}  {p['source'][:40]:40}  side {p['page']:3}  {len(p['text']):5} chars")
-#    t = pages[18]["text"]
-#    print(len(t))
-#    print(repr(t[:1500]))
-#    Path("page18.txt").write_text(t, encoding="utf-8")
+def build_chunks(parsed_dir="data-parsed", model_key=DEFAULT_MODEL):
+    cfg = MODELS[model_key]
+    tok = AutoTokenizer.from_pretrained(cfg["name"])
+    return chunk_structural(load_corpus(parsed_dir), tok)
 
-def build_index(chunks, db_path="chroma_db", collection_name="tender"):
-    model = SentenceTransformer("intfloat/multilingual-e5-small")
 
-    texts = [f"passage: {c['text']}" for c in chunks]
-    print(f"Embedding {len(texts)} chunks...")
-    vectors = model.encode(texts, batch_size=16, show_progress_bar=True)
+def build_index(chunks, db_path="chroma_db", collection_name="tender",
+                model_key=DEFAULT_MODEL):
+    cfg = MODELS[model_key]
+    model = SentenceTransformer(cfg["name"])
+
+    texts = [cfg["passage_prefix"] + c["text"] for c in chunks]
+    print(f"Embedding {len(texts)} chunks with {model_key}...")
+    vectors = model.encode(texts, batch_size=16, show_progress_bar=True,
+                           normalize_embeddings=True)
 
     client = chromadb.PersistentClient(path=db_path)
-    client.delete_collection(collection_name) if collection_name in [
-        c.name for c in client.list_collections()
-    ] else None
+    if collection_name in [c.name for c in client.list_collections()]:
+        client.delete_collection(collection_name)
     collection = client.create_collection(
-        name=collection_name,
-        metadata={"hnsw:space": "cosine"},
-    )
+        name=collection_name, metadata={"hnsw:space": "cosine"})
 
     collection.add(
-        ids=[f"{c['source']}-p{c['page']}-{i}" for i, c in enumerate(chunks)],
+        ids=[str(i) for i in range(len(chunks))],
         embeddings=[v.tolist() for v in vectors],
         documents=[c["text"] for c in chunks],
-        metadatas=[{"source": c["source"], "page": c["page"]} for c in chunks],
+        metadatas=[_meta(c) for c in chunks],
     )
     return collection
 
-#stage 2
-#if __name__ == "__main__":
-#    pages = load_pages()
-#    chunks = chunk_pages(pages)
-#    print(f"{len(pages)} pages -> {len(chunks)} chunks")
-#
-#    c = chunks[27]
-#    print(f"\n--- {c['source']} side {c['page']} ---")
-#    print(c["text"])
 
-#stage 3
+def _meta(c):
+    """Chroma rejects None and lists. `pages` is serialised to a comma string
+    and parsed back on retrieval — see week2-findings.md §13."""
+    return {
+        "source": c["source"],
+        "page": c["page"] or 0,
+        "pages": ",".join(str(p) for p in (c.get("pages") or [])),
+        "section": c["section"] or "",
+        "section_path": c["section_path"] or "",
+        "subsection": c["subsection"] or "",
+        "delaftale": c["delaftale"] or "",
+        "strategy": c.get("strategy", ""),
+    }
+
+
 if __name__ == "__main__":
-    pages = load_pages()
-    chunks = chunk_pages(pages)
-    print(f"{len(pages)} pages -> {len(chunks)} chunks")
-
+    chunks = build_chunks()
+    print(f"{len(chunks)} chunks")
     collection = build_index(chunks)
     print(f"Indexed: {collection.count()} chunks")

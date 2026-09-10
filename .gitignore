@@ -16,3 +16,7 @@ data/*
 notes/corpus-dump.txt
 docling_test.py
 notes/docling-sample.md
+
+#backups for curiosity
+ingest_wk1.py
+query_wk1.py

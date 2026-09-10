@@ -1,3 +1,4 @@
+from src.models import MODELS, DEFAULT_MODEL
 import chromadb
 from sentence_transformers import SentenceTransformer
 import os
@@ -9,19 +10,29 @@ from openai import OpenAI
 load_dotenv()
 llm = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-model = SentenceTransformer("intfloat/multilingual-e5-small")
+cfg = MODELS[DEFAULT_MODEL]
+model = SentenceTransformer(cfg["name"])
 client = chromadb.PersistentClient(path="chroma_db")
 collection = client.get_collection("tender")
 
-def retrieve(question, k=5):
-    q_vec = model.encode(f"query: {question}")
-    res = collection.query(query_embeddings=[q_vec.tolist()], n_results=k)
-    return [
-        {"text": doc, "source": meta["source"], "page": meta["page"], "distance": dist}
-        for doc, meta, dist in zip(
-            res["documents"][0], res["metadatas"][0], res["distances"][0]
-        )
-    ]
+def retrieve(question, k=5, where=None):
+    q_vec = model.encode(cfg["query_prefix"] + question,
+                         normalize_embeddings=True)
+    res = collection.query(query_embeddings=[q_vec.tolist()],
+                           n_results=k, where=where or None)
+    out = []
+    for doc, meta, dist in zip(res["documents"][0], res["metadatas"][0],
+                               res["distances"][0]):
+        out.append({
+            "text": doc,
+            "source": meta["source"],
+            "page": meta["page"],
+            "pages": [int(p) for p in meta["pages"].split(",") if p],
+            "section": meta["section"],
+            "delaftale": meta["delaftale"],
+            "distance": dist,
+        })
+    return out
 
 #stage 5
 
@@ -45,9 +56,15 @@ SVAR:"""
 
 
 def build_context(results):
-    return "\n\n".join(
-        f"[{r['source']}, side {r['page']}]\n{r['text']}" for r in results
-    )
+    parts = []
+    for r in results:
+        loc = f"{r['source']}, side {r['page']}"
+        if r["section"]:
+            loc += f", {r['section']}"
+        if r["delaftale"]:
+            loc += f", delaftale {r['delaftale']}"
+        parts.append(f"[{loc}]\n{r['text']}")
+    return "\n\n".join(parts)
 
 def answer(question, k=5):
     results = retrieve(question, k=k)
@@ -77,7 +94,12 @@ if __name__ == "__main__":
 
     if retrieve_only:
         for r in retrieve(question):
-            print(f"\n{r['source']} side {r['page']} ({r['distance']:.4f})")
+            loc = f"{r['source']} side {r['page']}"
+            if r["delaftale"]:
+                loc += f" [{r['delaftale']}]"
+            if r["section"]:
+                loc += f" — {r['section'][:40]}"
+            print(f"\n{loc} ({r['distance']:.4f})")
             print(r["text"][:200].replace("\n", " "))
     else:
         text, results = answer(question)
