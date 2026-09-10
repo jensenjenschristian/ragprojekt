@@ -8,12 +8,19 @@ results get fitted to the results.
 
 *Started Week 1, extended 3 September 2026.*
 
+Each entry carries a **Match:** line — the conditions under which a retrieved chunk counts
+as correct. All fields must hold together. `source` and `page` alone are too loose (a page
+holds several chunks); `contains` alone is too loose in the other direction (`550` appears
+in all three delaftale sheets). Probes are case-sensitive and assume whitespace-normalised
+text — see `week2-findings.md` §10 on the corpus's inconsistent internal spacing.
+
 ---
 
 ### Q1 — simple factual lookup
 **Question:** Hvor stor en andel af de leverede årsværk skal udgøres af personer under oplæring?
 **Expected:** 15 %.
 **Source:** `Bilag 3 - Kravspecifikation.pdf` p2
+**Match:** source=`Bilag 3 - Kravspecifikation`, page=2, contains=`15 %`
 **Tests:** baseline retrieval of a single stated figure.
 **Week 1 result:** correct chunk at rank 4 → MRR 0.25. The baseline to beat.
 
@@ -25,6 +32,7 @@ results get fitted to the results.
 Tekniske Kravspecifikation. The delegation must appear first and prominently; a list of
 on-topic contractual clauses without it is a failure.
 **Source:** `Bilag 3 - Kravspecifikation.pdf` p2
+**Match:** source=`Bilag 3 - Kravspecifikation`, page=2, contains=`Kravspecifikation`
 **Tests:** behaviour when on-topic distractors can support a nearby reading of the question.
 **Week 1 result:** failed — 13 correctly-cited bullets, none of them the answer. Faithful and
 wrong. `k=2` made it worse; a sharpened prompt changed nothing.
@@ -36,6 +44,7 @@ wrong. `k=2` made it worse; a sharpened prompt changed nothing.
 **Expected:** abstention. Not in the corpus; points at the external Tekniske
 Kravspecifikation, with a citation.
 **Source:** none — absence is the ground truth.
+**Match:** none — refusal test, no chunk should satisfy
 **Tests:** refusal where the context contains no substitute answer.
 **Week 1 result:** passed.
 
@@ -49,6 +58,7 @@ but contains none of its content — no classification levels, no handling proce
 clearance criteria. The correct answer points at the external circular.
 **Source:** none — absence is the ground truth. The two referring clauses are at
 `Aftale.pdf` p8.
+**Match:** none — refusal test, no chunk should satisfy
 **Tests:** whether the Q3 refusal generalises or was topic-specific. Week 1 §7 showed
 abstention is context-sensitive, so one refusal test does not characterise the behaviour.
 **Note:** the question was originally phrased *"Hvad kræver Sikkerhedscirkulæret af
@@ -64,6 +74,7 @@ positive version is now Q10.
 **Expected:** a penalty (bod) of 100.000 kr. per missing årsværk, applied pro rata —
 0,5 årsværk short = 50.000 kr., 1,1 short = 110.000 kr.
 **Source:** `Bilag 7 - Arbejdsklausul.pdf` p4
+**Match:** source=`Bilag 7 - Arbejdsklausul`, page=4, contains=`100.000`
 **Tests:** whether retrieval follows `jf. Bilag 7` to the referenced document. The referring
 clauses (`Bilag 3` p2, `Aftale.pdf` p15) state the obligation and are silent on consequences,
 so answering from them alone is the failure mode.
@@ -84,6 +95,7 @@ Conflating them is the failure mode.
 `Udbudsbetingelser.pdf` p4, which does not bind but adds the rationale (a fixed primary for
 both maintenance and larger works, a secondary to secure continuity) and names
 `aftalens pkt. 3.2` as the governing clause.
+**Match:** source=`Aftale`, page=4, contains=`mandskabsmangel`
 **Tests:** whether the system can distinguish two chunks that are lexically identical. No
 embedding, reranker or BM25 signal exists — the strings are the same. The `source` metadata
 field is the only available discriminator, which makes this the direct test of the Week 2
@@ -100,6 +112,7 @@ between the intro sentence and the bullet list. Check Docling removes it.
 **Expected:** based on the most comparable product in the referenceprisliste, less the
 supplier's quoted discount rate.
 **Source:** `Aftale.pdf` p10
+**Match:** source=`Aftale`, page=10, contains=`fratrukket` (matches 2 chunks in 6.4)
 **Tests:** compound matching. The question says `prislisten`; the corpus says
 `referenceprislisten`. BM25 will not match the part to the compound in Week 3.
 **Note:** the defining occurrence — `efterfølgende omtalt som "referenceprislisten"` — is
@@ -115,6 +128,7 @@ severe: any reservation entitles AAU to reject the tender, and AAU is *obliged* 
 reservations against fundamental elements or ones that cannot be reliably priced. An answer
 that reports "bør" as merely optional has missed the point.
 **Source:** `Udbudsbetingelser.pdf` p12
+**Match:** source=`Udbudsbetingelser`, page=12, contains=`forpligtet til at afvise`
 **Tests:** modality beyond the skal/bør binary. Three levels in four lines — `bør` (advisory),
 `er berettiget til` (discretionary), `er forpligtet til` (binding).
 **Note for Week 7:** a naive `skal`-detector fails twice on this passage. It flags
@@ -130,6 +144,7 @@ delaftale København?
 (576 × 3). Under pypdf: unanswerable — `Aftale.pdf` p7 establishes the surcharge `jf. Bilag 4`
 and Bilag 4 was invisible to the parser.
 **Source:** `Bilag 4 - Tilbudsliste.XLSX`, sheet for delaftale København
+**Match:** source=`Bilag 4 - Tilbudsliste`, delaftale=`København`, contains=`1848`
 **Tests:** the cost of excluding a file format, measured before and after. The justification
 for step 3, not an assertion.
 
@@ -142,6 +157,7 @@ dialogue and cooperation with the relevant security authorities and AAU's securi
 organisation regarding advice, design and construction of facilities subject to the
 Sikkerhedscirkulæret. The authorities are named: PET and FE.
 **Source:** `Aftale.pdf` p8
+**Match:** source=`Aftale`, page=8, contains=`sikkerhedsmyndigheder`
 **Tests:** whether the named authorities survive retrieval. `PET` and `FE` are rare short
 tokens — smoothed away by embeddings, weighted heavily by BM25. A Week 3 hybrid target.
 **Note:** the obligation is expressed as `er forpligtet til`, with no `skal` anywhere in the
@@ -156,6 +172,7 @@ both after Docling.
 **Question:** Hvad er den samlede værdi af delaftalen for Aalborg?
 **Expected:** 35 mio. kr. (Esbjerg 4,2 mio. kr., København 16,1 mio. kr.)
 **Source:** `Udbudsbetingelser.pdf` p5, table
+**Match:** source=`Udbudsbetingelser`, page=5, contains=`35 mio`
 **Tests:** table extraction end to end. Under pypdf this was unstructured text; the value is
 retrievable only because TableFormer reconstructed the grid.
 
@@ -165,6 +182,7 @@ retrievable only because TableFormer reconstructed the grid.
 **Question:** Hvornår er kontraktstart?
 **Expected:** 1. december 2026.
 **Source:** `Udbudsbetingelser.pdf` p7, continuation of the tidsplan beginning on p6
+**Match:** source=`Udbudsbetingelser`, page=7, contains=`1. december 2026`
 **Tests:** whether a chunk from the continuation table is interpretable. In isolation the p7
 rows are five dates with no header — `Uge 45`, `Uge 46-47`, `Uge 48` — because TableFormer
 works per page and the header stayed on p6.
@@ -176,6 +194,7 @@ works per page and the header stayed on p6.
 **Expected:** 500 kr. for delaftale Aalborg and Esbjerg, 550 kr. for København. An answer
 giving a single figure without naming the delaftale is wrong even when the number is right.
 **Source:** `Bilag 4 - Tilbudsliste.XLSX`, three sheets
+**Match:** source=`Bilag 4 - Tilbudsliste`, delaftale=`København`, contains=`550`
 **Tests:** the hardest near-duplicate case in the corpus. Aalborg and Esbjerg are byte-
 identical; København differs in two cells of fifteen (Tekniker 700 vs 650, Elektriker svend
 550 vs 500, giving gennemsnitstimesats 616 vs 576). Embeddings cannot separate them — the

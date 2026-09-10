@@ -447,6 +447,243 @@ decision, and Week 2 is where it gets made.**
 
 --
 
+## 9. The document schema
+
+The architectural decision of the week. The plan targeted document / appendix / §-path /
+page; the corpus forced three additions, each traceable to a specific eval question.
+
+### The corpus has real §-numbering
+
+An open question from the Week 2 plan: does the tender have §-numbering consistent enough to
+build a path from, or is heading hierarchy the only usable structure? Answer: it has
+numbering, and Docling captured it.
+
+`Aftale.pdf` has 47 section headers, `Udbudsbetingelser.pdf` 32, in consistent dotted-decimal
+form — `3.1 Aftalens omfang`, `6.4 Afregning af materialeforbrug`, `10.3 Ophævelse af Aftalen`.
+Three caveats:
+
+- **The number is inside the heading text**, not in a field. Splitting it out is a regex you
+  own: `^(\d+(?:\.\d+)*)\.?\s+(.*)$`.
+- **`level` is 1 on every heading.** Docling produced no nesting. The tree comes from the
+  numbering itself — `6.4` is a child of `6` because of its dots. Arguably better: the
+  document's own numbering is more reliable than inferred visual hierarchy.
+- **The appendices have headings but no numbers.** `Bilag 7` has 5 headings, none numbered.
+  So `section` is populatable everywhere; `section_path` only in the two main documents. The
+  schema must tolerate a null path rather than assume one.
+
+### A §-path is not a unique key
+
+`Udbudsbetingelser.pdf` p11 has **two sections numbered 12.2** — `12.2 Udvælgelse` and
+`12.2 Dokumentation`. Confirmed in both the heading list and the (separately damaged) ToC, so
+it is a numbering error in the source, not a parse artifact.
+
+Together with the `Bilag 3` → `(bilag 6)` misreference in §5, the same lesson from two
+directions: **the document's structural claims are usable but not trustworthy.** Treat the
+§-path as an addressing aid, not an identifier.
+
+### Reading order comes from `body`, not from the arrays
+
+`texts` and `tables` are separate arrays. Interleaving them by array position is wrong.
+`body.children` holds JSON Pointer refs (`{'$ref': '#/texts/12'}`) in true reading order, and
+walking those is what makes heading-to-table attachment work.
+
+The xlsx nests one level deeper: `body.children` holds three `#/groups/N` refs, one per
+sheet, each with 12 table children. The group `name` carries the sheet name
+(`Tilbudsliste - Aalborg`) — structural metadata, better than regexing a delaftale out of a
+cell. The walk has to recurse.
+
+### The schema, and why each field exists
+
+| Field | Justification |
+|---|---|
+| `text` | — |
+| `source` | Q6 — the byte-identical secondary-supplier passage |
+| `page` | ground truth for every eval question |
+| `section` | retrieval by address; the header for split tables |
+| `section_path` | sortable §-hierarchy; null in unnumbered appendices |
+| `subsection` | unnumbered headings — Q10's obligations sit under `Særligt vedr. sikkerhed` |
+| `delaftale` | Q13 — where the wrong sheet returns the wrong number |
+| `element_type` | filter tables in or out; know when text came from a cell |
+
+Populated by a single walk carrying section state, which is reset by a numbered heading and
+inherited by everything after it. Headings are consumed as metadata, not emitted as chunks.
+
+Page furniture is dropped by **label** (`page_footer`), not by matching `Side \d+`. Verified:
+16 footers in `Aftale.pdf`, all `Side 2`–`Side 17`, no clause misrouted. Dropping by label
+generalises to `Rev. August 2024 N` in `Bilag 5` without a second rule.
+
+### Three questions became answerable through metadata alone
+
+**Q10 — subsection state carries across pages.** The security obligations on p7 and p8 both
+carry `section_path: 5`, `subsection: Særligt vedr. sikkerhed`.
+
+**Q12 — the split tidsplan.** Both fragments carry `section: 7. Tidsplan`. The p7
+continuation was five bare dates (`Uge 45`, `Uge 46-47`, `Uge 48`, `1. december 2026`) with no
+header, because TableFormer works per page. **No table-specific code was needed** — the same
+heading-state mechanism that handles prose handles the split table.
+
+**Q13 — three delaftale sheets.** `Elektriker svend` now returns three chunks: Aalborg 500,
+Esbjerg 500, København 550, each tagged with its delaftale.
+
+**Q6 — two discriminators where there were none.** The identical passage now carries
+`Aftale / 3.1 Aftalens omfang` versus `Udbudsbetingelser / 2. Udbuddets genstand`. The section
+names are themselves informative: one is the contract defining its scope, the other the tender
+describing what is procured.
+
+**No retriever could have done any of this.** Q13's three chunks are the same string apart from
+two digits — identical embeddings, fourteen of sixteen tokens shared. The distinction came
+entirely from schema design: a group name and a state variable. This is the week's thesis
+demonstrated rather than asserted.
+
+### Curation, implemented as `exclude=True`
+
+601 elements after exclusions, from 691 before. 90 removed:
+
+- **88 from the four situationsplaner** — 13% of the corpus, all of it noise.
+- **2 tables of contents**, caught by a structural rule rather than a page number: a table
+  with `section is None` precedes the first heading and is therefore front matter. Precise —
+  it caught the `Udbudsbetingelser` ToC (2885 chars, by far the largest table) and a second
+  ToC in `Aftale.pdf` p2 that had not been noticed, and nothing else.
+
+The flag matters. Being able to run `exclude=False` makes this a measurable decision rather
+than an assertion.
+
+### Known limitations
+
+- `Bilag 4`'s `Materialepriser` and `Tilbudsevaluering` chunks inherit the wrong section,
+  because those headings sit in the first cell of their own table rather than as separate
+  1×1s. Misleading — `Tilbudsevaluering` under `Tillæg til timepriser` is the evaluation
+  table, not a surcharge. No eval question depends on it.
+- `Bilag 6B` and `6D` lost most elements in the walk (35→15, 15→1). Unexplained. Irrelevant
+  now they are excluded, but recorded rather than shrugged at.
+
+---
+
+## 10. Chunking: three strategies, and the surprise is which finding survives
+
+Week 1 used 1000-character chunks with 200 overlap. Characters are the wrong unit — the
+model's limit is in tokens.
+
+### Token statistics for the corpus
+
+Measured with `multilingual-e5-small`'s own tokenizer, on 601 elements:
+
+| | tokens |
+|---|---|
+| min | 3 |
+| median | **33** |
+| p90 | 83 |
+| max | 463 |
+| over 512 | **0** |
+
+**4.03 characters per token** — top of the 3–4 range the plan estimated. Week 1's
+1000-character chunks were therefore ~248 tokens, targeting roughly half of a 512 budget
+without knowing it.
+
+Median 33 means chunking here is a **grouping** problem, not a splitting one — the opposite of
+Week 1. Nothing exceeds e5's 512-token limit, so no silent truncation. (That limit is a real
+hazard: e5 will embed a 600-token string and discard the tail without warning.)
+
+### The 55 elements under 8 tokens
+
+Three kinds, needing no special handling because grouping absorbs them: form-field labels
+(`Navn :`, `EAN-nummer`, `Fakturanummer` — individually empty, collectively a real invoicing
+requirement), title-page fragments (`mellem`, `og`, `(`, `)` — the layout model split a
+parenthetical into three elements), and one genuine defect (below).
+
+`Bilag 1 :` and `Bilag 2 :` in the bilagsfortegnelse confirm those appendices are genuinely
+absent from the corpus rather than a download oversight.
+
+### A hypothesis tested and rejected
+
+§2 recorded a hypothesis that Danish suspended compounds (`Færdsels- og parkeringsskilte`)
+confuse Docling's de-hyphenation, since they are common in Danish administrative prose and
+rare in English.
+
+Tested across the corpus: **ten chains found, nine handled correctly.** One missed join —
+`administrations-, undervisnings-, værksteds- og labora-` + `toriebygninger`, so
+`laboratoriebygninger` exists only as two fragments. One over-join in the other direction —
+`nød- og` became `nødog` in `Bilag 3` p4, producing a token that matches nothing.
+
+Two isolated defects, opposite directions, one instance each in 601 elements. **The hypothesis
+does not survive the data.** Docling's hyphenation handling is essentially reliable here.
+
+Post-processing: the join rule (element ends in `-`, next starts lowercase) is safe and worth
+adding. `nødog` is not worth a rule — one instance does not justify machinery that could
+damage real compounds.
+
+### The three strategies
+
+| Strategy | Chunks | Median | Max |
+|---|---|---|---|
+| Fixed (250/50, tokens) | 123 | 250 | 252 |
+| Recursive (350/50, element-bounded) | 83 | 323 | 461 |
+| Structural (400, section-bounded) | 113 | 204 | 461 |
+
+Structural produces **more** chunks than recursive despite a larger budget, because sections
+are frequently smaller than the budget and it emits at the boundary rather than packing on.
+That is the tradeoff numerically: more coherent chunks, less dense. Smaller chunks mean less
+distractor text diluting the embedding but also less context to answer from.
+
+### The Week 1 severed chunks are fixed — but not by chunking
+
+Both `week1-findings.md` §4 defects are resolved in **all three** strategies, fixed-size
+included:
+
+> `'Tekniker' = faglært person med relevant svendebrev og den relevante efteruddannelse…`
+
+The severed subject was a definition in a category list; Week 1's cut landed inside it. And:
+
+> `Ved bestilling skal AAU fremsende en rekvisition med angivelse af ordrenr.…`
+
+`Ved` intact, condition restored.
+
+**The credit belongs to Docling, not to chunking strategy.** pypdf's text stream had no
+boundaries to respect, so a cut at character 1000 landed mid-token. With structured elements,
+even a naive chunker cuts at element joins. The chunking comparison has to rest on different
+evidence — which the same output supplies.
+
+### Recursive chunking's failure mode is silent citation error
+
+The severed-condition probe landed differently across strategies:
+
+| Strategy | Section reported |
+|---|---|
+| Fixed | `None` |
+| Recursive | `7.1 Fakturering af opgaver baseret på tidsforbrug…` |
+| Structural | `7.3 Generelt om fakturering` |
+
+Structural is correct — the clause is in 7.3. Recursive packed content across the section
+boundary, so its chunk *starts* in 7.1 and *contains* 7.3 material, and takes its label from
+the first element. **A confident incorrect citation, which is worse than fixed-size's honest
+`None`.**
+
+Fixed-size cannot cite at all. Concatenating a document before slicing destroys per-element
+provenance, so a fixed chunk has no single page and no section. Recorded rather than patched:
+the baseline's inability to cite is part of what the comparison shows.
+
+Same class as everything else this week — TableFormer's fallback cells, the markdown
+exporter's fabricated headers, the `[:45]` slice. Plausible output with no marker that it is
+wrong.
+
+### Short structural chunks: mostly fine, one real issue
+
+12 chunks under 50 tokens (p10 = 43). Seven are genuinely short contract clauses —
+`17. Overdragelse` at 32 tokens is complete as written. Five are form scaffolding.
+
+The problem is three near-identical 20-token chunks: `Bilag 4 - Tilbudsliste for delaftale
+X` + `Grønne felter skal udfyldes af tilbudsgiver`, one per sheet. A fourth near-duplicate
+cluster, and prime candidates to win a query about the tilbudsliste while containing no
+pricing. Worse, the `Grønne felter` instruction — which says the figures are bidder-supplied
+and therefore qualifies how to read 1728 and 500 — is now isolated from the tables it
+describes.
+
+**Not fixed.** A merge rule that helped here would be fitted to one case, which is the trap
+`week1-findings.md` §7 recorded with the third prompt variant. Revisit if retrieval evaluation
+shows title chunks displacing real answers.
+
+--
+
 ## Carried forward
 
 | Finding | Lands in |
@@ -472,3 +709,12 @@ decision, and Week 2 is where it gets made.**
 | Gennemsnitstimesats is an evaluation figure, not a price | W7 mode 2 |
 | Float artifacts, decimal separators, fraction vs percentage | W2 post-processing, W3 BM25 |
 | Inspection artifacts mistaken for data problems, ×3 | Method, all weeks |
+| §-numbering is real; `section_path` populatable in the two main documents | W3 retrieval by address |
+| Duplicate §12.2 — the path is not a unique key | W7 cross-reference resolution |
+| Reading order comes from `body.children`; xlsx nests in `groups` | W2 chunking, W7 full corpus |
+| Q6, Q10, Q12, Q13 answerable through metadata alone | W3 — sets the ceiling |
+| 4.03 chars/token on Danish; median element 33 tokens | W2 chunk sizing |
+| Suspended-compound hypothesis tested and rejected (9/10 correct) | Method |
+| Severed chunks fixed by Docling, not by chunking strategy | W2 writeup — attribute correctly |
+| Recursive chunking mislabels sections across boundaries | W2 strategy choice, W5 citations |
+| Three `Bilag 4` title chunks are a fourth near-duplicate cluster | W3 retrieval eval |

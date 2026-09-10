@@ -37,6 +37,13 @@ def _is_front_matter(el):
     misdetected as a 21x2 grid."""
     return el["element_type"] == "table" and el["section"] is None
 
+def normalise(text):
+    """Collapse runs of whitespace. Documented post-processing, not a hidden fix:
+    the corpus has inconsistent internal spacing (double spaces mid-sentence in
+    Aftale p10 and Bilag 3 p2, letter-spacing in Bilag 5), which breaks any
+    exact-match or phrase logic downstream."""
+    return " ".join(text.split())
+
 def split_heading(text):
     """Split '6.4 Afregning af materialeforbrug' into ('6.4', 'Afregning...').
 
@@ -63,7 +70,7 @@ def serialise_table(tbl):
     for c in cells:
         r = c.get("start_row_offset_idx", 0)
         rows.setdefault(r, []).append(
-            (c.get("start_col_offset_idx", 0), (c.get("text") or "").strip())
+            (c.get("start_col_offset_idx", 0), normalise(c.get("text") or ""))
         )
     lines = []
     for r in sorted(rows):
@@ -110,7 +117,7 @@ def load_elements(json_path):
                 label = "table"
             elif ref.startswith("#/texts/"):
                 label = node.get("label")
-                text = (node.get("text") or "").strip()
+                text = normalise(node.get("text") or "")
                 if label in DROP_LABELS:
                     continue
                 if label in HEADING_LABELS:
@@ -152,3 +159,4 @@ def filter_elements(elements, **criteria):
     for field, value in criteria.items():
         out = [e for e in out if e.get(field) == value]
     return out
+
