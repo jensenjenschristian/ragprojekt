@@ -1,0 +1,323 @@
+]633;E;{   echo "=== models.py"\x3b        cat src/models.py\x3b   echo "=== diff ingest/query"\x3b git --no-pager diff week2 HEAD -- src/ingest.py src/query.py\x3b   echo "=== filter_test.py"\x3b   cat filter_test.py\x3b   echo "=== load_corpus"\x3b      sed -n '21,33p' src/parse_docling.py\x3b   echo "=== chunk_structural"\x3b sed -n '64,100p' src/chunking.py\x3b   echo "=== evaluate.py"\x3b      cat src/evaluate.py\x3b   echo "=== eval_specs names"\x3b grep -n "^[A-Z_]* *=" src/eval_specs.py\x3b   echo "=== notebooks"\x3b        ls *.ipynb notebooks/ 2>/dev/null\x3b } > step03.txt;684a0823-f499-4606-b9c4-9ca2444bd9e4]633;C=== models.py
+MODELS = {
+    "e5-small": {
+        "name": "intfloat/multilingual-e5-small",
+        "passage_prefix": "passage: ",
+        "query_prefix": "query: ",
+    },
+    "bge-m3": {
+        "name": "BAAI/bge-m3",
+        "passage_prefix": "",
+        "query_prefix": "",
+    },
+}
+
+# e5-small until the 16 GB machine; BGE-M3 scored MRR 0.768 vs 0.697
+# on structural chunking (week2-findings.md §11) but needs ~2.3 GB.
+DEFAULT_MODEL = "e5-small"=== diff ingest/query
+diff --git a/src/ingest.py b/src/ingest.py
+index ae1bcc6..a6167bc 100644
+--- a/src/ingest.py
++++ b/src/ingest.py
+@@ -1,85 +1,61 @@
+-from pathlib import Path
+-from pypdf import PdfReader
++
+ import chromadb
+ from sentence_transformers import SentenceTransformer
++from transformers import AutoTokenizer
++
++from src.parse_docling import load_corpus
++from src.chunking import chunk_structural
++from src.models import MODELS, DEFAULT_MODEL
+ 
+-def load_pages(data_dir="data"):
+-    pages = []
+-    for pdf in sorted(Path(data_dir).glob("*.pdf")):
+-        reader = PdfReader(pdf)
+-        for i, page in enumerate(reader.pages, start=1):
+-            text = page.extract_text() or ""
+-            if text.strip():
+-                pages.append({"text": text, "source": pdf.name, "page": i})
+-    return pages
+ 
+-def chunk_pages(pages, size=1000, overlap=200):
+-    chunks = []
+-    for p in pages:
+-        text = p["text"]
+-        start = 0
+-        while start < len(text):
+-            piece = text[start:start + size]
+-            if piece.strip():
+-                chunks.append({
+-                    "text": piece,
+-                    "source": p["source"],
+-                    "page": p["page"],
+-                })
+-            start += size - overlap
+-    return chunks
++def build_chunks(parsed_dir="data-parsed", model_key=DEFAULT_MODEL):
++    cfg = MODELS[model_key]
++    tok = AutoTokenizer.from_pretrained(cfg["name"])
++    return chunk_structural(load_corpus(parsed_dir), tok)
+ 
+-#stage 1
+-#if __name__ == "__main__":
+-#    pages = load_pages()
+-#    docs = len({p["source"] for p in pages})
+-#    print(f"{len(pages)} pages with text, from {docs} documents")
+-#    #for i, p in enumerate(pages):
+-#    #    print(f"{i:4}  {p['source'][:40]:40}  side {p['page']:3}  {len(p['text']):5} chars")
+-#    t = pages[18]["text"]
+-#    print(len(t))
+-#    print(repr(t[:1500]))
+-#    Path("page18.txt").write_text(t, encoding="utf-8")
+ 
+-def build_index(chunks, db_path="chroma_db", collection_name="tender"):
+-    model = SentenceTransformer("intfloat/multilingual-e5-small")
++def build_index(chunks, db_path="chroma_db", collection_name="tender",
++                model_key=DEFAULT_MODEL):
++    cfg = MODELS[model_key]
++    model = SentenceTransformer(cfg["name"])
+ 
+-    texts = [f"passage: {c['text']}" for c in chunks]
+-    print(f"Embedding {len(texts)} chunks...")
+-    vectors = model.encode(texts, batch_size=16, show_progress_bar=True)
++    texts = [cfg["passage_prefix"] + c["text"] for c in chunks]
++    print(f"Embedding {len(texts)} chunks with {model_key}...")
++    vectors = model.encode(texts, batch_size=16, show_progress_bar=True,
++                           normalize_embeddings=True)
+ 
+     client = chromadb.PersistentClient(path=db_path)
+-    client.delete_collection(collection_name) if collection_name in [
+-        c.name for c in client.list_collections()
+-    ] else None
++    if collection_name in [c.name for c in client.list_collections()]:
++        client.delete_collection(collection_name)
+     collection = client.create_collection(
+-        name=collection_name,
+-        metadata={"hnsw:space": "cosine"},
+-    )
++        name=collection_name, metadata={"hnsw:space": "cosine"})
+ 
+     collection.add(
+-        ids=[f"{c['source']}-p{c['page']}-{i}" for i, c in enumerate(chunks)],
++        ids=[str(i) for i in range(len(chunks))],
+         embeddings=[v.tolist() for v in vectors],
+         documents=[c["text"] for c in chunks],
+-        metadatas=[{"source": c["source"], "page": c["page"]} for c in chunks],
++        metadatas=[_meta(c) for c in chunks],
+     )
+     return collection
+ 
+-#stage 2
+-#if __name__ == "__main__":
+-#    pages = load_pages()
+-#    chunks = chunk_pages(pages)
+-#    print(f"{len(pages)} pages -> {len(chunks)} chunks")
+-#
+-#    c = chunks[27]
+-#    print(f"\n--- {c['source']} side {c['page']} ---")
+-#    print(c["text"])
+ 
+-#stage 3
+-if __name__ == "__main__":
+-    pages = load_pages()
+-    chunks = chunk_pages(pages)
+-    print(f"{len(pages)} pages -> {len(chunks)} chunks")
++def _meta(c):
++    """Chroma rejects None and lists. `pages` is serialised to a comma string
++    and parsed back on retrieval — see week2-findings.md §13."""
++    return {
++        "source": c["source"],
++        "page": c["page"] or 0,
++        "pages": ",".join(str(p) for p in (c.get("pages") or [])),
++        "section": c["section"] or "",
++        "section_path": c["section_path"] or "",
++        "subsection": c["subsection"] or "",
++        "delaftale": c["delaftale"] or "",
++        "strategy": c.get("strategy", ""),
++    }
++
+ 
++if __name__ == "__main__":
++    chunks = build_chunks()
++    print(f"{len(chunks)} chunks")
+     collection = build_index(chunks)
+     print(f"Indexed: {collection.count()} chunks")
+\ No newline at end of file
+diff --git a/src/query.py b/src/query.py
+index 9cb4cff..749a03c 100644
+--- a/src/query.py
++++ b/src/query.py
+@@ -1,3 +1,4 @@
++from src.models import MODELS, DEFAULT_MODEL
+ import chromadb
+ from sentence_transformers import SentenceTransformer
+ import os
+@@ -9,19 +10,29 @@ from openai import OpenAI
+ load_dotenv()
+ llm = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+ 
+-model = SentenceTransformer("intfloat/multilingual-e5-small")
++cfg = MODELS[DEFAULT_MODEL]
++model = SentenceTransformer(cfg["name"])
+ client = chromadb.PersistentClient(path="chroma_db")
+ collection = client.get_collection("tender")
+ 
+-def retrieve(question, k=5):
+-    q_vec = model.encode(f"query: {question}")
+-    res = collection.query(query_embeddings=[q_vec.tolist()], n_results=k)
+-    return [
+-        {"text": doc, "source": meta["source"], "page": meta["page"], "distance": dist}
+-        for doc, meta, dist in zip(
+-            res["documents"][0], res["metadatas"][0], res["distances"][0]
+-        )
+-    ]
++def retrieve(question, k=5, where=None):
++    q_vec = model.encode(cfg["query_prefix"] + question,
++                         normalize_embeddings=True)
++    res = collection.query(query_embeddings=[q_vec.tolist()],
++                           n_results=k, where=where or None)
++    out = []
++    for doc, meta, dist in zip(res["documents"][0], res["metadatas"][0],
++                               res["distances"][0]):
++        out.append({
++            "text": doc,
++            "source": meta["source"],
++            "page": meta["page"],
++            "pages": [int(p) for p in meta["pages"].split(",") if p],
++            "section": meta["section"],
++            "delaftale": meta["delaftale"],
++            "distance": dist,
++        })
++    return out
+ 
+ #stage 5
+ 
+@@ -45,9 +56,15 @@ SVAR:"""
+ 
+ 
+ def build_context(results):
+-    return "\n\n".join(
+-        f"[{r['source']}, side {r['page']}]\n{r['text']}" for r in results
+-    )
++    parts = []
++    for r in results:
++        loc = f"{r['source']}, side {r['page']}"
++        if r["section"]:
++            loc += f", {r['section']}"
++        if r["delaftale"]:
++            loc += f", delaftale {r['delaftale']}"
++        parts.append(f"[{loc}]\n{r['text']}")
++    return "\n\n".join(parts)
+ 
+ def answer(question, k=5):
+     results = retrieve(question, k=k)
+@@ -77,7 +94,12 @@ if __name__ == "__main__":
+ 
+     if retrieve_only:
+         for r in retrieve(question):
+-            print(f"\n{r['source']} side {r['page']} ({r['distance']:.4f})")
++            loc = f"{r['source']} side {r['page']}"
++            if r["delaftale"]:
++                loc += f" [{r['delaftale']}]"
++            if r["section"]:
++                loc += f" — {r['section'][:40]}"
++            print(f"\n{loc} ({r['distance']:.4f})")
+             print(r["text"][:200].replace("\n", " "))
+     else:
+         text, results = answer(question)
+=== filter_test.py
+from src.query import retrieve
+
+for r in retrieve("Hvad er timeprisen for en elektrikersvend?",
+                  where={"delaftale": "København"}):
+    print(r["delaftale"], "|", r["section"], f"({r['distance']:.4f})")=== load_corpus
+def load_corpus(parsed_dir="data-parsed", exclude=True):
+    """Load all documents, optionally applying curation exclusions."""
+    out = []
+    for f in sorted(Path(parsed_dir).glob("*.json")):
+        if exclude and f.stem in EXCLUDE_DOCS:
+            continue
+        for el in load_elements(f):
+            if exclude and _is_front_matter(el):
+                continue
+            out.append(el)
+    return out
+
+
+=== chunk_structural
+def chunk_structural(elements, tok, size=400):
+    """Group by section, splitting only when a section exceeds `size`.
+
+    Boundaries fall where the document says they fall. Only possible because
+    step 4 put section state on every element.
+    """
+    chunks = []
+    key = lambda e: (e["source"], e["section"], e["delaftale"])
+    current, buf, buf_tokens = None, [], 0
+    for e in elements:
+        k = key(e)
+        n = len(tok.encode(e["text"], add_special_tokens=False))
+        if k != current or (buf and buf_tokens + n > size):
+            if buf:
+                chunks.append(_emit(buf, buf[0]["source"], "structural"))
+            buf, buf_tokens = [], 0
+            current = k
+        buf.append(e)
+        buf_tokens += n
+    if buf:
+        chunks.append(_emit(buf, buf[0]["source"], "structural"))
+    return chunks
+
+
+def _emit(buf, source, strategy):
+    first = buf[0]
+    return {
+        "text": "\n".join(e["text"] for e in buf),
+        "source": source,
+        "page": first["page"],
+        "pages": sorted({e["page"] for e in buf if e["page"]}),
+        "section": first["section"],
+        "section_path": first["section_path"],
+        "subsection": first["subsection"],
+        "delaftale": first["delaftale"],
+        "element_type": "group",
+        "strategy": strategy,
+=== evaluate.py
+def matches(chunk, spec):
+    """Does this chunk satisfy the match spec? All fields must hold."""
+    if spec is None:
+        return False
+    if "source" in spec and chunk["source"] != spec["source"]:
+        return False
+    if "page" in spec:
+        pages = chunk.get("pages") or [chunk.get("page")]
+        if spec["page"] not in pages:
+            return False
+    if "delaftale" in spec and chunk.get("delaftale") != spec["delaftale"]:
+        return False
+    if "contains" in spec and spec["contains"] not in chunk["text"]:
+        return False
+    return True
+
+
+def rank_of(retrieved, spec):
+    """1-based rank of the first matching chunk, or None if absent."""
+    for i, c in enumerate(retrieved, start=1):
+        if matches(c, spec):
+            return i
+    return None
+
+
+def score(results):
+    """results: list of (qid, rank_or_None). Returns hit rate and MRR."""
+    n = len(results)
+    hits = sum(1 for _, r in results if r is not None)
+    mrr = sum(1 / r for _, r in results if r is not None) / n
+    return {"n": n, "hit_rate": hits / n, "mrr": mrr}=== eval_specs names
+1:SPECS = {
+17:QUESTIONS = {
+=== notebooks
+week2_embedding_comparison.ipynb
