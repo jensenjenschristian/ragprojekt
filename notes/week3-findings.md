@@ -239,3 +239,65 @@ BM25's absences into dense losses.
 the questions dense fails are routing problems — an address (Q14), a delaftale (Q9, Q13) —
 not keyword problems. BM25 is kept only as a candidate source for the reranker, where its
 contribution can be measured as pool recall rather than fused rank.
+
+---
+
+## 6. Reranker (bge-reranker-v2-m3) — predictions before the run
+
+§1 rerank predictions stand for the original questions (Q2 2–3, Q9 2–3, Q10 1, Q12 1, Q13 1–3,
+Q6 1–2). Added:
+
+| Q | Rerank prediction | Why |
+|---|---|---|
+| Q14 | miss | no text signal for an address; the reranker sees only text |
+| Q15 | 1 | already 1 everywhere |
+| Q16 | 1 | cross-encoder reads `brand` against `ild` in context |
+| Q17 | 1–3 | the suspended compound is readable in context |
+
+**Pool prediction:** reranking dense-20 and reranking dense-20 ∪ BM25-20 give the same ranks.
+Dense-20 already contains every findable target; BM25 can only add distractors. Any difference
+is BM25 hurting, not helping.
+
+**Q12 caveat:** a good reranker will likely put the p4 sentence or Aftale 18.1 first; the spec
+only accepts the tidsplan, so a rank of 2–3 there is a correct result.
+
+### Results
+
+| Q | Dense | Rerank (dense-20) | Rerank (union) |
+|---|---|---|---|
+| Q2 | 5 | 2 | 2 |
+| Q6 | 1 | 2 | 2 |
+| Q9 | 4 | 5 | 5 |
+| Q10 | 2 | 1 | 1 |
+| Q12 | 2 | 2 | 2 |
+| Q13 | 1 | 3 | 3 |
+| Q14 | — | — | — |
+| Q16 | 2 | 1 | 1 |
+| Q17 | 4 | 1 | 1 |
+| others | 1 | 1 | 1 |
+
+Original 11: MRR 0.768 → 0.730, hit@1 0.64 → 0.55, hit@3 0.82 → 0.91.
+Q14–Q17: MRR 0.438 → 0.750.
+
+**The split is by question type, and it was predicted.**
+- *Answer in the text, worded differently* (Q2, Q10, Q16, Q17): reranker wins every time.
+- *Only metadata discriminates* (Q6 source, Q9 and Q13 delaftale): reranker loses. Nothing in
+  the text to decide on; dense's rank 1 on Q6/Q13 was a lucky tie-break, not understanding.
+- On the original questions where text can decide (Q1, 2, 5, 7, 8, 10, 11):
+  **dense MRR 0.814 → reranked 0.929.** That is the reranker's real effect.
+
+**Q13 is underspecified.** The question does not name a delaftale; the spec demands
+København. All three sheets answer it as asked. Same defect class as Q12 → Week 6.
+
+**Pool:** rerank(dense-20) and rerank(dense-20 ∪ BM25-20) give identical ranks on all 15
+questions. BM25 contributes nothing to this pipeline, even as a candidate source.
+
+**Q14:** a 6.4 chunk *is* in dense-20, but the reranker cannot recognise it — `6.4` is only
+in metadata. Next experiment: section heading prepended to the reranker input.
+
+**Latency (CPU, bge-reranker-v2-m3): median 24.6 s per query, ~1 s per candidate.**
+Unusable interactively. Strongest argument so far for the hosted reranker (step 8) or a
+shorter candidate list.
+
+Against predictions: Q2 ✓, Q6 ✓ (noise), Q9 ✗ (predicted 2–3, got 5), Q10 ✓, Q12 ✓ (caveat),
+Q13 ✓, Q14 ✓, Q15 ✓, Q16 ✓, Q17 ✓, pool ✓.
