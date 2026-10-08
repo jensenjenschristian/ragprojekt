@@ -217,3 +217,25 @@ Corpus notes from building them:
 Overall: no question where BM25 finds what dense misses. The case dense fails (Q14) is an
 addressing problem that BM25 also fails. If this holds, dense failures on this corpus are
 routing problems (address, delaftale), not keyword problems.
+
+### Results
+
+| Q | Dense | BM25-stem | Hybrid-raw | Hybrid-stem |
+|---|---|---|---|---|
+| Q14 | — | — | — | — |
+| Q15 | 1 | 1 | 1 | 1 |
+| Q16 | 2 | 4 | 1 | 2 |
+| Q17 | 4 | — | — | — |
+
+Predictions: dense 3/4, BM25 4/4, hybrid 2/4. The overall prediction held — **no question in
+15 where BM25 finds what dense misses.** Q14 is missed by every text retriever (that BM25's
+rank 1 is the Udb p12 cross-reference was predicted but not checked).
+
+**The hybrid pattern across all 15 questions:** losses where BM25 has nothing — Q10 (2→—),
+Q13 (1→—), Q17 (4→—); gains Q2 (5→2, stem) and Q16 (2→1, raw). Equal-weight RRF converts
+BM25's absences into dense losses.
+
+**Conclusion for step 4: RRF hybrid is not adopted as the default retriever.** On this corpus
+the questions dense fails are routing problems — an address (Q14), a delaftale (Q9, Q13) —
+not keyword problems. BM25 is kept only as a candidate source for the reranker, where its
+contribution can be measured as pool recall rather than fused rank.

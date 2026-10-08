@@ -1,0 +1,10 @@
+Q            dense    bm25-stem   hybrid-raw  hybrid-stem
+Q14           None         None         None         None
+Q15              1            1            1            1
+Q16              2            4            1            2
+Q17              4         None         None         None
+
+dense       MRR 0.438  hit@1 0.250  hit@3 0.500  hit@5 0.750
+bm25-stem   MRR 0.312  hit@1 0.250  hit@3 0.250  hit@5 0.500
+hybrid-raw  MRR 0.500  hit@1 0.500  hit@3 0.500  hit@5 0.500
+hybrid-stem MRR 0.375  hit@1 0.250  hit@3 0.500  hit@5 0.500

@@ -5,7 +5,13 @@ from src.bm25 import BM25
 from src.retrieve import dense_search, rrf
 from src.ingest import build_chunks
 from src.models import MODELS
-from src.eval_specs import SPECS, QUESTIONS
+#from src.eval_specs import SPECS, QUESTIONS
+import sys
+from src.eval_specs import SPECS, QUESTIONS, SPECS_W3, QUESTIONS_W3
+
+if len(sys.argv) > 1 and sys.argv[1] == "w3":
+    QUESTIONS, SPECS = QUESTIONS_W3, SPECS_W3
+    
 from src.evaluate import rank_of
 
 cfg = MODELS["bge-m3"]
