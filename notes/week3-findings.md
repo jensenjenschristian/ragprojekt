@@ -146,3 +146,39 @@ not two.
 
 Minor: BM25 rank 2 for Q12 (Udelukkelsesgrunde) shares only `er`, `hvornår` — a question word
 acting as a rare keyword. Real, but not what beat the target.
+
+---
+
+## 4. Hybrid (RRF, k=60, top-20 from each) — a net loss
+
+| Q | Dense | BM25-stem | Hybrid-raw | Hybrid-stem |
+|---|---|---|---|---|
+| Q2 | 5 | 2 | — | **2** |
+| Q9 | 4 | — | — | 5 |
+| Q10 | 2 | — | 5 | **—** |
+| Q12 | 2 | 3 | 2 | 2 |
+| Q13 | 1 | — | 4 | **—** |
+| others | 1 | 1 (Q7: 2) | 1 | 1 |
+| **MRR** | **0.768** | 0.576 | 0.632 | 0.655 |
+| hit@1 / @3 / @5 | 0.64 / 0.82 / 1.00 | 0.45 / 0.73 / 0.73 | 0.55 / 0.64 / 0.82 | 0.55 / 0.73 / 0.82 |
+
+Hybrid-stem vs dense: Q2 +0.30, Q9 −0.05, Q10 −0.50, Q13 −1.00 → net −0.114.
+
+**Why.** With k=60 a chunk in both lists scores ≥ 2/80 = 0.025; a chunk in one list scores at
+most 1/61 = 0.016. Agreement dominates. Q10 and Q13 were absent from BM25's top 20, so every
+chunk both retrievers liked overtook them. Equal-weight fusion assumes comparably competent
+retrievers; BM25 here is much weaker, and fails by absence rather than by rank.
+
+**BM25 adds no recall on this eval set.** Dense hit@5 = 1.00, so dense top-20 already contains
+every target. BM25's only possible contribution is ordering (Q2), which RRF trades badly. The
+eval set cannot test the core hybrid argument — that sparse retrieval finds what dense misses —
+because dense misses nothing here.
+
+**Decisions.**
+- No RRF tuning (k or weights) — fitted to 11 questions.
+- Treat fusion as **candidate generation**; ordering is the reranker's job (step 5). Recall of
+  the dense-20 ∪ BM25-20 pool is 11/11.
+- Write the deferred step 2 questions (lexical gap, clause address, numeric form) **before** the
+  reranker runs, since only questions dense might miss can measure BM25's recall value.
+
+Against §1: hybrid on Q2 predicted ≥5, got 2; Q10 predicted 1, missed; Q13 predicted 1–3, missed.
