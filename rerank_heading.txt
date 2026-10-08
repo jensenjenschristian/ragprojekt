@@ -1,0 +1,18 @@
+Q     plain-20  head-20  head-10   dense rank (of 20)
+Q1           1        1        1   1
+Q2           2        2        2   5
+Q5           1        1        1   1
+Q6           2        2        2   1
+Q7           1        1        1   1
+Q8           1        1        1   1
+Q9           5     None     None   4
+Q10          1        1        1   2
+Q11          1        1        1   1
+Q12          2        2        2   2
+Q13          3        3        3   1
+Q14       None        1        1   9
+Q15          1        1        1   1
+Q16          1        1        1   2
+Q17          1        1        1   4
+h20: MRR original 0.712  W3 1.000  median latency 22.6s
+h10: MRR original 0.712  W3 1.000  median latency 13.0s

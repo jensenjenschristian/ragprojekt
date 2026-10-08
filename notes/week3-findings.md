@@ -301,3 +301,68 @@ shorter candidate list.
 
 Against predictions: Q2 ✓, Q6 ✓ (noise), Q9 ✗ (predicted 2–3, got 5), Q10 ✓, Q12 ✓ (caveat),
 Q13 ✓, Q14 ✓, Q15 ✓, Q16 ✓, Q17 ✓, pool ✓.
+
+---
+
+## 7. Reranker with section heading, and pool size 10 — predictions before the run
+
+Variant: the chunk's `section` is prepended to the text the reranker reads
+(`"6.4 Afregning af materialeforbrug\n<chunk>"`). Query-time only — nothing indexed changes, so
+the W2 §1 decision (no metadata in indexed text) is untouched. Chunks with no section are
+unchanged.
+
+| Q | Rerank (plain, §6) | Prediction with heading | Why |
+|---|---|---|---|
+| Q14 | — | **top 5, likely 1** | `6.4` becomes readable text |
+| Q12 | 2 | 1–3 | `7. Tidsplan` and `18.1 Løbetid` both relevant — could go either way |
+| Q6 | 2 | 2 (or arbitrary flip) | headings differ, but the question doesn't ask contract vs tender |
+| Q9, Q13 | 5, 3 | unchanged | all three sheets share the same section; delaftale is not a heading |
+| others | — | unchanged ±1 | a heading adds a few generic words; may shift near ties |
+
+**Pool 10 vs 20:** identical ranks if every target sits in dense top 10; latency roughly halved
+(~12 s per query).
+
+### Results
+
+| Q | Plain-20 | Head-20 | Head-10 | Dense rank |
+|---|---|---|---|---|
+| Q9 | 5 | — | — | 4 |
+| Q14 | — | **1** | **1** | 9 |
+| all others | unchanged | | | |
+
+Original 11 MRR 0.730 → 0.712 (Q9 only); Q14–Q17 MRR 0.750 → **1.000**.
+Pool 10 = pool 20 on all 15 questions; latency 22.6 s → 13.0 s. **Margin is thin:** the deepest
+target sits at dense rank 9. Pool 10 is fitted to this set — recheck on the W6 set.
+
+All 15 questions: dense 0.680 → dense-10 + rerank-with-heading **0.789**.
+
+Predictions: Q14 ✓, Q6/Q12/Q13 ✓, pool-10 latency ✓, **Q9 ✗**.
+
+**Q9 diagnosis — hypothesis rejected.** Predicted the mislabelled Tilbudsevaluering table (W2 §9)
+would crowd in. It never appears. Actual cause: section 4.3 Hasteopgaver spans two chunks; with
+headings, the second also starts with the query's own word and rises to rank 4 (0.230), pushing
+the København table (0.236) to 6. A noise-scale reshuffle among scores of ~0.23.
+
+**Q9 is a two-part question.** The reranker's top two are `4.3 Hasteopgaver` and `6.3 Tillæg`
+("3 x timesats" — the rule); the København table supplies the figure (1848). A complete answer
+needs rule + figure; the spec accepts only the figure. Same defect class as Q12 → W6. First
+concrete multi-chunk case for W5.
+
+**The three sheets are ordered by chance** — the question names København, the chunk text does
+not.
+
+---
+
+## 8. Reranker with delaftale — predictions before the run
+
+Variant: `Delaftale <X>` prepended (with the section heading) for chunks that have a delaftale.
+Query-time only, same rationale as §7.
+
+| Q | Head-10 | Prediction | Why |
+|---|---|---|---|
+| Q9 | — | **3** | question names København → København table first among the three sheets; 4.3 and 6.3 stay above it, legitimately |
+| Q13 | 3 | 3 (unchanged, ±arbitrary) | question names no delaftale |
+| all others | — | unchanged | no other target has a delaftale |
+
+Hypothesis: exposing metadata to the reranker solves a metadata question **only when the
+question names the value**.
