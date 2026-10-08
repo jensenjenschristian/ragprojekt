@@ -366,3 +366,42 @@ Query-time only, same rationale as §7.
 
 Hypothesis: exposing metadata to the reranker solves a metadata question **only when the
 question names the value**.
+
+### Results
+
+| Q | Plain-20 | Head-10 | Head+delaftale-10 |
+|---|---|---|---|
+| Q9 | 5 | — | **2** |
+| Q13 | 3 | 3 | **1** |
+| all others | unchanged | | |
+
+h10 reproduces §7 head-10 exactly (code-change check passed).
+Original 11 MRR: head-10 0.712 → head+delaftale-10 **0.818**. W3: 1.000 both.
+
+**Of the +0.106, only Q9 (+0.045) is real.** Q13's 3 → 1 is a near-tie among three sheets that
+fell København's way; the question names no delaftale, and §1 committed that Q13 movement is noise.
+**Honest original-11 MRR ≈ 0.757.**
+
+Hypothesis confirmed: exposing a metadata value to the reranker solves the question **when the
+question names the value** (Q9). When it doesn't (Q13), no ranking can — the system must detect
+the ambiguity and return all three delaftaler or ask. → W5 generation.
+
+Latency: h10 10.3 s this run vs 13.0 s in §7 for identical work. Run-to-run variance ~25% on
+this machine; treat single latency numbers as ranges.
+
+### Pipeline at end of step 5
+
+dense (BGE-M3) top-10 → bge-reranker-v2-m3 reading `Delaftale X` + section heading + text.
+
+| | Dense | Final |
+|---|---|---|
+| Original 11 | 0.768 | 0.818 (≈0.757 ex-Q13) |
+| Q14–Q17 | 0.438 | 1.000 |
+| All 15 | 0.680 | 0.867 (≈0.822 ex-Q13) |
+
+### Step 6 (decompounding) — skipped, with reason
+
+Planned to help BM25 on compounds. BM25 is out of the pipeline (§4, §6: no recall added, even as
+a candidate source), and the reranker already handles the compound cases: Q17 (suspended
+compound) 4 → 1; Q2's problem was inflection, not compounding (§3). Decompounding would improve a
+component the pipeline no longer uses.

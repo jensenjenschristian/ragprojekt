@@ -24,7 +24,7 @@ rank_in = lambda idxs, spec: rank_of([chunks[i] for i in idxs], spec)
 times = {"hd10": [], "h10": []}
 ranks = {"hd10": {}, "h10": {}}
 
-print(f"{'Q':<5}{'plain-20':>9}{'head-20':>9}{'head-10':>9}   dense rank (of 20)")
+print(f"{'Q':<5}{'plain-20':>9}{'h+del-10':>10}{'head-10':>9}   dense rank (of 20)")
 for Q, S in [(QUESTIONS, SPECS), (QUESTIONS_W3, SPECS_W3)]:
     for qid, question in Q.items():
         q = embed.encode(cfg["query_prefix"] + question, normalize_embeddings=True)
