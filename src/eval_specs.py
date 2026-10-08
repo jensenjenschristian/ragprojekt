@@ -28,5 +28,20 @@ QUESTIONS = {
     "Q13": "Hvad er timeprisen for en elektrikersvend?",
 }
 
+# Week 3 additions - written before any reranker ran; scored separately from the
+# original 11, which stay frozen as the baseline comparison.
+SPECS_W3 = {
+    "Q14": {"source": "Aftale", "section": "6.4 Afregning af materialeforbrug"},
+    "Q15": {"source": "Aftale", "page": 11, "contains": "EAN-nummer"},
+    "Q16": {"source": "Bilag 5 - Vejledning til eksterne samarbejdspartnere - version august 2024",
+            "page": 4, "contains": "1-1-2"},
+    "Q17": {"source": "Aftale", "page": 4, "contains": "laboratoriebygninger"},
+}
 
+QUESTIONS_W3 = {
+    "Q14": "Hvad står der i punkt 6.4 i aftalen?",
+    "Q15": "Skal fakturaen indeholde EAN-nummer?",
+    "Q16": "Hvilket nummer skal man ringe til, hvis der går ild i noget på campus?",
+    "Q17": "Gælder aftalen også for undervisningsbygninger?",
+}
 

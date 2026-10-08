@@ -12,6 +12,8 @@ def matches(chunk, spec):
         return False
     if "contains" in spec and spec["contains"] not in chunk["text"]:
         return False
+    if "section" in spec and chunk.get("section") != spec["section"]:
+        return False
     return True
 
 

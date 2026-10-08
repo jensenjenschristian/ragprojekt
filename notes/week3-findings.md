@@ -182,3 +182,38 @@ because dense misses nothing here.
   reranker runs, since only questions dense might miss can measure BM25's recall value.
 
 Against §1: hybrid on Q2 predicted ≥5, got 2; Q10 predicted 1, missed; Q13 predicted 1–3, missed.
+
+---
+
+## 5. Four additional questions (Q14–Q17), written before any reranker ran
+
+Scored separately from the frozen 11. Specs verified against the chunks before any retriever
+ran on them: Q14 matches 3 chunks (6.4 is split across three — all correct answers); Q15–Q17
+match exactly one each. `matches()` gained an optional `section` field; baseline re-run after
+the change: MRR 0.768, unchanged.
+
+| Q | Question | Tests |
+|---|---|---|
+| Q14 | Hvad står der i punkt 6.4 i aftalen? | lookup by clause number; `6.4` exists only as metadata and in a cross-reference |
+| Q15 | Skal fakturaen indeholde EAN-nummer? | rare exact identifier — the BM25 case |
+| Q16 | Hvilket nummer skal man ringe til, hvis der går ild i noget på campus? | synonym gap `ild`/`brand` — the dense case |
+| Q17 | Gælder aftalen også for undervisningsbygninger? | suspended compound — the full word never occurs |
+
+Corpus notes from building them:
+- Clause 6.4 exceeds 400 tokens and spans three chunks. A lookup by clause number returns a
+  third of the clause → parent-document retrieval for W5/W7.
+- `laboratoriebygninger` is now whole; the split recorded in W2 §10 is gone from the current
+  chunks (presumably the hyphen-join rule). Original Q17 premise dropped.
+
+### Predictions
+
+| Q | Dense | BM25-stem | Hybrid |
+|---|---|---|---|
+| Q14 | miss | miss (rank 1 = Udb p12 cross-reference) | miss |
+| Q15 | 1–3 | 1 | 1 |
+| Q16 | 1–2 | 2–5 | 1–3 |
+| Q17 | 1–3 | miss | 1–5 |
+
+Overall: no question where BM25 finds what dense misses. The case dense fails (Q14) is an
+addressing problem that BM25 also fails. If this holds, dense failures on this corpus are
+routing problems (address, delaftale), not keyword problems.
