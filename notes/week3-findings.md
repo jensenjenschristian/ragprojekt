@@ -405,3 +405,22 @@ Planned to help BM25 on compounds. BM25 is out of the pipeline (§4, §6: no rec
 a candidate source), and the reranker already handles the compound cases: Q17 (suspended
 compound) 4 → 1; Q2's problem was inflection, not compounding (§3). Decompounding would improve a
 component the pipeline no longer uses.
+
+---
+
+## 9. Hosted reranker (Cohere rerank-v5.0-pro / -fast) — predictions before the run
+
+Same input as §8's final local variant: dense top-10, reranker reads `Delaftale X` + section
+heading + text. Only the reranker changes. Smoke test: Danish handled (`ild` → `brand`,
+0.687 vs 0.001).
+
+| | Prediction |
+|---|---|
+| Q2, Q10, Q14–Q17 (answer in text) | 1–2 — comparable to local |
+| Q9 (names København) | 2–3 — delaftale prefix does the work, as locally |
+| Q6, Q13 (metadata ties) | arbitrary — noise, whichever way it moves |
+| Q12 | 2 (spec too narrow, §3) |
+| Latency | < 2 s per query, mostly network — vs ~10 s local CPU |
+| pro vs fast | fast slightly worse or equal on quality, faster |
+
+Danish quality is the open question: Danish is not explicitly listed among the "100+" languages.
