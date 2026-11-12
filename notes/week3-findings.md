@@ -3,7 +3,23 @@
 Hybrid search and reranking over the Week 2 baseline (BGE-M3 + structural chunking).
 Read alongside `notes/week2-findings.md` and `notes/week3-plan.md`.
 
-*In progress. Started 5 October 2026.*
+*Completed 12 November 2026. Experiment scripts in `experiments/`; run from the repo root with
+`python -m experiments.<name>`.*
+
+## Summary
+
+The syllabus expects hybrid search to beat dense retrieval. On this corpus it does not. BM25 adds
+no recall on 15 questions, and equal-weight RRF lowers MRR from 0.768 to 0.655. The questions dense
+retrieval fails are **routing problems** — a clause address (Q14), a delaftale (Q9, Q13) — not
+keyword problems.
+
+What works is a **cross-encoder reranker that reads the metadata the index left out**. Dense
+top-10 → reranker on `Delaftale X` + section heading + text: MRR on all 15 questions **0.680 →
+0.867** (≈0.82 excluding one lucky tie). The hosted reranker (Cohere) matches the local one on
+quality at ~0.4 s against 10–13 s.
+
+Three eval-spec defects found (Q9, Q12, Q13) — each a question with more than one correct answer
+or none clearly specified. Several predictions failed and are recorded as failures.
 
 ---
 
@@ -468,3 +484,44 @@ the repo, run with `python -m pytest tests/ -v`).
 ~200 tokens the context is ~1,000 tokens, far below where the effect is documented. And it is a
 generation effect: `evaluate.py` scores retrieval ranks and cannot see it. Wire in during W4/W5
 when `query.py` moves to the final pipeline; measure in W6 if an eval can.
+
+---
+
+## Carried forward
+
+| Finding | Lands in |
+|---|---|
+| Baseline reproduces exactly on CPU (MRR 0.768) | W4 regression check |
+| Hit@5 saturated — report hit@1, hit@3 and per-question ranks | W6 |
+| Danish Snowball inconsistent on the `-hed` paradigm | lemmatiser, if sparse retrieval returns |
+| BM25 adds no recall on 15 questions; only ordering win is Q2 | W7 — retest on full corpus |
+| Equal-weight RRF: 0.768 → 0.655; not adopted | — |
+| Dense failures are routing problems (address, delaftale) | W5 query routing / filter extraction |
+| Reranker wins where text decides (0.814 → 0.929), loses metadata ties | W4 pipeline |
+| Section heading at rerank time fixes address lookup (Q14) | W4 default |
+| Delaftale prefix fixes Q9 (names the value); Q13 needs ambiguity handling | W5 generation |
+| Spec defects: Q12 (3 correct), Q9 (rule + figure), Q13 (underspecified) | W6 multi-answer specs |
+| Sections split across chunks (6.4 ×3, 4.3 ×2) | W5/W7 parent-document retrieval |
+| Pool of 10 sufficient; deepest target at dense rank 9 — thin margin | W6 recheck |
+| Local rerank 10–13 s CPU; Cohere 0.34–0.38 s, equal quality | W4: hosted default, local fallback |
+| Hosted reranker sends document text out | W8 writeup; client PoC decision |
+| Latency varies ~25% run to run on identical work | W4/W6 measurement design |
+| Lost-in-the-middle reorder implemented, unmeasured | W5 wiring, W6 measurement |
+| W2 §10 `laboratoriebygninger` split no longer present | note |
+| Rate limits belong to the key, not the object; never hide stderr | method |
+| Predictions written first; Q2, Q12, Q9 (heading) failed and are recorded | method |
+| `requirements.txt`: torch unpinned (pulled in implicitly); parsing deps may have crept back in | W8 Docker build — clean and verify 
+
+## End-of-week checklist
+
+- [x] Week 2 baseline reproduced locally
+- [x] Predictions written before any Week 3 retriever ran
+- [x] BM25, two tokenisation variants
+- [x] RRF fusion by hand
+- [x] Local multilingual reranker, CPU latency measured
+- [x] Cohere Rerank compared on quality and latency
+- [x] Results tables + per-question ranks
+- [x] Before/after examples for Q2 and Q9 (`notes/week3-before-after.md`)
+- [~] Step 6 decompounding — skipped with reason (§8)
+- [x] Step 7 implemented, not measured (§10)
+- [x] `requirements.txt` updated; repo pushed
