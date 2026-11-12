@@ -510,7 +510,7 @@ when `query.py` moves to the final pipeline; measure in W6 if an eval can.
 | W2 §10 `laboratoriebygninger` split no longer present | note |
 | Rate limits belong to the key, not the object; never hide stderr | method |
 | Predictions written first; Q2, Q12, Q9 (heading) failed and are recorded | method |
-| `requirements.txt`: torch unpinned (pulled in implicitly); parsing deps may have crept back in | W8 Docker build — clean and verify 
+| `requirements.txt`: torch unpinned (pulled in implicitly); parsing deps may have crept back in | W8 Docker build — clean and verify |
 
 ## End-of-week checklist
 
