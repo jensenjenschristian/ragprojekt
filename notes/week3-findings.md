@@ -455,3 +455,16 @@ Predictions: all held except Q12 (2 → 1, spec effect).
 Bug recorded: per-instance rate limiting let two instances make ~18 calls/min against a 10/min
 key limit; `2>/dev/null` hid the resulting crash. Fixed with a class-level timestamp (the limit
 belongs to the key, not the object). Same family as W2 §14: a hidden view of the pipe.
+
+---
+
+## 10. "Lost in the middle" — implemented, not measured
+
+`src/context.py: reorder_for_context()` — best-first input becomes strongest-at-the-edges:
+[1, 2, 3, 4, 5] → [1, 3, 5, 4, 2]. Covered by `tests/test_context.py` (first unit tests in
+the repo, run with `python -m pytest tests/ -v`).
+
+**Not wired into the generation path yet, and not measured — deliberately.** With 5 chunks of
+~200 tokens the context is ~1,000 tokens, far below where the effect is documented. And it is a
+generation effect: `evaluate.py` scores retrieval ranks and cannot see it. Wire in during W4/W5
+when `query.py` moves to the final pipeline; measure in W6 if an eval can.
