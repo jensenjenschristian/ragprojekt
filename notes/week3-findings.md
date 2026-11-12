@@ -424,3 +424,34 @@ heading + text. Only the reranker changes. Smoke test: Danish handled (`ild` →
 | pro vs fast | fast slightly worse or equal on quality, faster |
 
 Danish quality is the open question: Danish is not explicitly listed among the "100+" languages.
+
+### Results
+
+| Q | Local | Pro | Fast |
+|---|---|---|---|
+| Q6 | 2 | 2 | 1 |
+| Q12 | 2 | 1 | 1 |
+| Q13 | 1 | 3 | 2 |
+| other 12 | identical across all three | | |
+
+| | MRR original | MRR W3 | Latency median / max |
+|---|---|---|---|
+| Local bge-reranker-v2-m3 | 0.818 | 1.000 | 10–13 s (CPU) |
+| Cohere rerank-v5.0-pro | 0.803 | 1.000 | 0.38 / 0.56 s |
+| Cohere rerank-v5.0-fast | 0.864 | 1.000 | 0.34 / 0.76 s |
+
+**Quality: indistinguishable.** Every difference is on Q6/Q13 (declared noise, §1) or Q12 (spec
+accepts one of three correct answers, §3). "Fast beats pro" is entirely those ties — not a finding.
+
+**Latency: ~27× faster hosted.** Local is compute; hosted is mostly network round-trip.
+
+**Decision for W4: hosted reranker by default; local Reranker kept as fallback** (confidential
+documents, API outage). Same interface → one-line swap. Open before production: per-search
+pricing beyond the trial; data leaves the machine (fine for a public tender, a client decision
+otherwise).
+
+Predictions: all held except Q12 (2 → 1, spec effect).
+
+Bug recorded: per-instance rate limiting let two instances make ~18 calls/min against a 10/min
+key limit; `2>/dev/null` hid the resulting crash. Fixed with a class-level timestamp (the limit
+belongs to the key, not the object). Same family as W2 §14: a hidden view of the pipe.
